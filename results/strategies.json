@@ -1,0 +1,498 @@
+{
+ "sentences_per_language": 100,
+ "languages": [
+  "hin_Deva",
+  "ben_Beng",
+  "mar_Deva",
+  "guj_Gujr",
+  "pan_Guru",
+  "ory_Orya",
+  "asm_Beng",
+  "npi_Deva",
+  "mai_Deva",
+  "san_Deva",
+  "kan_Knda",
+  "tam_Taml",
+  "tel_Telu",
+  "mal_Mlym"
+ ],
+ "learned_fixed_format": {
+  "gpt4|hin_Deva": "casual_roman",
+  "gpt4o|hin_Deva": "original",
+  "llama3|hin_Deva": "casual_roman",
+  "gemma3|hin_Deva": "original",
+  "qwen3|hin_Deva": "casual_roman",
+  "deepseek_v4|hin_Deva": "casual_roman",
+  "mistral_nemo|hin_Deva": "original",
+  "gpt4|ben_Beng": "casual_roman",
+  "gpt4o|ben_Beng": "original",
+  "llama3|ben_Beng": "casual_roman",
+  "gemma3|ben_Beng": "original",
+  "qwen3|ben_Beng": "casual_roman",
+  "deepseek_v4|ben_Beng": "original",
+  "mistral_nemo|ben_Beng": "original",
+  "gpt4|mar_Deva": "casual_roman",
+  "gpt4o|mar_Deva": "original",
+  "llama3|mar_Deva": "casual_roman",
+  "gemma3|mar_Deva": "original",
+  "qwen3|mar_Deva": "casual_roman",
+  "deepseek_v4|mar_Deva": "casual_roman",
+  "mistral_nemo|mar_Deva": "original",
+  "gpt4|guj_Gujr": "casual_roman",
+  "gpt4o|guj_Gujr": "original",
+  "llama3|guj_Gujr": "casual_roman",
+  "gemma3|guj_Gujr": "original",
+  "qwen3|guj_Gujr": "casual_roman",
+  "deepseek_v4|guj_Gujr": "casual_roman",
+  "mistral_nemo|guj_Gujr": "casual_roman",
+  "gpt4|pan_Guru": "casual_roman",
+  "gpt4o|pan_Guru": "casual_roman",
+  "llama3|pan_Guru": "casual_roman",
+  "gemma3|pan_Guru": "casual_roman",
+  "qwen3|pan_Guru": "casual_roman",
+  "deepseek_v4|pan_Guru": "casual_roman",
+  "mistral_nemo|pan_Guru": "casual_roman",
+  "gpt4|ory_Orya": "casual_roman",
+  "gpt4o|ory_Orya": "casual_roman",
+  "llama3|ory_Orya": "casual_roman",
+  "gemma3|ory_Orya": "casual_roman",
+  "qwen3|ory_Orya": "casual_roman",
+  "deepseek_v4|ory_Orya": "casual_roman",
+  "mistral_nemo|ory_Orya": "casual_roman",
+  "gpt4|asm_Beng": "casual_roman",
+  "gpt4o|asm_Beng": "original",
+  "llama3|asm_Beng": "casual_roman",
+  "gemma3|asm_Beng": "original",
+  "qwen3|asm_Beng": "casual_roman",
+  "deepseek_v4|asm_Beng": "casual_roman",
+  "mistral_nemo|asm_Beng": "casual_roman",
+  "gpt4|npi_Deva": "casual_roman",
+  "gpt4o|npi_Deva": "original",
+  "llama3|npi_Deva": "casual_roman",
+  "gemma3|npi_Deva": "original",
+  "qwen3|npi_Deva": "casual_roman",
+  "deepseek_v4|npi_Deva": "casual_roman",
+  "mistral_nemo|npi_Deva": "casual_roman",
+  "gpt4|mai_Deva": "casual_roman",
+  "gpt4o|mai_Deva": "original",
+  "llama3|mai_Deva": "casual_roman",
+  "gemma3|mai_Deva": "original",
+  "qwen3|mai_Deva": "casual_roman",
+  "deepseek_v4|mai_Deva": "casual_roman",
+  "mistral_nemo|mai_Deva": "casual_roman",
+  "gpt4|san_Deva": "casual_roman",
+  "gpt4o|san_Deva": "casual_roman",
+  "llama3|san_Deva": "casual_roman",
+  "gemma3|san_Deva": "original",
+  "qwen3|san_Deva": "casual_roman",
+  "deepseek_v4|san_Deva": "casual_roman",
+  "mistral_nemo|san_Deva": "casual_roman",
+  "gpt4|kan_Knda": "casual_roman",
+  "gpt4o|kan_Knda": "casual_roman",
+  "llama3|kan_Knda": "casual_roman",
+  "gemma3|kan_Knda": "original",
+  "qwen3|kan_Knda": "casual_roman",
+  "deepseek_v4|kan_Knda": "casual_roman",
+  "mistral_nemo|kan_Knda": "casual_roman",
+  "gpt4|tam_Taml": "casual_roman",
+  "gpt4o|tam_Taml": "original",
+  "llama3|tam_Taml": "casual_roman",
+  "gemma3|tam_Taml": "original",
+  "qwen3|tam_Taml": "casual_roman",
+  "deepseek_v4|tam_Taml": "casual_roman",
+  "mistral_nemo|tam_Taml": "casual_roman",
+  "gpt4|tel_Telu": "casual_roman",
+  "gpt4o|tel_Telu": "casual_roman",
+  "llama3|tel_Telu": "casual_roman",
+  "gemma3|tel_Telu": "original",
+  "qwen3|tel_Telu": "casual_roman",
+  "deepseek_v4|tel_Telu": "casual_roman",
+  "mistral_nemo|tel_Telu": "casual_roman",
+  "gpt4|mal_Mlym": "casual_roman",
+  "gpt4o|mal_Mlym": "original",
+  "llama3|mal_Mlym": "casual_roman",
+  "gemma3|mal_Mlym": "original",
+  "qwen3|mal_Mlym": "casual_roman",
+  "deepseek_v4|mal_Mlym": "casual_roman",
+  "mistral_nemo|mal_Mlym": "casual_roman"
+ },
+ "pareto": [
+  {
+   "strategy": "original",
+   "token_reduction": 0.0,
+   "meaning_safe_rate": 1.0
+  },
+  {
+   "strategy": "always_iso_roman",
+   "token_reduction": 0.22559278403517857,
+   "meaning_safe_rate": 0.995
+  },
+  {
+   "strategy": "always_casual_roman",
+   "token_reduction": 0.4785860986454866,
+   "meaning_safe_rate": 0.9814285714285714
+  },
+  {
+   "strategy": "always_compressed",
+   "token_reduction": 0.0007609023174884877,
+   "meaning_safe_rate": 1.0
+  },
+  {
+   "strategy": "best_fixed_per_model_language",
+   "token_reduction": 0.4976497864376985,
+   "meaning_safe_rate": 0.9864285714285714
+  },
+  {
+   "strategy": "truncate_25pct",
+   "token_reduction": 0.2540045725669232,
+   "meaning_safe_rate": 0.0
+  },
+  {
+   "strategy": "adaptive_unverified",
+   "token_reduction": 0.5173268455457708,
+   "meaning_safe_rate": 0.981734693877551
+  },
+  {
+   "strategy": "adaptive_verified (ours)",
+   "token_reduction": 0.5140471866732117,
+   "meaning_safe_rate": 1.0
+  }
+ ],
+ "per_tokenizer": [
+  {
+   "tokenizer": "gpt4",
+   "adaptive_saving": 0.6358725170842245,
+   "best_fixed_saving": 0.6406037972603456,
+   "test": {
+    "mean_diff": -0.0047312801761210275,
+    "ci95": [
+     -0.007008420497676159,
+     -0.002719982436286436
+    ],
+    "p_value": 0.0001999600079984003,
+    "n": 1400
+   }
+  },
+  {
+   "tokenizer": "gpt4o",
+   "adaptive_saving": 0.1392820624652053,
+   "best_fixed_saving": 0.04891519926235615,
+   "test": {
+    "mean_diff": 0.09036686320284916,
+    "ci95": [
+     0.08647214924566725,
+     0.0943181886097992
+    ],
+    "p_value": 0.0001999600079984003,
+    "n": 1400
+   }
+  },
+  {
+   "tokenizer": "llama3",
+   "adaptive_saving": 0.5110605520968836,
+   "best_fixed_saving": 0.4978340326755475,
+   "test": {
+    "mean_diff": 0.013226519421336097,
+    "ci95": [
+     0.010825865551734733,
+     0.015678140946528838
+    ],
+    "p_value": 0.0001999600079984003,
+    "n": 1400
+   }
+  },
+  {
+   "tokenizer": "gemma3",
+   "adaptive_saving": 0.10701349168610517,
+   "best_fixed_saving": 0.044606977766819905,
+   "test": {
+    "mean_diff": 0.062406513919285284,
+    "ci95": [
+     0.059241727841037074,
+     0.06571032517420922
+    ],
+    "p_value": 0.0001999600079984003,
+    "n": 1400
+   }
+  },
+  {
+   "tokenizer": "qwen3",
+   "adaptive_saving": 0.5903411872491969,
+   "best_fixed_saving": 0.5935402953971977,
+   "test": {
+    "mean_diff": -0.0031991081480006738,
+    "ci95": [
+     -0.004921803853350852,
+     -0.0017011537848617363
+    ],
+    "p_value": 0.0001999600079984003,
+    "n": 1400
+   }
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "adaptive_saving": 0.3205768897185809,
+   "best_fixed_saving": 0.30680972616335045,
+   "test": {
+    "mean_diff": 0.013767163555230394,
+    "ci95": [
+     0.01142062517627861,
+     0.0159887572095259
+    ],
+    "p_value": 0.0001999600079984003,
+    "n": 1400
+   }
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "adaptive_saving": 0.20969686762635376,
+   "best_fixed_saving": 0.12945842067874294,
+   "test": {
+    "mean_diff": 0.08023844694761084,
+    "ci95": [
+     0.07584566148262835,
+     0.08428413489357942
+    ],
+    "p_value": 0.0001999600079984003,
+    "n": 1400
+   }
+  }
+ ],
+ "ablation": [
+  {
+   "variant": "full system",
+   "token_reduction": 0.5140471866732117
+  },
+  {
+   "variant": "without word_best hybrid",
+   "token_reduction": 0.49801637862356263
+  },
+  {
+   "variant": "without compression",
+   "token_reduction": 0.5133622851747437
+  },
+  {
+   "variant": "without romanisation",
+   "token_reduction": 0.0022576713885528177
+  },
+  {
+   "variant": "without lossless (ISO) option",
+   "token_reduction": 0.5099833781738166
+  },
+  {
+   "variant": "without meaning verification",
+   "token_reduction": 0.5173268455457708,
+   "unsafe_outputs": 0.018265306122449032
+  }
+ ],
+ "domains": [
+  {
+   "domain": "conversational (code-mixed comments)",
+   "strategy": "always_casual_roman",
+   "token_reduction": 0.4881857837928527,
+   "meaning_safe_rate": 0.9866666666666667,
+   "sentences": 450
+  },
+  {
+   "domain": "conversational (code-mixed comments)",
+   "strategy": "always_compressed",
+   "token_reduction": 0.011623138154092771,
+   "meaning_safe_rate": 0.9977777777777778,
+   "sentences": 450
+  },
+  {
+   "domain": "conversational (code-mixed comments)",
+   "strategy": "best_fixed_per_model_language",
+   "token_reduction": 0.49011520608467085,
+   "meaning_safe_rate": 0.9901587301587301,
+   "sentences": 450
+  },
+  {
+   "domain": "conversational (code-mixed comments)",
+   "strategy": "adaptive_verified (ours)",
+   "token_reduction": 0.5169640027589807,
+   "meaning_safe_rate": 1.0,
+   "sentences": 450
+  },
+  {
+   "domain": "formal (FLORES)",
+   "strategy": "always_casual_roman",
+   "token_reduction": 0.4785860986454866,
+   "meaning_safe_rate": 0.9814285714285714,
+   "sentences": 1400
+  },
+  {
+   "domain": "formal (FLORES)",
+   "strategy": "always_compressed",
+   "token_reduction": 0.0007609023174884877,
+   "meaning_safe_rate": 1.0,
+   "sentences": 1400
+  },
+  {
+   "domain": "formal (FLORES)",
+   "strategy": "best_fixed_per_model_language",
+   "token_reduction": 0.4976497864376985,
+   "meaning_safe_rate": 0.9864285714285714,
+   "sentences": 1400
+  },
+  {
+   "domain": "formal (FLORES)",
+   "strategy": "adaptive_verified (ours)",
+   "token_reduction": 0.5140471866732117,
+   "meaning_safe_rate": 1.0,
+   "sentences": 1400
+  }
+ ],
+ "winning_candidate": {
+  "casual_roman": 4573,
+  "word_best": 4121,
+  "compressed+word_best": 552,
+  "original": 409,
+  "iso_roman": 89,
+  "normalized": 55,
+  "compressed": 1
+ },
+ "failure_by_candidate": [
+  {
+   "candidate": "casual_roman",
+   "reason": "spelling_clarity",
+   "count": 31
+  },
+  {
+   "candidate": "word_best",
+   "reason": "spelling_clarity",
+   "count": 31
+  },
+  {
+   "candidate": "iso_roman",
+   "reason": "content_words",
+   "count": 19
+  },
+  {
+   "candidate": "compressed+word_best",
+   "reason": "spelling_clarity",
+   "count": 7
+  },
+  {
+   "candidate": "casual_roman",
+   "reason": "content_words",
+   "count": 1
+  },
+  {
+   "candidate": "word_best",
+   "reason": "content_words",
+   "count": 1
+  },
+  {
+   "candidate": "compressed",
+   "reason": "names_and_links",
+   "count": 1
+  },
+  {
+   "candidate": "compressed+word_best",
+   "reason": "names_and_links",
+   "count": 1
+  }
+ ],
+ "failure_by_language": [
+  {
+   "language": "asm_Beng",
+   "reason": "spelling_clarity",
+   "count": 27
+  },
+  {
+   "language": "ben_Beng",
+   "reason": "spelling_clarity",
+   "count": 10
+  },
+  {
+   "language": "mal_Mlym",
+   "reason": "spelling_clarity",
+   "count": 10
+  },
+  {
+   "language": "pan_Guru",
+   "reason": "spelling_clarity",
+   "count": 8
+  },
+  {
+   "language": "san_Deva",
+   "reason": "spelling_clarity",
+   "count": 7
+  },
+  {
+   "language": "mal_Mlym",
+   "reason": "content_words",
+   "count": 7
+  },
+  {
+   "language": "tam_Taml",
+   "reason": "spelling_clarity",
+   "count": 5
+  },
+  {
+   "language": "asm_Beng",
+   "reason": "content_words",
+   "count": 4
+  },
+  {
+   "language": "kan_Knda",
+   "reason": "content_words",
+   "count": 4
+  },
+  {
+   "language": "tam_Taml",
+   "reason": "content_words",
+   "count": 4
+  },
+  {
+   "language": "kan_Knda",
+   "reason": "spelling_clarity",
+   "count": 2
+  },
+  {
+   "language": "tam_Taml",
+   "reason": "names_and_links",
+   "count": 2
+  },
+  {
+   "language": "guj_Gujr",
+   "reason": "content_words",
+   "count": 1
+  },
+  {
+   "language": "san_Deva",
+   "reason": "content_words",
+   "count": 1
+  }
+ ],
+ "failure_examples": [
+  {
+   "language": "ben_Beng",
+   "candidate": "casual_roman",
+   "original": "জানা গেছে যে এই অঞ্চলে প্রায় ৯৪০০টি বাড়ি জলবিহীন  এবং প্রায় ১০০টি বাড়ি বিদ্যুৎবিহীন।",
+   "rewrite": "jaanaa gechhe ye ei anchale praay 9400ti vaari jalaviheen  evan praay 100ti vaari vidyutviheen.",
+   "reason": "spelling_clarity: 29% of words have a casual spelling shared by another word (limit 25%)"
+  },
+  {
+   "language": "guj_Gujr",
+   "candidate": "iso_roman",
+   "original": "આર્કિપlલેગો પેનિનસુલાથી ઉત્તરમાં 120 કિ.મી. તે અંતરે છે. વિલા લાસ એસ્ટ્રેલાસના સમાધાન સાથે કિંગ જ્યોર્જ આઇલેન્ડ સૌથી મોટું છે.",
+   "rewrite": "ārkipallēgō pēninasulāthī uttaramāṁ 120 ki.mī. tē aṁtarē chē. vilā lāsa ēsṭrēlāsanā samādhāna sāthē kiṁga jyōrja āilēnḍa sauthī mōṭuṁ chē.",
+   "reason": "content_words: 1 word(s) dropped without a rule: ['aarkipllego']"
+  },
+  {
+   "language": "tam_Taml",
+   "candidate": "compressed",
+   "original": "\"போராடாம அவன் போகவும் மாட்டான் , சாகவும் மாட்டான்\"\".       \"\"U WILL SEE MY RAGE\"\" .         DAMN !  BEAST MODE TRAILER MAN!!!!!\"",
+   "rewrite": "\"போராடாம அவன் போகவும் மாட்டான் , சாகவும் மாட்டான்\"\". \"\"U WILL SEE MY RAGE\"\" . DAMN ! BEAST MODE TRAILER MAN!\"",
+   "reason": "names_and_links: missing ['MAN!!!!!\"']"
+  }
+ ],
+ "latency_ms": {
+  "p50": 27.73,
+  "p95": 74.945,
+  "mean": 32.55817837837838,
+  "n": 1850
+ }
+}

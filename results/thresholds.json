@@ -1,0 +1,5 @@
+{
+ "chrf": 0.95,
+ "embedding": 0.9,
+ "source": "calibrated on FLORES dev (3074 safe rewrites, 1st percentile)"
+}

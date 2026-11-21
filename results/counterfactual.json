@@ -1,0 +1,850 @@
+{
+ "sentences_per_language": 200,
+ "languages": [
+  "hin_Deva",
+  "ben_Beng",
+  "mar_Deva",
+  "guj_Gujr",
+  "pan_Guru",
+  "ory_Orya",
+  "asm_Beng",
+  "npi_Deva",
+  "mai_Deva",
+  "san_Deva",
+  "kan_Knda",
+  "tam_Taml",
+  "tel_Telu",
+  "mal_Mlym"
+ ],
+ "rows": [
+  {
+   "language": "hin_Deva",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 25618,
+   "tokens_fixed_pretokenizer": 25586,
+   "saving_fixed_pretokenizer": 0.0012491217112967634
+  },
+  {
+   "language": "hin_Deva",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 8282,
+   "tokens_fixed_pretokenizer": 8282,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "hin_Deva",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 13530,
+   "tokens_fixed_pretokenizer": 13854,
+   "saving_fixed_pretokenizer": -0.02394678492239466
+  },
+  {
+   "language": "hin_Deva",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 6984,
+   "tokens_fixed_pretokenizer": 6984,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "hin_Deva",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 24098,
+   "tokens_fixed_pretokenizer": 24089,
+   "saving_fixed_pretokenizer": 0.00037347497717654665
+  },
+  {
+   "language": "hin_Deva",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 14964,
+   "tokens_fixed_pretokenizer": 14964,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "hin_Deva",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 9780,
+   "tokens_fixed_pretokenizer": 9780,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ben_Beng",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 30142,
+   "tokens_fixed_pretokenizer": 30114,
+   "saving_fixed_pretokenizer": 0.0009289363678588458
+  },
+  {
+   "language": "ben_Beng",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 8734,
+   "tokens_fixed_pretokenizer": 8734,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ben_Beng",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 29915,
+   "tokens_fixed_pretokenizer": 29887,
+   "saving_fixed_pretokenizer": 0.0009359852916597244
+  },
+  {
+   "language": "ben_Beng",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 6247,
+   "tokens_fixed_pretokenizer": 6247,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ben_Beng",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 26521,
+   "tokens_fixed_pretokenizer": 26521,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ben_Beng",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 10426,
+   "tokens_fixed_pretokenizer": 10426,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ben_Beng",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 10994,
+   "tokens_fixed_pretokenizer": 10994,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mar_Deva",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 27525,
+   "tokens_fixed_pretokenizer": 27524,
+   "saving_fixed_pretokenizer": 3.633060853769354e-05
+  },
+  {
+   "language": "mar_Deva",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 9803,
+   "tokens_fixed_pretokenizer": 9803,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mar_Deva",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 15255,
+   "tokens_fixed_pretokenizer": 15489,
+   "saving_fixed_pretokenizer": -0.015339233038348166
+  },
+  {
+   "language": "mar_Deva",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 7616,
+   "tokens_fixed_pretokenizer": 7616,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mar_Deva",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 25573,
+   "tokens_fixed_pretokenizer": 25573,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mar_Deva",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 16265,
+   "tokens_fixed_pretokenizer": 16265,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mar_Deva",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 12001,
+   "tokens_fixed_pretokenizer": 12001,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "guj_Gujr",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 40772,
+   "tokens_fixed_pretokenizer": 40772,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "guj_Gujr",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 9388,
+   "tokens_fixed_pretokenizer": 9388,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "guj_Gujr",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 40772,
+   "tokens_fixed_pretokenizer": 40772,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "guj_Gujr",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 9813,
+   "tokens_fixed_pretokenizer": 9813,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "guj_Gujr",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 36399,
+   "tokens_fixed_pretokenizer": 36399,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "guj_Gujr",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 20434,
+   "tokens_fixed_pretokenizer": 20434,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "guj_Gujr",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 14781,
+   "tokens_fixed_pretokenizer": 14781,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "pan_Guru",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 42953,
+   "tokens_fixed_pretokenizer": 42953,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "pan_Guru",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 14111,
+   "tokens_fixed_pretokenizer": 14111,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "pan_Guru",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 42736,
+   "tokens_fixed_pretokenizer": 42736,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "pan_Guru",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 14673,
+   "tokens_fixed_pretokenizer": 14673,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "pan_Guru",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 40480,
+   "tokens_fixed_pretokenizer": 40480,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "pan_Guru",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 24307,
+   "tokens_fixed_pretokenizer": 24307,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "pan_Guru",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 16518,
+   "tokens_fixed_pretokenizer": 16518,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ory_Orya",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 66048,
+   "tokens_fixed_pretokenizer": 66048,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ory_Orya",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 26265,
+   "tokens_fixed_pretokenizer": 26265,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ory_Orya",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 64778,
+   "tokens_fixed_pretokenizer": 64778,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ory_Orya",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 18654,
+   "tokens_fixed_pretokenizer": 18654,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ory_Orya",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 52550,
+   "tokens_fixed_pretokenizer": 52550,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ory_Orya",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 29363,
+   "tokens_fixed_pretokenizer": 29363,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "ory_Orya",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 70164,
+   "tokens_fixed_pretokenizer": 70164,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "asm_Beng",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 32529,
+   "tokens_fixed_pretokenizer": 32523,
+   "saving_fixed_pretokenizer": 0.0001844507977496468
+  },
+  {
+   "language": "asm_Beng",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 10321,
+   "tokens_fixed_pretokenizer": 10321,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "asm_Beng",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 32323,
+   "tokens_fixed_pretokenizer": 32317,
+   "saving_fixed_pretokenizer": 0.00018562633418928165
+  },
+  {
+   "language": "asm_Beng",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 10545,
+   "tokens_fixed_pretokenizer": 10545,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "asm_Beng",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 28924,
+   "tokens_fixed_pretokenizer": 28924,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "asm_Beng",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 14269,
+   "tokens_fixed_pretokenizer": 14269,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "asm_Beng",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 17713,
+   "tokens_fixed_pretokenizer": 17713,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "npi_Deva",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 26043,
+   "tokens_fixed_pretokenizer": 26042,
+   "saving_fixed_pretokenizer": 3.83980340206147e-05
+  },
+  {
+   "language": "npi_Deva",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 8817,
+   "tokens_fixed_pretokenizer": 8817,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "npi_Deva",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 14131,
+   "tokens_fixed_pretokenizer": 14261,
+   "saving_fixed_pretokenizer": -0.009199632014719406
+  },
+  {
+   "language": "npi_Deva",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 8417,
+   "tokens_fixed_pretokenizer": 8417,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "npi_Deva",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 24543,
+   "tokens_fixed_pretokenizer": 24542,
+   "saving_fixed_pretokenizer": 4.0744815222315545e-05
+  },
+  {
+   "language": "npi_Deva",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 16111,
+   "tokens_fixed_pretokenizer": 16111,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "npi_Deva",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 11979,
+   "tokens_fixed_pretokenizer": 11979,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mai_Deva",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 25712,
+   "tokens_fixed_pretokenizer": 25708,
+   "saving_fixed_pretokenizer": 0.000155569383945231
+  },
+  {
+   "language": "mai_Deva",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 9124,
+   "tokens_fixed_pretokenizer": 9124,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mai_Deva",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 13651,
+   "tokens_fixed_pretokenizer": 13725,
+   "saving_fixed_pretokenizer": -0.005420848289502622
+  },
+  {
+   "language": "mai_Deva",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 8554,
+   "tokens_fixed_pretokenizer": 8554,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mai_Deva",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 23528,
+   "tokens_fixed_pretokenizer": 23527,
+   "saving_fixed_pretokenizer": 4.250255015303406e-05
+  },
+  {
+   "language": "mai_Deva",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 16290,
+   "tokens_fixed_pretokenizer": 16290,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mai_Deva",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 12123,
+   "tokens_fixed_pretokenizer": 12123,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "san_Deva",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 26603,
+   "tokens_fixed_pretokenizer": 26602,
+   "saving_fixed_pretokenizer": 3.7589745517374595e-05
+  },
+  {
+   "language": "san_Deva",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 11100,
+   "tokens_fixed_pretokenizer": 11100,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "san_Deva",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 14199,
+   "tokens_fixed_pretokenizer": 14301,
+   "saving_fixed_pretokenizer": -0.007183604479188643
+  },
+  {
+   "language": "san_Deva",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 9551,
+   "tokens_fixed_pretokenizer": 9551,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "san_Deva",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 24669,
+   "tokens_fixed_pretokenizer": 24669,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "san_Deva",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 15334,
+   "tokens_fixed_pretokenizer": 15334,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "san_Deva",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 12526,
+   "tokens_fixed_pretokenizer": 12526,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "kan_Knda",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 49332,
+   "tokens_fixed_pretokenizer": 49332,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "kan_Knda",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 10708,
+   "tokens_fixed_pretokenizer": 10708,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "kan_Knda",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 49313,
+   "tokens_fixed_pretokenizer": 49313,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "kan_Knda",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 10613,
+   "tokens_fixed_pretokenizer": 10613,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "kan_Knda",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 39180,
+   "tokens_fixed_pretokenizer": 39180,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "kan_Knda",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 20336,
+   "tokens_fixed_pretokenizer": 20336,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "kan_Knda",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 12512,
+   "tokens_fixed_pretokenizer": 12512,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "tam_Taml",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 39488,
+   "tokens_fixed_pretokenizer": 39488,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "tam_Taml",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 10009,
+   "tokens_fixed_pretokenizer": 10009,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "tam_Taml",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 39488,
+   "tokens_fixed_pretokenizer": 39488,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "tam_Taml",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 7419,
+   "tokens_fixed_pretokenizer": 7419,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "tam_Taml",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 32071,
+   "tokens_fixed_pretokenizer": 32071,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "tam_Taml",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 15708,
+   "tokens_fixed_pretokenizer": 15708,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "tam_Taml",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 11401,
+   "tokens_fixed_pretokenizer": 11401,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "tel_Telu",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 45447,
+   "tokens_fixed_pretokenizer": 45445,
+   "saving_fixed_pretokenizer": 4.400730521270102e-05
+  },
+  {
+   "language": "tel_Telu",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 10495,
+   "tokens_fixed_pretokenizer": 10495,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "tel_Telu",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 45446,
+   "tokens_fixed_pretokenizer": 45444,
+   "saving_fixed_pretokenizer": 4.400827355544035e-05
+  },
+  {
+   "language": "tel_Telu",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 9655,
+   "tokens_fixed_pretokenizer": 9655,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "tel_Telu",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 38988,
+   "tokens_fixed_pretokenizer": 38986,
+   "saving_fixed_pretokenizer": 5.1297835231389755e-05
+  },
+  {
+   "language": "tel_Telu",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 20356,
+   "tokens_fixed_pretokenizer": 20356,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "tel_Telu",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 12695,
+   "tokens_fixed_pretokenizer": 12695,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mal_Mlym",
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "tokens": 46982,
+   "tokens_fixed_pretokenizer": 46982,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mal_Mlym",
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "tokens": 10190,
+   "tokens_fixed_pretokenizer": 10190,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mal_Mlym",
+   "tokenizer": "llama3",
+   "has_split": true,
+   "tokens": 46958,
+   "tokens_fixed_pretokenizer": 46958,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mal_Mlym",
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "tokens": 9679,
+   "tokens_fixed_pretokenizer": 9679,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mal_Mlym",
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "tokens": 38694,
+   "tokens_fixed_pretokenizer": 38694,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mal_Mlym",
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "tokens": 23004,
+   "tokens_fixed_pretokenizer": 23004,
+   "saving_fixed_pretokenizer": 0.0
+  },
+  {
+   "language": "mal_Mlym",
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "tokens": 13804,
+   "tokens_fixed_pretokenizer": 13804,
+   "saving_fixed_pretokenizer": 0.0
+  }
+ ],
+ "per_tokenizer": [
+  {
+   "tokenizer": "gpt4",
+   "has_split": true,
+   "saving_fixed_pretokenizer": 0.00014280437324110107,
+   "saving_bhashatoken": 0.6358725170842245
+  },
+  {
+   "tokenizer": "gpt4o",
+   "has_split": false,
+   "saving_fixed_pretokenizer": 0.0,
+   "saving_bhashatoken": 0.1392820624652053
+  },
+  {
+   "tokenizer": "llama3",
+   "has_split": true,
+   "saving_fixed_pretokenizer": -0.0017902896247528055,
+   "saving_bhashatoken": 0.5110605520968836
+  },
+  {
+   "tokenizer": "gemma3",
+   "has_split": false,
+   "saving_fixed_pretokenizer": 0.0,
+   "saving_bhashatoken": 0.10701349168610517
+  },
+  {
+   "tokenizer": "qwen3",
+   "has_split": true,
+   "saving_fixed_pretokenizer": 2.849514924885277e-05,
+   "saving_bhashatoken": 0.5903411872491969
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "has_split": false,
+   "saving_fixed_pretokenizer": 0.0,
+   "saving_bhashatoken": 0.3205768897185809
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "has_split": false,
+   "saving_fixed_pretokenizer": 0.0,
+   "saving_bhashatoken": 0.20969686762635376
+  }
+ ],
+ "note": "The fixed pre-tokenizer keeps the original vocabulary and merges. A real fix would need a retrained vocabulary and model."
+}

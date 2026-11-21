@@ -1,0 +1,50 @@
+{
+ "tokenizers": [
+  {
+   "tokenizer": "gpt4",
+   "load_ms": 194.75985200006107,
+   "encode_ms_per_sentence": 0.1393814419998307,
+   "rss_increase_mb": 63.6953125
+  },
+  {
+   "tokenizer": "gpt4o",
+   "load_ms": 431.46611799966195,
+   "encode_ms_per_sentence": 0.07940662599958159,
+   "rss_increase_mb": 44.33203125
+  },
+  {
+   "tokenizer": "llama3",
+   "load_ms": 339.8688760003097,
+   "encode_ms_per_sentence": 0.0953424540002743,
+   "rss_increase_mb": 19.19921875
+  },
+  {
+   "tokenizer": "gemma3",
+   "load_ms": 1341.8652529999235,
+   "encode_ms_per_sentence": 0.0547903540000334,
+   "rss_increase_mb": 255.51171875
+  },
+  {
+   "tokenizer": "qwen3",
+   "load_ms": 395.36224299990863,
+   "encode_ms_per_sentence": 0.11107438799990632,
+   "rss_increase_mb": 1.2890625
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "load_ms": 310.659355000098,
+   "encode_ms_per_sentence": 0.09042196000063996,
+   "rss_increase_mb": 6.43359375
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "load_ms": 438.56104100041193,
+   "encode_ms_per_sentence": 0.07994602600047074,
+   "rss_increase_mb": 14.25390625
+  }
+ ],
+ "plan_ms_per_sentence_all_tokenizers": 35.302784959994824,
+ "plan_python_peak_mb": 0.089525,
+ "process_rss_mb": 576.51953125,
+ "note": "measured on the machine named in ledger.json; CPU only"
+}

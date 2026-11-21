@@ -1,0 +1,318 @@
+{
+ "threshold": {
+  "chrf": 0.95,
+  "embedding": 0.9,
+  "source": "calibrated on FLORES dev (3074 safe rewrites, 1st percentile)"
+ },
+ "dev_rows": 7776,
+ "test_rows": 10302,
+ "languages": [
+  "kan_Knda",
+  "hin_Deva",
+  "tam_Taml",
+  "tel_Telu",
+  "mal_Mlym",
+  "ben_Beng"
+ ],
+ "summary": {
+  "safe_accepted": 0.9977832512315271,
+  "unsafe_caught": 1.0,
+  "similarity_only": {
+   "unsafe_caught": 0.29413649471323294,
+   "safe_accepted": 0.9992610837438424
+  }
+ },
+ "by_kind": [
+  {
+   "kind": "safe:casual_roman",
+   "safe": true,
+   "n": 1200,
+   "accepted": 0.9983333333333333,
+   "accepted_similarity_only": 0.9991666666666666,
+   "mean_similarity": 0.9999275666434448,
+   "caught_by": {
+    "similarity": 1,
+    "content_words": 1
+   }
+  },
+  {
+   "kind": "safe:iso_roman",
+   "safe": true,
+   "n": 1200,
+   "accepted": 0.9941666666666666,
+   "accepted_similarity_only": 0.9983333333333333,
+   "mean_similarity": 0.9997921895872536,
+   "caught_by": {
+    "content_words": 6,
+    "similarity": 2
+   }
+  },
+  {
+   "kind": "safe:normalized",
+   "safe": true,
+   "n": 348,
+   "accepted": 1.0,
+   "accepted_similarity_only": 1.0,
+   "mean_similarity": 1.0,
+   "caught_by": {}
+  },
+  {
+   "kind": "safe:pro_drop",
+   "safe": true,
+   "n": 112,
+   "accepted": 1.0,
+   "accepted_similarity_only": 1.0,
+   "mean_similarity": 1.0,
+   "caught_by": {}
+  },
+  {
+   "kind": "safe:spacing",
+   "safe": true,
+   "n": 1200,
+   "accepted": 1.0,
+   "accepted_similarity_only": 1.0,
+   "mean_similarity": 1.0,
+   "caught_by": {}
+  },
+  {
+   "kind": "unsafe:negation_added",
+   "safe": false,
+   "n": 1200,
+   "accepted": 0.0,
+   "accepted_similarity_only": 1.0,
+   "mean_similarity": 0.9926885289430237,
+   "caught_by": {
+    "negation": 1200
+   }
+  },
+  {
+   "kind": "unsafe:negation_added+roman",
+   "safe": false,
+   "n": 1200,
+   "accepted": 0.0,
+   "accepted_similarity_only": 0.9941666666666666,
+   "mean_similarity": 0.9920181433230235,
+   "caught_by": {
+    "negation": 1200,
+    "content_words": 25,
+    "names_and_links": 9,
+    "similarity": 7
+   }
+  },
+  {
+   "kind": "unsafe:number_changed",
+   "safe": false,
+   "n": 247,
+   "accepted": 0.0,
+   "accepted_similarity_only": 0.9271255060728745,
+   "mean_similarity": 0.9730361471129637,
+   "caught_by": {
+    "numbers": 247,
+    "content_words": 247,
+    "similarity": 18,
+    "dates_times": 8,
+    "names_and_links": 4
+   }
+  },
+  {
+   "kind": "unsafe:question_added",
+   "safe": false,
+   "n": 1195,
+   "accepted": 0.0,
+   "accepted_similarity_only": 1.0,
+   "mean_similarity": 1.0,
+   "caught_by": {
+    "question_form": 1195
+   }
+  },
+  {
+   "kind": "unsafe:word_deleted",
+   "safe": false,
+   "n": 1200,
+   "accepted": 0.0,
+   "accepted_similarity_only": 0.28833333333333333,
+   "mean_similarity": 0.9257622576126836,
+   "caught_by": {
+    "content_words": 1200,
+    "similarity": 854,
+    "sentence_count": 16,
+    "negation": 11,
+    "modality": 2,
+    "numbers": 2,
+    "question_form": 1
+   }
+  },
+  {
+   "kind": "unsafe:word_replaced",
+   "safe": false,
+   "n": 1200,
+   "accepted": 0.0,
+   "accepted_similarity_only": 0.2025,
+   "mean_similarity": 0.9179208139424252,
+   "caught_by": {
+    "content_words": 1200,
+    "similarity": 957,
+    "sentence_count": 17,
+    "negation": 13,
+    "numbers": 8,
+    "modality": 7,
+    "question_form": 5
+   }
+  }
+ ],
+ "ablation": [
+  {
+   "removed_check": "(none: full verifier)",
+   "unsafe_caught": 1.0,
+   "safe_accepted": 0.9977832512315271
+  },
+  {
+   "removed_check": "numbers",
+   "unsafe_caught": 1.0,
+   "safe_accepted": 0.9977832512315271
+  },
+  {
+   "removed_check": "dates_times",
+   "unsafe_caught": 1.0,
+   "safe_accepted": 0.9977832512315271
+  },
+  {
+   "removed_check": "negation",
+   "unsafe_caught": 0.6196731816725408,
+   "safe_accepted": 0.9977832512315271
+  },
+  {
+   "removed_check": "modality",
+   "unsafe_caught": 1.0,
+   "safe_accepted": 0.9977832512315271
+  },
+  {
+   "removed_check": "question_form",
+   "unsafe_caught": 0.8085549503364307,
+   "safe_accepted": 0.9977832512315271
+  },
+  {
+   "removed_check": "names_and_links",
+   "unsafe_caught": 1.0,
+   "safe_accepted": 0.9977832512315271
+  },
+  {
+   "removed_check": "content_words",
+   "unsafe_caught": 0.9086831143864146,
+   "safe_accepted": 0.9992610837438424
+  },
+  {
+   "removed_check": "similarity",
+   "unsafe_caught": 1.0,
+   "safe_accepted": 0.9982758620689656
+  },
+  {
+   "removed_check": "sentence_count",
+   "unsafe_caught": 1.0,
+   "safe_accepted": 0.9977832512315271
+  }
+ ],
+ "missed_examples": [],
+ "false_rejections": [
+  {
+   "language": "kan_Knda",
+   "id": 977,
+   "kind": "safe:iso_roman",
+   "safe": true,
+   "similarity": 0.9191542739057943,
+   "passed": false,
+   "failed": [
+    "content_words",
+    "similarity"
+   ]
+  },
+  {
+   "language": "tel_Telu",
+   "id": 395,
+   "kind": "safe:iso_roman",
+   "safe": true,
+   "similarity": 0.9486565164575259,
+   "passed": false,
+   "failed": [
+    "similarity"
+   ]
+  },
+  {
+   "language": "tel_Telu",
+   "id": 395,
+   "kind": "safe:casual_roman",
+   "safe": true,
+   "similarity": 0.9486565164575259,
+   "passed": false,
+   "failed": [
+    "similarity"
+   ]
+  },
+  {
+   "language": "tel_Telu",
+   "id": 976,
+   "kind": "safe:iso_roman",
+   "safe": true,
+   "similarity": 0.9783316676634614,
+   "passed": false,
+   "failed": [
+    "content_words"
+   ]
+  },
+  {
+   "language": "mal_Mlym",
+   "id": 492,
+   "kind": "safe:iso_roman",
+   "safe": true,
+   "similarity": 0.9644234556762527,
+   "passed": false,
+   "failed": [
+    "content_words"
+   ]
+  },
+  {
+   "language": "mal_Mlym",
+   "id": 492,
+   "kind": "safe:casual_roman",
+   "safe": true,
+   "similarity": 0.9644234556762527,
+   "passed": false,
+   "failed": [
+    "content_words"
+   ]
+  },
+  {
+   "language": "ben_Beng",
+   "id": 25,
+   "kind": "safe:iso_roman",
+   "safe": true,
+   "similarity": 0.973684938566956,
+   "passed": false,
+   "failed": [
+    "content_words"
+   ]
+  },
+  {
+   "language": "ben_Beng",
+   "id": 296,
+   "kind": "safe:iso_roman",
+   "safe": true,
+   "similarity": 0.9832930078431654,
+   "passed": false,
+   "failed": [
+    "content_words"
+   ]
+  },
+  {
+   "language": "ben_Beng",
+   "id": 746,
+   "kind": "safe:iso_roman",
+   "safe": true,
+   "similarity": 0.9830836445911655,
+   "passed": false,
+   "failed": [
+    "content_words"
+   ]
+  }
+ ]
+}

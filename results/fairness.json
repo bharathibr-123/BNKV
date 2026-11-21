@@ -1,0 +1,1201 @@
+{
+ "parts": [
+  "cost_parity",
+  "typing_parity",
+  "word_integrity",
+  "char_integrity",
+  "pretoken_integrity"
+ ],
+ "scores": [
+  {
+   "tokenizer": "gpt4",
+   "language": "hin_Deva",
+   "cost_parity": 0.21014627207223924,
+   "typing_parity": 0.4452561918490368,
+   "word_integrity": 0.0,
+   "char_integrity": 0.39215140551071526,
+   "pretoken_integrity": 0.4428243595547715,
+   "index": 0.17464790780399583
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "ben_Beng",
+   "cost_parity": 0.17244617004808852,
+   "typing_parity": 0.4503537286478785,
+   "word_integrity": 0.0,
+   "char_integrity": 0.15008945224772563,
+   "pretoken_integrity": 0.36570834433588595,
+   "index": 0.13364061689086934
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "mar_Deva",
+   "cost_parity": 0.1980805526609195,
+   "typing_parity": 0.4123858360894499,
+   "word_integrity": 0.0,
+   "char_integrity": 0.3180496549512851,
+   "pretoken_integrity": 0.33823207871310323,
+   "index": 0.15444400695398783
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "guj_Gujr",
+   "cost_parity": 0.13050826299465138,
+   "typing_parity": 0.43152196345509675,
+   "word_integrity": 0.0,
+   "char_integrity": 0.017548660924341486,
+   "pretoken_integrity": 0.39309623083439926,
+   "index": 0.08277072425998874
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "pan_Guru",
+   "cost_parity": 0.12737164197987882,
+   "typing_parity": 0.40798499061913696,
+   "word_integrity": 0.0,
+   "char_integrity": 0.01355625635522728,
+   "pretoken_integrity": 0.44341061387968883,
+   "index": 0.07923782721483974
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "ory_Orya",
+   "cost_parity": 0.08064152465941994,
+   "typing_parity": 0.4324143745724694,
+   "word_integrity": 0.0,
+   "char_integrity": 0.0086183367351782,
+   "pretoken_integrity": 0.35639023770986067,
+   "index": 0.06589871262070762
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "asm_Beng",
+   "cost_parity": 0.16255524258897122,
+   "typing_parity": 0.4381578735270887,
+   "word_integrity": 0.0,
+   "char_integrity": 0.10799739260960306,
+   "pretoken_integrity": 0.38922615309468983,
+   "index": 0.12452294319536095
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "npi_Deva",
+   "cost_parity": 0.2098736835603323,
+   "typing_parity": 0.4340785691472373,
+   "word_integrity": 0.0,
+   "char_integrity": 0.3351400599153772,
+   "pretoken_integrity": 0.35708612852532146,
+   "index": 0.16125200766919806
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "mai_Deva",
+   "cost_parity": 0.2050759736242512,
+   "typing_parity": 0.43251070059032254,
+   "word_integrity": 0.0,
+   "char_integrity": 0.3271618909661551,
+   "pretoken_integrity": 0.4611607067519449,
+   "index": 0.1679984709223447
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "urd_Arab",
+   "cost_parity": 0.23043990606746526,
+   "typing_parity": null,
+   "word_integrity": 0.0020161290322580645,
+   "char_integrity": 0.6558152547114626,
+   "pretoken_integrity": 0.990806340000659,
+   "index": 0.1967125169348746
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "snd_Arab",
+   "cost_parity": 0.25114800750247157,
+   "typing_parity": null,
+   "word_integrity": 0.006048387096774193,
+   "char_integrity": 0.7162180890872301,
+   "pretoken_integrity": 0.9835863477862703,
+   "index": 0.20509113033620435
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "san_Deva",
+   "cost_parity": 0.2024986404237408,
+   "typing_parity": 0.43299987256276284,
+   "word_integrity": 0.0020161290322580645,
+   "char_integrity": 0.2998592000476783,
+   "pretoken_integrity": 0.3265653454056538,
+   "index": 0.15373029865766544
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "kan_Knda",
+   "cost_parity": 0.11290925555158635,
+   "typing_parity": 0.4374034500514933,
+   "word_integrity": 0.0,
+   "char_integrity": 0.017969444467521245,
+   "pretoken_integrity": 0.29934266755761374,
+   "index": 0.0767119468519074
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "tam_Taml",
+   "cost_parity": 0.13082609783801474,
+   "typing_parity": 0.4221004084041182,
+   "word_integrity": 0.0,
+   "char_integrity": 0.1070596615520859,
+   "pretoken_integrity": 0.2753456061132338,
+   "index": 0.11023584497116684
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "tel_Telu",
+   "cost_parity": 0.1206678415896086,
+   "typing_parity": 0.46404670854957664,
+   "word_integrity": 0.0,
+   "char_integrity": 0.020322911441293057,
+   "pretoken_integrity": 0.3102071299019981,
+   "index": 0.08120040367389529
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "mal_Mlym",
+   "cost_parity": 0.11189139347636376,
+   "typing_parity": 0.4292256189994947,
+   "word_integrity": 0.0,
+   "char_integrity": 0.0308152075477911,
+   "pretoken_integrity": 0.26846230918842456,
+   "index": 0.08314308739475985
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "sat_Olck",
+   "cost_parity": 0.07850510476685583,
+   "typing_parity": null,
+   "word_integrity": 0.0,
+   "char_integrity": 0.0062874554145185835,
+   "pretoken_integrity": 1.0,
+   "index": 0.05293275207482053
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "hin_Deva",
+   "cost_parity": 0.6356561642539502,
+   "typing_parity": 0.507574040495618,
+   "word_integrity": 0.8611670020120724,
+   "char_integrity": 0.9973034345728072,
+   "pretoken_integrity": 1.0,
+   "index": 0.7736192575902832
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "ben_Beng",
+   "cost_parity": 0.5894235830847517,
+   "typing_parity": 0.5012684200708823,
+   "word_integrity": 0.5432595573440644,
+   "char_integrity": 0.9882654851728373,
+   "pretoken_integrity": 1.0,
+   "index": 0.6919516851199813
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "mar_Deva",
+   "cost_parity": 0.55086813029129,
+   "typing_parity": 0.464922752201519,
+   "word_integrity": 0.37424547283702214,
+   "char_integrity": 0.9949572597011254,
+   "pretoken_integrity": 1.0,
+   "index": 0.6249969322693268
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "guj_Gujr",
+   "cost_parity": 0.5582839929365326,
+   "typing_parity": 0.4987935258742297,
+   "word_integrity": 0.5855130784708249,
+   "char_integrity": 0.9782071257920432,
+   "pretoken_integrity": 1.0,
+   "index": 0.6927055723390902
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "pan_Guru",
+   "cost_parity": 0.382017200938233,
+   "typing_parity": 0.4612044553520861,
+   "word_integrity": 0.09657947686116701,
+   "char_integrity": 0.9450422915630109,
+   "pretoken_integrity": 1.0,
+   "index": 0.4377866369476201
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "ory_Orya",
+   "cost_parity": 0.20060316062137487,
+   "typing_parity": 0.4829972321075524,
+   "word_integrity": 0.0,
+   "char_integrity": 0.7297273086943215,
+   "pretoken_integrity": 1.0,
+   "index": 0.23436275925219507
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "asm_Beng",
+   "cost_parity": 0.5029289016151067,
+   "typing_parity": 0.485028427037271,
+   "word_integrity": 0.2655935613682093,
+   "char_integrity": 0.9898377407220257,
+   "pretoken_integrity": 1.0,
+   "index": 0.5773126416984049
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "npi_Deva",
+   "cost_parity": 0.6195218664269083,
+   "typing_parity": 0.4853613163075478,
+   "word_integrity": 0.551307847082495,
+   "char_integrity": 0.9933144293058533,
+   "pretoken_integrity": 1.0,
+   "index": 0.6971408691789664
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "mai_Deva",
+   "cost_parity": 0.5686685288640596,
+   "typing_parity": 0.481543203239795,
+   "word_integrity": 0.6177062374245472,
+   "char_integrity": 0.9964872185542577,
+   "pretoken_integrity": 1.0,
+   "index": 0.7004056393980729
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "urd_Arab",
+   "cost_parity": 0.6050842114743763,
+   "typing_parity": null,
+   "word_integrity": 0.738430583501006,
+   "char_integrity": 0.9996847698820138,
+   "pretoken_integrity": 1.0,
+   "index": 0.8175176600034237
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "snd_Arab",
+   "cost_parity": 0.5847422590682595,
+   "typing_parity": null,
+   "word_integrity": 0.46680080482897385,
+   "char_integrity": 0.9976064582109363,
+   "pretoken_integrity": 1.0,
+   "index": 0.7223768710317677
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "san_Deva",
+   "cost_parity": 0.47962662192793015,
+   "typing_parity": 0.49037426324337147,
+   "word_integrity": 0.17303822937625754,
+   "char_integrity": 0.9614128397794,
+   "pretoken_integrity": 1.0,
+   "index": 0.5229938548670889
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "kan_Knda",
+   "cost_parity": 0.5079578103735067,
+   "typing_parity": 0.48846678178678543,
+   "word_integrity": 0.23541247484909458,
+   "char_integrity": 0.9891501587781643,
+   "pretoken_integrity": 1.0,
+   "index": 0.5653935829476787
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "tam_Taml",
+   "cost_parity": 0.5051410740803398,
+   "typing_parity": 0.4666666666666667,
+   "word_integrity": 0.22334004024144868,
+   "char_integrity": 0.9859019906389218,
+   "pretoken_integrity": 1.0,
+   "index": 0.5534061225101371
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "tel_Telu",
+   "cost_parity": 0.5182935061428379,
+   "typing_parity": 0.5144634823394276,
+   "word_integrity": 0.2454728370221328,
+   "char_integrity": 0.9615421705336651,
+   "pretoken_integrity": 1.0,
+   "index": 0.5751490670848554
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "mal_Mlym",
+   "cost_parity": 0.51104898828541,
+   "typing_parity": 0.470630472854641,
+   "word_integrity": 0.23943661971830985,
+   "char_integrity": 0.9828845276129621,
+   "pretoken_integrity": 1.0,
+   "index": 0.5630761462430097
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "sat_Olck",
+   "cost_parity": 0.07299311708559912,
+   "typing_parity": null,
+   "word_integrity": 0.0,
+   "char_integrity": 0.06730805795337869,
+   "pretoken_integrity": 1.0,
+   "index": 0.08372154659898236
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "hin_Deva",
+   "cost_parity": 0.3965874591312471,
+   "typing_parity": 0.450305772386019,
+   "word_integrity": 0.08870967741935483,
+   "char_integrity": 0.9969056515646894,
+   "pretoken_integrity": 0.4428243595547715,
+   "index": 0.37063003484679297
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "ben_Beng",
+   "cost_parity": 0.17366876953462063,
+   "typing_parity": 0.45657872626449336,
+   "word_integrity": 0.0,
+   "char_integrity": 0.1585332336228772,
+   "pretoken_integrity": 0.36570834433588595,
+   "index": 0.13567458987712588
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "mar_Deva",
+   "cost_parity": 0.3574238019442508,
+   "typing_parity": 0.41544601082535704,
+   "word_integrity": 0.026209677419354836,
+   "char_integrity": 0.9657454057538247,
+   "pretoken_integrity": 0.33823207871310323,
+   "index": 0.26354054330274024
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "guj_Gujr",
+   "cost_parity": 0.1304554489672457,
+   "typing_parity": 0.4355024843724956,
+   "word_integrity": 0.0,
+   "char_integrity": 0.017548660924341486,
+   "pretoken_integrity": 0.39309623083439926,
+   "index": 0.08291615306214445
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "pan_Guru",
+   "cost_parity": 0.1279954400064066,
+   "typing_parity": 0.41090359168241963,
+   "word_integrity": 0.0,
+   "char_integrity": 0.01891360979079615,
+   "pretoken_integrity": 0.44341061387968883,
+   "index": 0.08489908093969085
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "ory_Orya",
+   "cost_parity": 0.08221329282831155,
+   "typing_parity": 0.43742353016936053,
+   "word_integrity": 0.0,
+   "char_integrity": 0.011879186914134587,
+   "pretoken_integrity": 0.35639023770986067,
+   "index": 0.06862957980465878
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "asm_Beng",
+   "cost_parity": 0.16355657753753175,
+   "typing_parity": 0.44481369916835833,
+   "word_integrity": 0.0,
+   "char_integrity": 0.11465995690018416,
+   "pretoken_integrity": 0.38922615309468983,
+   "index": 0.12655869595811833
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "npi_Deva",
+   "cost_parity": 0.3871174559753804,
+   "typing_parity": 0.4389144657135934,
+   "word_integrity": 0.03225806451612903,
+   "char_integrity": 0.9847837237134552,
+   "pretoken_integrity": 0.35708612852532146,
+   "index": 0.2864144728057122
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "mai_Deva",
+   "cost_parity": 0.386319366442495,
+   "typing_parity": 0.4376489916886799,
+   "word_integrity": 0.07056451612903226,
+   "char_integrity": 0.995706140787397,
+   "pretoken_integrity": 0.4611607067519449,
+   "index": 0.35296240697345654
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "urd_Arab",
+   "cost_parity": 0.3253583360275892,
+   "typing_parity": null,
+   "word_integrity": 0.2883064516129032,
+   "char_integrity": 0.6421429512279819,
+   "pretoken_integrity": 0.990806340000659,
+   "index": 0.49426424973969907
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "snd_Arab",
+   "cost_parity": 0.34971362378531434,
+   "typing_parity": null,
+   "word_integrity": 0.15524193548387097,
+   "char_integrity": 0.6998519853272411,
+   "pretoken_integrity": 0.9835863477862703,
+   "index": 0.4396783414306221
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "san_Deva",
+   "cost_parity": 0.37959457382751927,
+   "typing_parity": 0.43724754992677944,
+   "word_integrity": 0.026209677419354836,
+   "char_integrity": 0.9585912069182302,
+   "pretoken_integrity": 0.3265653454056538,
+   "index": 0.2671914265291438
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "kan_Knda",
+   "cost_parity": 0.11289685919782608,
+   "typing_parity": 0.4402657376650733,
+   "word_integrity": 0.0,
+   "char_integrity": 0.01826144404602137,
+   "pretoken_integrity": 0.29934266755761374,
+   "index": 0.07705841965944746
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "tam_Taml",
+   "cost_parity": 0.13077315518934216,
+   "typing_parity": 0.42642581374179983,
+   "word_integrity": 0.0,
+   "char_integrity": 0.1070596615520859,
+   "pretoken_integrity": 0.2753456061132338,
+   "index": 0.11045190765739472
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "tel_Telu",
+   "cost_parity": 0.1206200807063806,
+   "typing_parity": 0.4701922577742399,
+   "word_integrity": 0.0,
+   "char_integrity": 0.020323091880085742,
+   "pretoken_integrity": 0.3102071299019981,
+   "index": 0.08140804566668777
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "mal_Mlym",
+   "cost_parity": 0.11191521611981119,
+   "typing_parity": 0.435021374021358,
+   "word_integrity": 0.0,
+   "char_integrity": 0.03145208458617199,
+   "pretoken_integrity": 0.26846230918842456,
+   "index": 0.0837117648434823
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "sat_Olck",
+   "cost_parity": 0.07847560183112626,
+   "typing_parity": null,
+   "word_integrity": 0.0,
+   "char_integrity": 0.006304966280127666,
+   "pretoken_integrity": 1.0,
+   "index": 0.05292777822082954
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "hin_Deva",
+   "cost_parity": 0.7633231046423242,
+   "typing_parity": 0.5143117282194275,
+   "word_integrity": 0.9839679358717435,
+   "char_integrity": 1.0,
+   "pretoken_integrity": 1.0,
+   "index": 0.826767043494135
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "ben_Beng",
+   "cost_parity": 0.8257400414179559,
+   "typing_parity": 0.502352984770445,
+   "word_integrity": 0.9579158316633266,
+   "char_integrity": 1.0,
+   "pretoken_integrity": 1.0,
+   "index": 0.8314496149848639
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "mar_Deva",
+   "cost_parity": 0.7166380335668032,
+   "typing_parity": 0.4664212481937659,
+   "word_integrity": 0.7875751503006012,
+   "char_integrity": 0.9999471388925598,
+   "pretoken_integrity": 1.0,
+   "index": 0.76571903865239
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "guj_Gujr",
+   "cost_parity": 0.5375175941161311,
+   "typing_parity": 0.49858409032400425,
+   "word_integrity": 0.5130260521042084,
+   "char_integrity": 0.9999405269313879,
+   "pretoken_integrity": 1.0,
+   "index": 0.6724328754824692
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "pan_Guru",
+   "cost_parity": 0.37119583818194263,
+   "typing_parity": 0.4707046507994375,
+   "word_integrity": 0.08817635270541081,
+   "char_integrity": 0.999917858854131,
+   "pretoken_integrity": 1.0,
+   "index": 0.4340438516749231
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "ory_Orya",
+   "cost_parity": 0.2848139161125642,
+   "typing_parity": 0.4859052705148653,
+   "word_integrity": 0.01002004008016032,
+   "char_integrity": 0.9893801405476949,
+   "pretoken_integrity": 1.0,
+   "index": 0.2675895150548689
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "asm_Beng",
+   "cost_parity": 0.49868496073274354,
+   "typing_parity": 0.4860882036572248,
+   "word_integrity": 0.32064128256513025,
+   "char_integrity": 0.999889647054496,
+   "pretoken_integrity": 1.0,
+   "index": 0.5999327525177525
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "npi_Deva",
+   "cost_parity": 0.6541532968226013,
+   "typing_parity": 0.48760925080027334,
+   "word_integrity": 0.5250501002004008,
+   "char_integrity": 0.9999517479311926,
+   "pretoken_integrity": 1.0,
+   "index": 0.6994976375872188
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "mai_Deva",
+   "cost_parity": 0.6100436484723035,
+   "typing_parity": 0.48523569204338024,
+   "word_integrity": 0.6993987975951903,
+   "char_integrity": 1.0,
+   "pretoken_integrity": 1.0,
+   "index": 0.7298064644127409
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "urd_Arab",
+   "cost_parity": 0.6586983456016325,
+   "typing_parity": null,
+   "word_integrity": 0.8577154308617234,
+   "char_integrity": 1.0,
+   "pretoken_integrity": 1.0,
+   "index": 0.86697674600345
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "snd_Arab",
+   "cost_parity": 0.4937358875373297,
+   "typing_parity": null,
+   "word_integrity": 0.282565130260521,
+   "char_integrity": 1.0,
+   "pretoken_integrity": 1.0,
+   "index": 0.6111577390848342
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "san_Deva",
+   "cost_parity": 0.5651457990287012,
+   "typing_parity": 0.4972126457859605,
+   "word_integrity": 0.2665330661322645,
+   "char_integrity": 0.9998749400754529,
+   "pretoken_integrity": 1.0,
+   "index": 0.5954974274747689
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "kan_Knda",
+   "cost_parity": 0.5196243771559985,
+   "typing_parity": 0.4820352361819766,
+   "word_integrity": 0.26452905811623245,
+   "char_integrity": 1.0,
+   "pretoken_integrity": 1.0,
+   "index": 0.5810966043866262
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "tam_Taml",
+   "cost_parity": 0.680743158423299,
+   "typing_parity": 0.46790225719610684,
+   "word_integrity": 0.7134268537074148,
+   "char_integrity": 1.0,
+   "pretoken_integrity": 1.0,
+   "index": 0.7435284239463095
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "tel_Telu",
+   "cost_parity": 0.5631386558112487,
+   "typing_parity": 0.5139412779346817,
+   "word_integrity": 0.3607214428857715,
+   "char_integrity": 0.9899684306720944,
+   "pretoken_integrity": 1.0,
+   "index": 0.6351326354844686
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "mal_Mlym",
+   "cost_parity": 0.5410572107038094,
+   "typing_parity": 0.475600771794422,
+   "word_integrity": 0.2625250501002004,
+   "char_integrity": 1.0,
+   "pretoken_integrity": 1.0,
+   "index": 0.5833528151153505
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "sat_Olck",
+   "cost_parity": 0.19042335028232715,
+   "typing_parity": null,
+   "word_integrity": 0.0,
+   "char_integrity": 0.9689861505183021,
+   "pretoken_integrity": 1.0,
+   "index": 0.2072571123217207
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "hin_Deva",
+   "cost_parity": 0.2264814647785695,
+   "typing_parity": 0.449868073878628,
+   "word_integrity": 0.0,
+   "char_integrity": 0.4857531752994908,
+   "pretoken_integrity": 0.4467112096361635,
+   "index": 0.18574283395907146
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "ben_Beng",
+   "cost_parity": 0.1989784892013774,
+   "typing_parity": 0.454509552253542,
+   "word_integrity": 0.0,
+   "char_integrity": 0.3238866396761133,
+   "pretoken_integrity": 0.3702502089170722,
+   "index": 0.16108217982616524
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "mar_Deva",
+   "cost_parity": 0.2166760802033324,
+   "typing_parity": 0.41638652295168466,
+   "word_integrity": 0.0,
+   "char_integrity": 0.42331105462989116,
+   "pretoken_integrity": 0.3428097276505987,
+   "index": 0.167264615439137
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "guj_Gujr",
+   "cost_parity": 0.14840505268134904,
+   "typing_parity": 0.43595814195747906,
+   "word_integrity": 0.0,
+   "char_integrity": 0.14343511409367127,
+   "pretoken_integrity": 0.3975695016983808,
+   "index": 0.1298351861696239
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "pan_Guru",
+   "cost_parity": 0.13742679874817773,
+   "typing_parity": 0.41233373639661425,
+   "word_integrity": 0.0,
+   "char_integrity": 0.09167259574002296,
+   "pretoken_integrity": 0.4472508643637365,
+   "index": 0.11836470045048941
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "ory_Orya",
+   "cost_parity": 0.10310459773118372,
+   "typing_parity": 0.4369650851908687,
+   "word_integrity": 0.0,
+   "char_integrity": 0.02189306924779666,
+   "pretoken_integrity": 0.36093341316610467,
+   "index": 0.08133766517044888
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "asm_Beng",
+   "cost_parity": 0.18567116823403668,
+   "typing_parity": 0.4422615044672879,
+   "word_integrity": 0.0,
+   "char_integrity": 0.2651264091205474,
+   "pretoken_integrity": 0.39395198282875493,
+   "index": 0.1536965000306231
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "npi_Deva",
+   "cost_parity": 0.22647960773381,
+   "typing_parity": 0.4382616146230008,
+   "word_integrity": 0.0,
+   "char_integrity": 0.4251627609504911,
+   "pretoken_integrity": 0.3619379831960959,
+   "index": 0.1725005101770638
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "mai_Deva",
+   "cost_parity": 0.22800703312668708,
+   "typing_parity": 0.43741487980236277,
+   "word_integrity": 0.0,
+   "char_integrity": 0.46051295597691944,
+   "pretoken_integrity": 0.46517704599510906,
+   "index": 0.18447621743932688
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "urd_Arab",
+   "cost_parity": 0.3176251423051713,
+   "typing_parity": null,
+   "word_integrity": 0.056451612903225805,
+   "char_integrity": 0.9980106024539737,
+   "pretoken_integrity": 0.9909392049883087,
+   "index": 0.3649163719342308
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "snd_Arab",
+   "cost_parity": 0.3514927082537986,
+   "typing_parity": null,
+   "word_integrity": 0.06048387096774193,
+   "char_integrity": 0.9077651370542872,
+   "pretoken_integrity": 0.9838402052918126,
+   "index": 0.37120472104739627
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "san_Deva",
+   "cost_parity": 0.22188037209003422,
+   "typing_parity": 0.43804615018634524,
+   "word_integrity": 0.0020161290322580645,
+   "char_integrity": 0.40828687563260124,
+   "pretoken_integrity": 0.33175147349399625,
+   "index": 0.16744932712607827
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "kan_Knda",
+   "cost_parity": 0.1445164733397165,
+   "typing_parity": 0.4414063124250899,
+   "word_integrity": 0.0,
+   "char_integrity": 0.28678836585097867,
+   "pretoken_integrity": 0.3042190055862473,
+   "index": 0.14096157813423676
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "tam_Taml",
+   "cost_parity": 0.16360437842064113,
+   "typing_parity": 0.42688901596525664,
+   "word_integrity": 0.0,
+   "char_integrity": 0.3675575141564196,
+   "pretoken_integrity": 0.27969893661096534,
+   "index": 0.14832870486477429
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "tel_Telu",
+   "cost_parity": 0.14298878184387764,
+   "typing_parity": 0.4680970054400325,
+   "word_integrity": 0.0,
+   "char_integrity": 0.1944100761509352,
+   "pretoken_integrity": 0.31490592028579645,
+   "index": 0.1325889969103634
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "mal_Mlym",
+   "cost_parity": 0.1383935505529028,
+   "typing_parity": 0.43336575875486383,
+   "word_integrity": 0.0,
+   "char_integrity": 0.25913529709444194,
+   "pretoken_integrity": 0.27323828205053136,
+   "index": 0.13353887488203367
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "sat_Olck",
+   "cost_parity": 0.11211049912125111,
+   "typing_parity": null,
+   "word_integrity": 0.0,
+   "char_integrity": 0.04042650777479673,
+   "pretoken_integrity": 1.0,
+   "index": 0.08204991361985688
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "hin_Deva",
+   "cost_parity": 0.35781297553359004,
+   "typing_parity": 0.4487685873605948,
+   "word_integrity": 0.036511156186612576,
+   "char_integrity": 0.9369086843184735,
+   "pretoken_integrity": 1.0,
+   "index": 0.35315086727343237
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "ben_Beng",
+   "cost_parity": 0.49587398224895474,
+   "typing_parity": 0.4533049469431546,
+   "word_integrity": 0.27586206896551724,
+   "char_integrity": 0.9699075772023766,
+   "pretoken_integrity": 1.0,
+   "index": 0.5699500871372604
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "mar_Deva",
+   "cost_parity": 0.3338436276991074,
+   "typing_parity": 0.41603458621167133,
+   "word_integrity": 0.016227180527383367,
+   "char_integrity": 0.9262213113742145,
+   "pretoken_integrity": 1.0,
+   "index": 0.29102216879025955
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "guj_Gujr",
+   "cost_parity": 0.2589662800831266,
+   "typing_parity": 0.44254058654097933,
+   "word_integrity": 0.012170385395537525,
+   "char_integrity": 0.578735670711269,
+   "pretoken_integrity": 1.0,
+   "index": 0.24065571609260492
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "pan_Guru",
+   "cost_parity": 0.22344609892743228,
+   "typing_parity": 0.41110114477704973,
+   "word_integrity": 0.0,
+   "char_integrity": 0.5727742980383084,
+   "pretoken_integrity": 1.0,
+   "index": 0.22091285936833993
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "ory_Orya",
+   "cost_parity": 0.18032502650759885,
+   "typing_parity": 0.4377266252266252,
+   "word_integrity": 0.0,
+   "char_integrity": 0.22725848076448585,
+   "pretoken_integrity": 1.0,
+   "index": 0.1781376888623643
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "asm_Beng",
+   "cost_parity": 0.37125362109916665,
+   "typing_parity": 0.44189694899743437,
+   "word_integrity": 0.07910750507099391,
+   "char_integrity": 0.9664181665911555,
+   "pretoken_integrity": 1.0,
+   "index": 0.4165574392215006
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "npi_Deva",
+   "cost_parity": 0.33700569548473935,
+   "typing_parity": 0.4362858986769926,
+   "word_integrity": 0.016227180527383367,
+   "char_integrity": 0.8986777003701442,
+   "pretoken_integrity": 1.0,
+   "index": 0.2925843483047846
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "mai_Deva",
+   "cost_parity": 0.32037581157291123,
+   "typing_parity": 0.43946953568120134,
+   "word_integrity": 0.02028397565922921,
+   "char_integrity": 0.8993886545661343,
+   "pretoken_integrity": 1.0,
+   "index": 0.30334566707226374
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "urd_Arab",
+   "cost_parity": 0.4228790366721401,
+   "typing_parity": null,
+   "word_integrity": 0.2434077079107505,
+   "char_integrity": 0.9934787708186723,
+   "pretoken_integrity": 1.0,
+   "index": 0.5654930459485904
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "snd_Arab",
+   "cost_parity": 0.3460982196567304,
+   "typing_parity": null,
+   "word_integrity": 0.13995943204868155,
+   "char_integrity": 0.7135579987456964,
+   "pretoken_integrity": 1.0,
+   "index": 0.43117910218576083
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "san_Deva",
+   "cost_parity": 0.3501903701209563,
+   "typing_parity": 0.4433314206082466,
+   "word_integrity": 0.02231237322515213,
+   "char_integrity": 0.9459193452303867,
+   "pretoken_integrity": 1.0,
+   "index": 0.31848319177814727
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "kan_Knda",
+   "cost_parity": 0.2713624823129183,
+   "typing_parity": 0.4414785064733637,
+   "word_integrity": 0.008113590263691683,
+   "char_integrity": 0.7628877359531957,
+   "pretoken_integrity": 1.0,
+   "index": 0.24670843609215037
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "tam_Taml",
+   "cost_parity": 0.32571277146746,
+   "typing_parity": 0.4319579559431958,
+   "word_integrity": 0.004056795131845842,
+   "char_integrity": 0.9044819985304923,
+   "pretoken_integrity": 1.0,
+   "index": 0.26359382890789684
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "tel_Telu",
+   "cost_parity": 0.26725637477762404,
+   "typing_parity": 0.47645141397233726,
+   "word_integrity": 0.004056795131845842,
+   "char_integrity": 0.6834354615536667,
+   "pretoken_integrity": 1.0,
+   "index": 0.24430302275525115
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "mal_Mlym",
+   "cost_parity": 0.22645886372772345,
+   "typing_parity": 0.4380741004746707,
+   "word_integrity": 0.0,
+   "char_integrity": 0.5393440975479029,
+   "pretoken_integrity": 1.0,
+   "index": 0.2216565485114083
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "sat_Olck",
+   "cost_parity": 0.15579843746399022,
+   "typing_parity": null,
+   "word_integrity": 0.0,
+   "char_integrity": 0.12332050425203378,
+   "pretoken_integrity": 1.0,
+   "index": 0.11773337595231
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "hin_Deva",
+   "cost_parity": 0.556707012103631,
+   "typing_parity": 0.4653889251250146,
+   "word_integrity": 0.5763747454175152,
+   "char_integrity": 0.9916374912473742,
+   "pretoken_integrity": 1.0,
+   "index": 0.682496020473441
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "ben_Beng",
+   "cost_parity": 0.4874319045700573,
+   "typing_parity": 0.4707743321659984,
+   "word_integrity": 0.2545824847250509,
+   "char_integrity": 0.924083448650353,
+   "pretoken_integrity": 1.0,
+   "index": 0.5577676065378079
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "mar_Deva",
+   "cost_parity": 0.46666890271512185,
+   "typing_parity": 0.4301126791041316,
+   "word_integrity": 0.17311608961303465,
+   "char_integrity": 0.9741400996159587,
+   "pretoken_integrity": 1.0,
+   "index": 0.5080541372696946
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "guj_Gujr",
+   "cost_parity": 0.3671834795803919,
+   "typing_parity": 0.453651776980763,
+   "word_integrity": 0.04276985743380856,
+   "char_integrity": 0.8032328297156429,
+   "pretoken_integrity": 1.0,
+   "index": 0.3560549276002973
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "pan_Guru",
+   "cost_parity": 0.33701510252031636,
+   "typing_parity": 0.4277326037167407,
+   "word_integrity": 0.054989816700611,
+   "char_integrity": 0.8494107958192542,
+   "pretoken_integrity": 1.0,
+   "index": 0.3678276338280499
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "ory_Orya",
+   "cost_parity": 0.07772036643950396,
+   "typing_parity": 0.45156108009866286,
+   "word_integrity": 0.0,
+   "char_integrity": 0.06212155066473024,
+   "pretoken_integrity": 1.0,
+   "index": 0.11686883804474066
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "asm_Beng",
+   "cost_parity": 0.30475637669890154,
+   "typing_parity": 0.45954783412877975,
+   "word_integrity": 0.06517311608961304,
+   "char_integrity": 0.7000733772136372,
+   "pretoken_integrity": 1.0,
+   "index": 0.36399809833765256
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "npi_Deva",
+   "cost_parity": 0.469669862273832,
+   "typing_parity": 0.45577685327742656,
+   "word_integrity": 0.18329938900203666,
+   "char_integrity": 0.9727585741290845,
+   "pretoken_integrity": 1.0,
+   "index": 0.5204058965341611
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "mai_Deva",
+   "cost_parity": 0.44233031314576376,
+   "typing_parity": 0.4568993826349665,
+   "word_integrity": 0.28513238289205706,
+   "char_integrity": 0.9926243840406931,
+   "pretoken_integrity": 1.0,
+   "index": 0.5642606326151534
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "urd_Arab",
+   "cost_parity": 0.5699801315007886,
+   "typing_parity": null,
+   "word_integrity": 0.5030549898167006,
+   "char_integrity": 0.9995493742446898,
+   "pretoken_integrity": 1.0,
+   "index": 0.7316777650920108
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "snd_Arab",
+   "cost_parity": 0.40052103573844583,
+   "typing_parity": null,
+   "word_integrity": 0.21792260692464357,
+   "char_integrity": 0.676238179541431,
+   "pretoken_integrity": 1.0,
+   "index": 0.49289773872707765
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "san_Deva",
+   "cost_parity": 0.4380342216695263,
+   "typing_parity": 0.45575445894819594,
+   "word_integrity": 0.10794297352342158,
+   "char_integrity": 0.9542556708171329,
+   "pretoken_integrity": 1.0,
+   "index": 0.45985362984410555
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "kan_Knda",
+   "cost_parity": 0.453024013024013,
+   "typing_parity": 0.4610477831532905,
+   "word_integrity": 0.09368635437881874,
+   "char_integrity": 0.9681888481888482,
+   "pretoken_integrity": 1.0,
+   "index": 0.4523772074389007
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "tam_Taml",
+   "cost_parity": 0.45905506615196806,
+   "typing_parity": 0.4523906293183333,
+   "word_integrity": 0.09164969450101833,
+   "char_integrity": 0.9656207727077766,
+   "pretoken_integrity": 1.0,
+   "index": 0.44963820078947797
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "tel_Telu",
+   "cost_parity": 0.44242877130501146,
+   "typing_parity": 0.48732093446814473,
+   "word_integrity": 0.10590631364562118,
+   "char_integrity": 0.9505532943271432,
+   "pretoken_integrity": 1.0,
+   "index": 0.46484841078458183
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "mal_Mlym",
+   "cost_parity": 0.3901929440798699,
+   "typing_parity": 0.4528618158738425,
+   "word_integrity": 0.028513238289205704,
+   "char_integrity": 0.9177463682764037,
+   "pretoken_integrity": 1.0,
+   "index": 0.34119516378262277
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "sat_Olck",
+   "cost_parity": 0.08036771543931194,
+   "typing_parity": null,
+   "word_integrity": 0.0,
+   "char_integrity": 0.006313430335657344,
+   "pretoken_integrity": 1.0,
+   "index": 0.0532439670221578
+  }
+ ]
+}

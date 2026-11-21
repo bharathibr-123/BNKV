@@ -1,0 +1,41 @@
+{
+ "formula": "LFI = exp( sum_i w_i * ln(max(part_i, 0.01)) / sum_i w_i ), equal weights",
+ "parts": [
+  "cost_parity",
+  "typing_parity",
+  "word_integrity",
+  "char_integrity",
+  "pretoken_integrity"
+ ],
+ "pairs": 98,
+ "draws": 500,
+ "kendall_tau": {
+  "mean": 0.9527548916473806,
+  "min": 0.8354723332632021,
+  "p05": 0.8989901115085209
+ },
+ "worst_pair": "gpt4|ory_Orya",
+ "worst_pair_stable": 0.908,
+ "leave_one_out": [
+  {
+   "dropped_part": "cost_parity",
+   "kendall_tau": 0.9785398695560699
+  },
+  {
+   "dropped_part": "typing_parity",
+   "kendall_tau": 0.9886387544708605
+  },
+  {
+   "dropped_part": "word_integrity",
+   "kendall_tau": 0.9495055754260467
+  },
+  {
+   "dropped_part": "char_integrity",
+   "kendall_tau": 0.944876919840101
+  },
+  {
+   "dropped_part": "pretoken_integrity",
+   "kendall_tau": 0.9734904270986745
+  }
+ ]
+}

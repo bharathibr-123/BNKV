@@ -1,0 +1,2114 @@
+{
+ "metric": "median absolute % error per sentence",
+ "summary": {
+  "gpt4": {
+   "ours": {
+    "mean": 3.0842857510434167,
+    "worst": 12.632741894193622
+   },
+   "generic": {
+    "mean": 5.327130801898328,
+    "worst": 74.79126643036646
+   },
+   "chars_over_4": {
+    "mean": 59.78048349470493,
+    "worst": 90.0238957153298
+   }
+  },
+  "gpt4o": {
+   "ours": {
+    "mean": 6.291944082569395,
+    "worst": 11.660913337445441
+   },
+   "generic": {
+    "mean": 8.157890688408402,
+    "worst": 53.31593535810541
+   },
+   "chars_over_4": {
+    "mean": 32.41838257675944,
+    "worst": 90.51020408163265
+   }
+  },
+  "llama3": {
+   "ours": {
+    "mean": 3.3724860957341787,
+    "worst": 12.101507690911218
+   },
+   "generic": {
+    "mean": 5.479111332509719,
+    "worst": 71.14810430687852
+   },
+   "chars_over_4": {
+    "mean": 56.390109099461704,
+    "worst": 89.89623492740546
+   }
+  },
+  "gemma3": {
+   "ours": {
+    "mean": 7.464283446540193,
+    "worst": 25.3171501935065
+   },
+   "generic": {
+    "mean": 9.791869109922198,
+    "worst": 55.26658962432839
+   },
+   "chars_over_4": {
+    "mean": 28.80459760508233,
+    "worst": 75.41783054003724
+   }
+  },
+  "qwen3": {
+   "ours": {
+    "mean": 3.1877214616255007,
+    "worst": 10.986401396812424
+   },
+   "generic": {
+    "mean": 5.533944032610578,
+    "worst": 75.21855499556005
+   },
+   "chars_over_4": {
+    "mean": 57.9103843789859,
+    "worst": 87.44239141977275
+   }
+  },
+  "deepseek_v4": {
+   "ours": {
+    "mean": 5.131101796499666,
+    "worst": 13.49474916505068
+   },
+   "generic": {
+    "mean": 7.671512566666974,
+    "worst": 75.6876693311056
+   },
+   "chars_over_4": {
+    "mean": 48.7343235560265,
+    "worst": 79.88248369107744
+   }
+  },
+  "mistral_nemo": {
+   "ours": {
+    "mean": 6.824213080242849,
+    "worst": 22.629873055102443
+   },
+   "generic": {
+    "mean": 9.276232796274762,
+    "worst": 67.22780174762546
+   },
+   "chars_over_4": {
+    "mean": 42.61207733619744,
+    "worst": 90.625
+   }
+  }
+ },
+ "rows": [
+  {
+   "tokenizer": "gpt4",
+   "set": "eng_Latn",
+   "ours": 12.632741894193622,
+   "generic": 74.79126643036646,
+   "chars_over_4": 21.225071225071225
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "hin_Deva",
+   "ours": 3.038542897556848,
+   "generic": 3.1329028528784866,
+   "chars_over_4": 74.57261835184103
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "hin_Deva/roman",
+   "ours": 3.292944058609584,
+   "generic": 3.821112524590646,
+   "chars_over_4": 34.200851393188856
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "ben_Beng",
+   "ours": 3.352515867561258,
+   "generic": 4.514585414443764,
+   "chars_over_4": 79.43293180890159
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "ben_Beng/roman",
+   "ours": 3.1141141750390275,
+   "generic": 3.680897985795864,
+   "chars_over_4": 35.267857142857146
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "mar_Deva",
+   "ours": 2.2452883347273613,
+   "generic": 2.305676576369307,
+   "chars_over_4": 75.7253493462035
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "mar_Deva/roman",
+   "ours": 3.202597219872451,
+   "generic": 4.479516942386934,
+   "chars_over_4": 36.51247401247401
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "guj_Gujr",
+   "ours": 0.4375541640269787,
+   "generic": 0.3985011941820271,
+   "chars_over_4": 84.87914415072294
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "guj_Gujr/roman",
+   "ours": 2.566615203113866,
+   "generic": 4.4554509482399975,
+   "chars_over_4": 35.88709677419355
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "pan_Guru",
+   "ours": 0.5480424745423954,
+   "generic": 0.3805593702815137,
+   "chars_over_4": 84.39782968058445
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "pan_Guru/roman",
+   "ours": 3.177412120102824,
+   "generic": 4.186426664422556,
+   "chars_over_4": 35.09424603174603
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "ory_Orya",
+   "ours": 0.5084200731505456,
+   "generic": 0.4951491282916142,
+   "chars_over_4": 90.0238957153298
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "ory_Orya/roman",
+   "ours": 3.185995986770755,
+   "generic": 3.5362779720549824,
+   "chars_over_4": 35.459830866807614
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "asm_Beng",
+   "ours": 3.1887018583016817,
+   "generic": 4.593000801280244,
+   "chars_over_4": 81.14160401002506
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "asm_Beng/roman",
+   "ours": 3.146209406354697,
+   "generic": 4.763194107391866,
+   "chars_over_4": 36.53846153846153
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "npi_Deva",
+   "ours": 2.7636774438703364,
+   "generic": 2.9656660956216907,
+   "chars_over_4": 75.49019607843137
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "npi_Deva/roman",
+   "ours": 3.026350174991841,
+   "generic": 4.635344408615438,
+   "chars_over_4": 36.587542625745954
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "mai_Deva",
+   "ours": 2.4598035870096133,
+   "generic": 3.242339755220501,
+   "chars_over_4": 75.41158536585367
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "mai_Deva/roman",
+   "ours": 3.263327806452114,
+   "generic": 3.9467296168179615,
+   "chars_over_4": 34.526248399487834
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "urd_Arab",
+   "ours": 3.943081964685141,
+   "generic": 4.070575755606381,
+   "chars_over_4": 72.5
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "snd_Arab",
+   "ours": 3.674326345909647,
+   "generic": 3.900003300895398,
+   "chars_over_4": 72.36842105263158
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "san_Deva",
+   "ours": 2.5578152402211236,
+   "generic": 2.9390599947241274,
+   "chars_over_4": 76.26696936341955
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "san_Deva/roman",
+   "ours": 2.981974481820477,
+   "generic": 3.847533564534711,
+   "chars_over_4": 36.507936507936506
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "kan_Knda",
+   "ours": 0.4905796746739301,
+   "generic": 0.5925667183344764,
+   "chars_over_4": 85.6887258667486
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "kan_Knda/roman",
+   "ours": 3.2277517562199503,
+   "generic": 3.148848545975566,
+   "chars_over_4": 34.830927051671736
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "tam_Taml",
+   "ours": 1.8410572050081853,
+   "generic": 2.0332013333325003,
+   "chars_over_4": 81.34735580422566
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "tam_Taml/roman",
+   "ours": 2.753623532073263,
+   "generic": 3.5189843647184764,
+   "chars_over_4": 35.789165602383996
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "tel_Telu",
+   "ours": 0.4173383078453774,
+   "generic": 0.5591360545348127,
+   "chars_over_4": 85.41666666666666
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "tel_Telu/roman",
+   "ours": 3.9304777312692356,
+   "generic": 3.8886824476827777,
+   "chars_over_4": 34.178433889602054
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "mal_Mlym",
+   "ours": 0.7976427446509436,
+   "generic": 2.1205163785214127,
+   "chars_over_4": 84.61538461538461
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "mal_Mlym/roman",
+   "ours": 3.0419702617279247,
+   "generic": 3.14335461893495,
+   "chars_over_4": 35.714285714285715
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "sat_Olck",
+   "ours": 0.4268033130203055,
+   "generic": 0.3765649847628443,
+   "chars_over_4": 89.89848687051065
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "kan_Knda/real_native",
+   "ours": 0.7421876842012436,
+   "generic": 1.334401485584648,
+   "chars_over_4": 85.41666666666666
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "kan_Knda/real_mixed",
+   "ours": 1.3122602943958976,
+   "generic": 1.8182281912454148,
+   "chars_over_4": 80.1542207792208
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "kan_Knda/real_roman",
+   "ours": 10.32963002393492,
+   "generic": 13.60272122752103,
+   "chars_over_4": 25.0
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "tam_Taml/real_native",
+   "ours": 2.012642353993273,
+   "generic": 2.429922227852056,
+   "chars_over_4": 81.52690281937416
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "tam_Taml/real_mixed",
+   "ours": 3.0266206239611315,
+   "generic": 3.8589919359234797,
+   "chars_over_4": 75.53811520907857
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "tam_Taml/real_roman",
+   "ours": 9.45158535180079,
+   "generic": 11.694122886300581,
+   "chars_over_4": 23.4375
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "mal_Mlym/real_native",
+   "ours": 1.1021106513084122,
+   "generic": 2.699845123566697,
+   "chars_over_4": 84.28571428571429
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "mal_Mlym/real_mixed",
+   "ours": 1.9540544805232443,
+   "generic": 4.016294711270222,
+   "chars_over_4": 79.482395713739
+  },
+  {
+   "tokenizer": "gpt4",
+   "set": "mal_Mlym/real_roman",
+   "ours": 7.289327023287878,
+   "generic": 8.494208236757004,
+   "chars_over_4": 28.660714285714285
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "eng_Latn",
+   "ours": 7.423196902625221,
+   "generic": 53.31593535810541,
+   "chars_over_4": 22.727272727272727
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "hin_Deva",
+   "ours": 8.126302407049913,
+   "generic": 8.69750154934813,
+   "chars_over_4": 23.223296888141295
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "hin_Deva/roman",
+   "ours": 3.457498945230765,
+   "generic": 4.515472416420851,
+   "chars_over_4": 24.192708333333336
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "ben_Beng",
+   "ours": 9.524497321796469,
+   "generic": 9.650504336344914,
+   "chars_over_4": 29.633273703041148
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "ben_Beng/roman",
+   "ours": 3.0043019253451058,
+   "generic": 3.999854414055913,
+   "chars_over_4": 27.10353866317169
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "mar_Deva",
+   "ours": 7.670324894840033,
+   "generic": 7.364279182530861,
+   "chars_over_4": 32.73733503618561
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "mar_Deva/roman",
+   "ours": 3.1379475638238516,
+   "generic": 3.6877969887947994,
+   "chars_over_4": 27.45408009635652
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "guj_Gujr",
+   "ours": 6.5174346003979755,
+   "generic": 6.818118189243898,
+   "chars_over_4": 35.04385964912281
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "guj_Gujr/roman",
+   "ours": 3.58359355936331,
+   "generic": 3.8966093506555985,
+   "chars_over_4": 25.0
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "pan_Guru",
+   "ours": 4.857105003820574,
+   "generic": 4.76186653646236,
+   "chars_over_4": 52.659574468085104
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "pan_Guru/roman",
+   "ours": 3.3362138406710704,
+   "generic": 5.234795481194871,
+   "chars_over_4": 26.12788331071913
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "ory_Orya",
+   "ours": 1.7297478718060575,
+   "generic": 1.9397118519180974,
+   "chars_over_4": 74.71697710184553
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "ory_Orya/roman",
+   "ours": 3.422158138080615,
+   "generic": 3.881718271945723,
+   "chars_over_4": 27.083333333333332
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "asm_Beng",
+   "ours": 7.668576745374936,
+   "generic": 9.867631315216872,
+   "chars_over_4": 41.5994623655914
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "asm_Beng/roman",
+   "ours": 3.5007272055256804,
+   "generic": 4.843960385399428,
+   "chars_over_4": 28.884671666361804
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "npi_Deva",
+   "ours": 10.839754011511133,
+   "generic": 11.451304142641877,
+   "chars_over_4": 26.986842105263158
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "npi_Deva/roman",
+   "ours": 3.0616512135168494,
+   "generic": 3.9008115661417095,
+   "chars_over_4": 27.931627196333075
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "mai_Deva",
+   "ours": 8.45239123140826,
+   "generic": 7.816123056530485,
+   "chars_over_4": 32.00502246893999
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "mai_Deva/roman",
+   "ours": 3.222679442849463,
+   "generic": 4.989347374691923,
+   "chars_over_4": 26.176633444075303
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "urd_Arab",
+   "ours": 6.446446906628572,
+   "generic": 6.108524092520399,
+   "chars_over_4": 27.895796064400713
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "snd_Arab",
+   "ours": 7.232349406853612,
+   "generic": 7.439052561921794,
+   "chars_over_4": 35.91746794871795
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "san_Deva",
+   "ours": 11.660913337445441,
+   "generic": 13.646077264347722,
+   "chars_over_4": 44.230769230769226
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "san_Deva/roman",
+   "ours": 2.873131521814653,
+   "generic": 3.255013527755791,
+   "chars_over_4": 27.362351190476193
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "kan_Knda",
+   "ours": 6.9014579682582875,
+   "generic": 7.258132782514556,
+   "chars_over_4": 35.30940009447331
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "kan_Knda/roman",
+   "ours": 3.076951654694282,
+   "generic": 3.3979861852747066,
+   "chars_over_4": 26.36363636363636
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "tam_Taml",
+   "ours": 6.780880582840237,
+   "generic": 7.3481863686512865,
+   "chars_over_4": 28.516483516483515
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "tam_Taml/roman",
+   "ours": 2.9917414914116187,
+   "generic": 3.2417140125496693,
+   "chars_over_4": 28.37837837837838
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "tel_Telu",
+   "ours": 7.210982240812405,
+   "generic": 7.438207897126387,
+   "chars_over_4": 35.98780487804878
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "tel_Telu/roman",
+   "ours": 3.892136854073526,
+   "generic": 3.8459848850474687,
+   "chars_over_4": 25.495098039215687
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "mal_Mlym",
+   "ours": 9.182476537690391,
+   "generic": 9.544418355979737,
+   "chars_over_4": 29.00493421052632
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "mal_Mlym/roman",
+   "ours": 3.5997294606464405,
+   "generic": 3.4616304982945323,
+   "chars_over_4": 28.6900871459695
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "sat_Olck",
+   "ours": 0.5722941309289811,
+   "generic": 0.691520161760858,
+   "chars_over_4": 90.51020408163265
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "kan_Knda/real_native",
+   "ours": 11.201596472143391,
+   "generic": 14.533175491194383,
+   "chars_over_4": 40.625
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "kan_Knda/real_mixed",
+   "ours": 9.248699306510497,
+   "generic": 11.591327128462089,
+   "chars_over_4": 36.36363636363637
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "kan_Knda/real_roman",
+   "ours": 9.774069762647887,
+   "generic": 11.849764508222089,
+   "chars_over_4": 17.403846153846153
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "tam_Taml/real_native",
+   "ours": 7.843472553099932,
+   "generic": 9.301936633046964,
+   "chars_over_4": 29.94565217391304
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "tam_Taml/real_mixed",
+   "ours": 9.115644347702819,
+   "generic": 9.861176543330464,
+   "chars_over_4": 28.268113465481886
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "tam_Taml/real_roman",
+   "ours": 8.765192960159196,
+   "generic": 11.026645032057248,
+   "chars_over_4": 16.833333333333332
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "mal_Mlym/real_native",
+   "ours": 9.981082662662013,
+   "generic": 9.897455433105659,
+   "chars_over_4": 35.30701754385965
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "mal_Mlym/real_mixed",
+   "ours": 9.181895481537554,
+   "generic": 10.061952153319458,
+   "chars_over_4": 28.62394957983193
+  },
+  {
+   "tokenizer": "gpt4o",
+   "set": "mal_Mlym/real_roman",
+   "ours": 7.900458919746154,
+   "generic": 9.040294940617539,
+   "chars_over_4": 20.833333333333336
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "eng_Latn",
+   "ours": 12.101507690911218,
+   "generic": 71.14810430687852,
+   "chars_over_4": 21.59090909090909
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "hin_Deva",
+   "ours": 3.551966529918768,
+   "generic": 3.376033519322926,
+   "chars_over_4": 52.66312056737588
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "hin_Deva/roman",
+   "ours": 3.3394924599537483,
+   "generic": 4.333139267578789,
+   "chars_over_4": 33.17744755244755
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "ben_Beng",
+   "ours": 3.461707051211765,
+   "generic": 4.6391968308341225,
+   "chars_over_4": 79.27350427350427
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "ben_Beng/roman",
+   "ours": 3.031236782546671,
+   "generic": 3.371565959229576,
+   "chars_over_4": 34.3952922077922
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "mar_Deva",
+   "ours": 4.852381196517383,
+   "generic": 4.7284937417338675,
+   "chars_over_4": 56.3579163008487
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "mar_Deva/roman",
+   "ours": 3.4391161595600366,
+   "generic": 4.348319803750199,
+   "chars_over_4": 36.02795509575171
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "guj_Gujr",
+   "ours": 0.4147481425474524,
+   "generic": 0.3870895283933902,
+   "chars_over_4": 84.87914415072294
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "guj_Gujr/roman",
+   "ours": 2.481672904486445,
+   "generic": 4.555674608652637,
+   "chars_over_4": 35.15720953082781
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "pan_Guru",
+   "ours": 0.5556859809858135,
+   "generic": 0.29515741812349905,
+   "chars_over_4": 84.30232558139535
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "pan_Guru/roman",
+   "ours": 3.1132339135363405,
+   "generic": 5.046611840787089,
+   "chars_over_4": 34.60221285563752
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "ory_Orya",
+   "ours": 0.7107667317705182,
+   "generic": 0.7587151238969976,
+   "chars_over_4": 89.83801736665531
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "ory_Orya/roman",
+   "ours": 2.9797542305651015,
+   "generic": 3.5723321935357517,
+   "chars_over_4": 34.62188149688149
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "asm_Beng",
+   "ours": 3.2200986228298403,
+   "generic": 4.49229220404422,
+   "chars_over_4": 80.9805834262356
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "asm_Beng/roman",
+   "ours": 3.1858103977315366,
+   "generic": 4.091407505742324,
+   "chars_over_4": 35.35098522167488
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "npi_Deva",
+   "ours": 3.254776818085775,
+   "generic": 3.723323204553447,
+   "chars_over_4": 54.901009316770185
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "npi_Deva/roman",
+   "ours": 2.9721639103158033,
+   "generic": 4.233340435214146,
+   "chars_over_4": 35.82532051282051
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "mai_Deva",
+   "ours": 3.0348445992308912,
+   "generic": 3.410047488110448,
+   "chars_over_4": 53.93997634535778
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "mai_Deva/roman",
+   "ours": 3.164785816859354,
+   "generic": 3.8997802247229716,
+   "chars_over_4": 33.594497607655505
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "urd_Arab",
+   "ours": 7.522867960659093,
+   "generic": 7.649472116570536,
+   "chars_over_4": 61.21368449633451
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "snd_Arab",
+   "ours": 6.554224017774354,
+   "generic": 6.734173113329786,
+   "chars_over_4": 61.64772727272727
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "san_Deva",
+   "ours": 3.480834461187949,
+   "generic": 3.6619538931224827,
+   "chars_over_4": 55.942292171105734
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "san_Deva/roman",
+   "ours": 2.862151048678027,
+   "generic": 3.6086662832133074,
+   "chars_over_4": 35.714285714285715
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "kan_Knda",
+   "ours": 0.4556369661058213,
+   "generic": 0.5545105070165942,
+   "chars_over_4": 85.68511198945981
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "kan_Knda/roman",
+   "ours": 3.373194446403639,
+   "generic": 3.235558669088176,
+   "chars_over_4": 34.375
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "tam_Taml",
+   "ours": 1.8546156079745615,
+   "generic": 1.985085844035254,
+   "chars_over_4": 81.34735580422566
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "tam_Taml/roman",
+   "ours": 2.8852936986486237,
+   "generic": 3.478990726664498,
+   "chars_over_4": 35.2621336996337
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "tel_Telu",
+   "ours": 0.39998815710191005,
+   "generic": 0.5140110414604543,
+   "chars_over_4": 85.41666666666666
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "tel_Telu/roman",
+   "ours": 4.135300898419061,
+   "generic": 3.756302984830077,
+   "chars_over_4": 33.1458543983822
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "mal_Mlym",
+   "ours": 0.7947032765353449,
+   "generic": 2.124982597240968,
+   "chars_over_4": 84.61538461538461
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "mal_Mlym/roman",
+   "ours": 3.0571715785809723,
+   "generic": 3.0874857852722664,
+   "chars_over_4": 34.691650853889946
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "sat_Olck",
+   "ours": 0.46998607014866717,
+   "generic": 0.41446555629317877,
+   "chars_over_4": 89.89623492740546
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "kan_Knda/real_native",
+   "ours": 0.669859311731465,
+   "generic": 1.3771632885839895,
+   "chars_over_4": 85.41666666666666
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "kan_Knda/real_mixed",
+   "ours": 1.2856284347059408,
+   "generic": 1.8303180089694533,
+   "chars_over_4": 80.08846375143844
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "kan_Knda/real_roman",
+   "ours": 10.450023581727681,
+   "generic": 13.471651897492443,
+   "chars_over_4": 24.133811230585422
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "tam_Taml/real_native",
+   "ours": 2.03557263343068,
+   "generic": 2.4148988674272642,
+   "chars_over_4": 81.52690281937416
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "tam_Taml/real_mixed",
+   "ours": 2.9715315413808394,
+   "generic": 3.757655347853102,
+   "chars_over_4": 75.53811520907857
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "tam_Taml/real_roman",
+   "ours": 9.701370945157342,
+   "generic": 11.317495839296466,
+   "chars_over_4": 23.18121693121693
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "mal_Mlym/real_native",
+   "ours": 1.1014470515611003,
+   "generic": 2.625619560125909,
+   "chars_over_4": 84.28571428571429
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "mal_Mlym/real_mixed",
+   "ours": 1.9105223799012625,
+   "generic": 3.9934332142464433,
+   "chars_over_4": 79.47761194029852
+  },
+  {
+   "tokenizer": "llama3",
+   "set": "mal_Mlym/real_roman",
+   "ours": 7.434255917722525,
+   "generic": 8.639044285660889,
+   "chars_over_4": 27.91327913279133
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "eng_Latn",
+   "ours": 5.678854047478896,
+   "generic": 55.26658962432839,
+   "chars_over_4": 23.192508710801395
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "hin_Deva",
+   "ours": 9.638136213018576,
+   "generic": 11.149980254503209,
+   "chars_over_4": 9.690656565656566
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "hin_Deva/roman",
+   "ours": 3.667271639501521,
+   "generic": 4.167464918578061,
+   "chars_over_4": 24.33321479374111
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "ben_Beng",
+   "ours": 25.3171501935065,
+   "generic": 32.22155695695055,
+   "chars_over_4": 9.25925925925926
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "ben_Beng/roman",
+   "ours": 2.750809760773306,
+   "generic": 3.9946771268778125,
+   "chars_over_4": 27.411600496277917
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "mar_Deva",
+   "ours": 9.640568154983457,
+   "generic": 12.274565948956944,
+   "chars_over_4": 12.837837837837837
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "mar_Deva/roman",
+   "ours": 3.032038733738217,
+   "generic": 3.7900529539235923,
+   "chars_over_4": 28.323293172690768
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "guj_Gujr",
+   "ours": 6.3037597495446125,
+   "generic": 6.161234104248557,
+   "chars_over_4": 37.70166536559979
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "guj_Gujr/roman",
+   "ours": 3.1593303396256753,
+   "generic": 3.6867816417283206,
+   "chars_over_4": 25.610119047619044
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "pan_Guru",
+   "ours": 4.046571977770143,
+   "generic": 4.598629633705569,
+   "chars_over_4": 54.493589743589745
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "pan_Guru/roman",
+   "ours": 3.364843901077103,
+   "generic": 4.327885510299084,
+   "chars_over_4": 25.32692307692308
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "ory_Orya",
+   "ours": 2.916438677887572,
+   "generic": 3.6184315553487196,
+   "chars_over_4": 64.21011586452762
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "ory_Orya/roman",
+   "ours": 3.1568338824000453,
+   "generic": 4.061422416008788,
+   "chars_over_4": 27.56121939030485
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "asm_Beng",
+   "ours": 16.455379418829956,
+   "generic": 22.252955744318946,
+   "chars_over_4": 42.43177223719676
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "asm_Beng/roman",
+   "ours": 3.6187256643371835,
+   "generic": 4.911655640555536,
+   "chars_over_4": 29.166666666666668
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "npi_Deva",
+   "ours": 9.201978330248698,
+   "generic": 8.092107505236907,
+   "chars_over_4": 25.0
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "npi_Deva/roman",
+   "ours": 3.1393856453845577,
+   "generic": 4.243081342386847,
+   "chars_over_4": 28.215467328370558
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "mai_Deva",
+   "ours": 9.132499300757907,
+   "generic": 10.591528169038218,
+   "chars_over_4": 26.785714285714285
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "mai_Deva/roman",
+   "ours": 2.9478370020432547,
+   "generic": 4.533309800097319,
+   "chars_over_4": 26.063829787234045
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "urd_Arab",
+   "ours": 17.718133737226548,
+   "generic": 17.924355587245046,
+   "chars_over_4": 21.875
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "snd_Arab",
+   "ours": 16.152566389447696,
+   "generic": 17.36522043620295,
+   "chars_over_4": 46.548202614379086
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "san_Deva",
+   "ours": 13.35438224844745,
+   "generic": 13.83096528317797,
+   "chars_over_4": 35.0
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "san_Deva/roman",
+   "ours": 3.1448291912772515,
+   "generic": 3.2402048415695965,
+   "chars_over_4": 26.95058847402597
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "kan_Knda",
+   "ours": 6.736453596077571,
+   "generic": 7.005468464830692,
+   "chars_over_4": 35.33962922356224
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "kan_Knda/roman",
+   "ours": 3.0470376516271482,
+   "generic": 3.091432728738842,
+   "chars_over_4": 28.10096153846154
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "tam_Taml",
+   "ours": 8.942375415525126,
+   "generic": 8.743043742735166,
+   "chars_over_4": 9.272486772486772
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "tam_Taml/roman",
+   "ours": 3.163382228285981,
+   "generic": 3.6874413724497885,
+   "chars_over_4": 28.749233285626662
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "tel_Telu",
+   "ours": 6.676772399327772,
+   "generic": 7.550330758089322,
+   "chars_over_4": 31.466547192353644
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "tel_Telu/roman",
+   "ours": 3.914717417170667,
+   "generic": 3.6271520635809766,
+   "chars_over_4": 25.935314685314687
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "mal_Mlym",
+   "ours": 9.440142881522904,
+   "generic": 9.353937685987262,
+   "chars_over_4": 25.65210027100271
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "mal_Mlym/roman",
+   "ours": 3.0322147782354336,
+   "generic": 3.1516948370030122,
+   "chars_over_4": 28.47222222222222
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "sat_Olck",
+   "ours": 1.6952075042860413,
+   "generic": 1.8651784339644613,
+   "chars_over_4": 75.41783054003724
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "kan_Knda/real_native",
+   "ours": 10.650362417384216,
+   "generic": 13.586013429301774,
+   "chars_over_4": 39.02529761904761
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "kan_Knda/real_mixed",
+   "ours": 7.964438521050695,
+   "generic": 9.02353595765694,
+   "chars_over_4": 33.493589743589745
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "kan_Knda/real_roman",
+   "ours": 8.999776796426373,
+   "generic": 10.85393706796641,
+   "chars_over_4": 17.759856630824373
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "tam_Taml/real_native",
+   "ours": 9.059652660197981,
+   "generic": 10.468065688513759,
+   "chars_over_4": 12.68939393939394
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "tam_Taml/real_mixed",
+   "ours": 9.035486531374998,
+   "generic": 10.023795815675323,
+   "chars_over_4": 17.385590599876316
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "tam_Taml/real_roman",
+   "ours": 8.322551293570726,
+   "generic": 13.183079704386753,
+   "chars_over_4": 17.176573426573427
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "mal_Mlym/real_native",
+   "ours": 9.347274896452134,
+   "generic": 9.206501844200357,
+   "chars_over_4": 30.39596273291926
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "mal_Mlym/real_mixed",
+   "ours": 10.455294581006036,
+   "generic": 12.30652362720493,
+   "chars_over_4": 25.0
+  },
+  {
+   "tokenizer": "gemma3",
+   "set": "mal_Mlym/real_roman",
+   "ours": 8.014155539319987,
+   "generic": 8.434843289237431,
+   "chars_over_4": 21.666666666666668
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "eng_Latn",
+   "ours": 10.986401396812424,
+   "generic": 75.21855499556005,
+   "chars_over_4": 20.809511434511435
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "hin_Deva",
+   "ours": 2.5565633337404554,
+   "generic": 2.62921747296852,
+   "chars_over_4": 73.01587301587301
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "hin_Deva/roman",
+   "ours": 3.000465064952113,
+   "generic": 3.547233618865944,
+   "chars_over_4": 34.41558441558442
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "ben_Beng",
+   "ours": 4.260935475099007,
+   "generic": 5.215875009015549,
+   "chars_over_4": 76.67640346096198
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "ben_Beng/roman",
+   "ours": 3.0054106409196297,
+   "generic": 3.533638257477371,
+   "chars_over_4": 35.714285714285715
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "mar_Deva",
+   "ours": 1.8171514080974738,
+   "generic": 2.0147630330236943,
+   "chars_over_4": 73.87256563539998
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "mar_Deva/roman",
+   "ours": 3.1144630945677947,
+   "generic": 4.514076866377416,
+   "chars_over_4": 36.91168327796235
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "guj_Gujr",
+   "ours": 1.3978800369709192,
+   "generic": 1.4485329779345792,
+   "chars_over_4": 83.083906574948
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "guj_Gujr/roman",
+   "ours": 2.554800889528393,
+   "generic": 4.193392741910672,
+   "chars_over_4": 36.03796169630643
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "pan_Guru",
+   "ours": 1.340525700620301,
+   "generic": 1.4486050067482592,
+   "chars_over_4": 83.37697411713096
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "pan_Guru/roman",
+   "ours": 3.0121223053055606,
+   "generic": 3.697811815747594,
+   "chars_over_4": 35.167163345129445
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "ory_Orya",
+   "ours": 0.9505961796384984,
+   "generic": 1.1006056848406511,
+   "chars_over_4": 87.44239141977275
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "ory_Orya/roman",
+   "ours": 3.069575937945581,
+   "generic": 3.2829653435347232,
+   "chars_over_4": 35.66120218579235
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "asm_Beng",
+   "ours": 3.712560265263613,
+   "generic": 4.916226126927816,
+   "chars_over_4": 78.77380952380952
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "asm_Beng/roman",
+   "ours": 3.065661890602287,
+   "generic": 4.628394021244395,
+   "chars_over_4": 36.63291900561347
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "npi_Deva",
+   "ours": 2.2072586051291556,
+   "generic": 2.3578100291535398,
+   "chars_over_4": 74.01445296311647
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "npi_Deva/roman",
+   "ours": 2.9991924064520967,
+   "generic": 4.635825175968063,
+   "chars_over_4": 36.875
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "mai_Deva",
+   "ours": 2.2387321896270413,
+   "generic": 2.6127850374824004,
+   "chars_over_4": 73.23008849557522
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "mai_Deva/roman",
+   "ours": 3.253641424530084,
+   "generic": 3.525085426863382,
+   "chars_over_4": 34.58904109589041
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "urd_Arab",
+   "ours": 4.012917276710841,
+   "generic": 4.343975604464047,
+   "chars_over_4": 63.02173913043478
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "snd_Arab",
+   "ours": 4.86536883141581,
+   "generic": 5.136247384644832,
+   "chars_over_4": 62.26843910806175
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "san_Deva",
+   "ours": 1.9612579582985994,
+   "generic": 2.627188856602712,
+   "chars_over_4": 74.4301948051948
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "san_Deva/roman",
+   "ours": 2.951637872216216,
+   "generic": 3.8815674118502472,
+   "chars_over_4": 36.53846153846153
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "kan_Knda",
+   "ours": 0.9246943689498126,
+   "generic": 1.2987252556741744,
+   "chars_over_4": 81.94444444444444
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "kan_Knda/roman",
+   "ours": 3.2045441797807466,
+   "generic": 3.1524768789323683,
+   "chars_over_4": 35.08771929824561
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "tam_Taml",
+   "ours": 1.451032635520812,
+   "generic": 1.7260199897058772,
+   "chars_over_4": 77.17597167325427
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "tam_Taml/roman",
+   "ours": 2.781819178000074,
+   "generic": 3.6373893820685406,
+   "chars_over_4": 35.859310910582444
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "tel_Telu",
+   "ours": 1.2382759819022524,
+   "generic": 1.5321836829733704,
+   "chars_over_4": 82.95454545454545
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "tel_Telu/roman",
+   "ours": 3.8674303116392084,
+   "generic": 3.8610716873962105,
+   "chars_over_4": 34.646401985111666
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "mal_Mlym",
+   "ours": 1.2701886146106207,
+   "generic": 2.761908386198534,
+   "chars_over_4": 81.2996062992126
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "mal_Mlym/roman",
+   "ours": 2.9215966915567,
+   "generic": 3.2496084395836933,
+   "chars_over_4": 36.11111111111111
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "sat_Olck",
+   "ours": 0.9656958616028829,
+   "generic": 1.053698222973703,
+   "chars_over_4": 85.80387025175425
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "kan_Knda/real_native",
+   "ours": 1.4518727695987244,
+   "generic": 2.7322520280027263,
+   "chars_over_4": 81.74036281179139
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "kan_Knda/real_mixed",
+   "ours": 2.1690517509027067,
+   "generic": 3.140242139290378,
+   "chars_over_4": 76.1673328488372
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "kan_Knda/real_roman",
+   "ours": 10.215321052725587,
+   "generic": 13.86434189309195,
+   "chars_over_4": 25.0
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "tam_Taml/real_native",
+   "ours": 1.7443974710733736,
+   "generic": 2.3646184128260432,
+   "chars_over_4": 77.24859550561798
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "tam_Taml/real_mixed",
+   "ours": 2.756453188794983,
+   "generic": 3.8904820561550952,
+   "chars_over_4": 70.79802259887006
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "tam_Taml/real_roman",
+   "ours": 9.356778310259806,
+   "generic": 12.081680979782956,
+   "chars_over_4": 23.684210526315788
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "mal_Mlym/real_native",
+   "ours": 1.7235454283346627,
+   "generic": 3.3394276190746157,
+   "chars_over_4": 81.29500129500128
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "mal_Mlym/real_mixed",
+   "ours": 2.7305234903106395,
+   "generic": 4.27818000020425,
+   "chars_over_4": 76.00223214285715
+  },
+  {
+   "tokenizer": "qwen3",
+   "set": "mal_Mlym/real_roman",
+   "ours": 7.588238456638038,
+   "generic": 8.417020383892753,
+   "chars_over_4": 28.947368421052634
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "eng_Latn",
+   "ours": 11.180982748590974,
+   "generic": 75.6876693311056,
+   "chars_over_4": 22.43421052631579
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "hin_Deva",
+   "ours": 5.52082212298245,
+   "generic": 4.692760659701172,
+   "chars_over_4": 57.196194762684115
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "hin_Deva/roman",
+   "ours": 3.22662294262498,
+   "generic": 4.18674966885182,
+   "chars_over_4": 33.51668278529981
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "ben_Beng",
+   "ours": 13.422378295771523,
+   "generic": 16.535264926158835,
+   "chars_over_4": 41.549180327868854
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "ben_Beng/roman",
+   "ours": 2.867073356745378,
+   "generic": 4.000577920539645,
+   "chars_over_4": 34.63225371120108
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "mar_Deva",
+   "ours": 3.7040367287667406,
+   "generic": 4.246000966823432,
+   "chars_over_4": 59.14906358885017
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "mar_Deva/roman",
+   "ours": 3.2073884432197026,
+   "generic": 4.54684848662392,
+   "chars_over_4": 35.643223010244284
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "guj_Gujr",
+   "ours": 3.276661155954519,
+   "generic": 3.5597811005318833,
+   "chars_over_4": 69.75308641975309
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "guj_Gujr/roman",
+   "ours": 3.0842939961201474,
+   "generic": 3.661870024080864,
+   "chars_over_4": 34.0471386647102
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "pan_Guru",
+   "ours": 2.188053323951519,
+   "generic": 2.447747118893638,
+   "chars_over_4": 72.56427158866184
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "pan_Guru/roman",
+   "ours": 3.170095978352548,
+   "generic": 4.926521604844125,
+   "chars_over_4": 34.51542588866533
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "ory_Orya",
+   "ours": 2.5391088460305897,
+   "generic": 2.9259066617317817,
+   "chars_over_4": 77.3534877072613
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "ory_Orya/roman",
+   "ours": 3.000535759463108,
+   "generic": 3.8487238419080123,
+   "chars_over_4": 34.7608612804878
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "asm_Beng",
+   "ours": 10.735168617969478,
+   "generic": 14.681686592854154,
+   "chars_over_4": 57.07418788410887
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "asm_Beng/roman",
+   "ours": 3.0843115188303254,
+   "generic": 4.472246844189648,
+   "chars_over_4": 35.459830866807614
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "npi_Deva",
+   "ours": 3.620418929527644,
+   "generic": 3.8296553080314046,
+   "chars_over_4": 60.331312709030094
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "npi_Deva/roman",
+   "ours": 3.705740933682686,
+   "generic": 5.263493222434254,
+   "chars_over_4": 36.135912698412696
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "mai_Deva",
+   "ours": 3.533306624898082,
+   "generic": 7.106256423944601,
+   "chars_over_4": 61.37626262626264
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "mai_Deva/roman",
+   "ours": 3.0272163332807294,
+   "generic": 3.637774968490595,
+   "chars_over_4": 33.0638852672751
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "urd_Arab",
+   "ours": 12.236403869734207,
+   "generic": 12.392946606743983,
+   "chars_over_4": 50.0
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "snd_Arab",
+   "ours": 13.49474916505068,
+   "generic": 14.081627347923664,
+   "chars_over_4": 61.69093003770423
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "san_Deva",
+   "ours": 3.665868722130593,
+   "generic": 4.777044092065959,
+   "chars_over_4": 59.210526315789465
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "san_Deva/roman",
+   "ours": 2.9432960721907264,
+   "generic": 3.2542001049694553,
+   "chars_over_4": 34.61538461538461
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "kan_Knda",
+   "ours": 3.9448843366542903,
+   "generic": 4.030697542444673,
+   "chars_over_4": 65.38461538461539
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "kan_Knda/roman",
+   "ours": 2.7974558266912206,
+   "generic": 2.886827181587024,
+   "chars_over_4": 33.88369678089305
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "tam_Taml",
+   "ours": 4.432254501913368,
+   "generic": 4.17508320853736,
+   "chars_over_4": 53.75
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "tam_Taml/roman",
+   "ours": 3.0031121302433315,
+   "generic": 3.1787539213616283,
+   "chars_over_4": 34.07670454545455
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "tel_Telu",
+   "ours": 3.371514343127044,
+   "generic": 3.666349947020142,
+   "chars_over_4": 67.2776376398333
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "tel_Telu/roman",
+   "ours": 4.343284109919399,
+   "generic": 3.79376741274526,
+   "chars_over_4": 31.944444444444443
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "mal_Mlym",
+   "ours": 4.00647502065417,
+   "generic": 4.153961478100202,
+   "chars_over_4": 68.93939393939394
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "mal_Mlym/roman",
+   "ours": 3.0067853218932563,
+   "generic": 3.0949040731083644,
+   "chars_over_4": 34.44568038561365
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "sat_Olck",
+   "ours": 1.94674615078503,
+   "generic": 2.051710625356777,
+   "chars_over_4": 79.88248369107744
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "kan_Knda/real_native",
+   "ours": 5.841687264750307,
+   "generic": 6.735089854261302,
+   "chars_over_4": 66.98873537465771
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "kan_Knda/real_mixed",
+   "ours": 5.568028599374941,
+   "generic": 5.724952072326932,
+   "chars_over_4": 58.85255417956656
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "kan_Knda/real_roman",
+   "ours": 9.342354470942743,
+   "generic": 12.865244723742741,
+   "chars_over_4": 24.25893635571055
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "tam_Taml/real_native",
+   "ours": 4.383797427809449,
+   "generic": 4.705291735114745,
+   "chars_over_4": 54.533365570599614
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "tam_Taml/real_mixed",
+   "ours": 5.795702279699035,
+   "generic": 6.561712937452294,
+   "chars_over_4": 48.78048780487805
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "tam_Taml/real_roman",
+   "ours": 9.693331270609354,
+   "generic": 15.819061744085383,
+   "chars_over_4": 22.727272727272727
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "mal_Mlym/real_native",
+   "ours": 4.728145353636746,
+   "generic": 5.346118494666068,
+   "chars_over_4": 68.15516591251885
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "mal_Mlym/real_mixed",
+   "ours": 5.443691295339565,
+   "generic": 6.734077992578258,
+   "chars_over_4": 61.111111111111114
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "set": "mal_Mlym/real_roman",
+   "ours": 8.291389466573746,
+   "generic": 10.245056465414315,
+   "chars_over_4": 27.041666666666664
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "eng_Latn",
+   "ours": 12.40022379253357,
+   "generic": 67.22780174762546,
+   "chars_over_4": 20.307917888563047
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "hin_Deva",
+   "ours": 9.577761977563087,
+   "generic": 10.98021142630093,
+   "chars_over_4": 36.11111111111111
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "hin_Deva/roman",
+   "ours": 3.2792110533911996,
+   "generic": 5.3226547897671335,
+   "chars_over_4": 32.940687361419066
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "ben_Beng",
+   "ours": 22.629873055102443,
+   "generic": 29.117241654120967,
+   "chars_over_4": 44.13102582871484
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "ben_Beng/roman",
+   "ours": 2.8775166612525718,
+   "generic": 4.2365255801073785,
+   "chars_over_4": 34.21052631578947
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "mar_Deva",
+   "ours": 6.356616307447194,
+   "generic": 5.23367876381506,
+   "chars_over_4": 45.336158192090394
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "mar_Deva/roman",
+   "ours": 3.6489713981637037,
+   "generic": 4.965311981464998,
+   "chars_over_4": 35.5873745819398
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "guj_Gujr",
+   "ours": 3.943023034632408,
+   "generic": 3.9845075270133785,
+   "chars_over_4": 58.333333333333336
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "guj_Gujr/roman",
+   "ours": 3.1901646584857537,
+   "generic": 4.735085166224094,
+   "chars_over_4": 34.24919484702094
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "pan_Guru",
+   "ours": 3.9536996886237326,
+   "generic": 4.491617244230782,
+   "chars_over_4": 60.0
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "pan_Guru/roman",
+   "ours": 3.4713766296022386,
+   "generic": 5.128384327266498,
+   "chars_over_4": 33.62426634284558
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "ory_Orya",
+   "ours": 0.4154118076722427,
+   "generic": 0.4753012594645502,
+   "chars_over_4": 90.625
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "ory_Orya/roman",
+   "ours": 3.1043117588442777,
+   "generic": 4.082071844830247,
+   "chars_over_4": 34.393382352941174
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "asm_Beng",
+   "ours": 15.111995208865558,
+   "generic": 20.852142436894795,
+   "chars_over_4": 65.83920187793427
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "asm_Beng/roman",
+   "ours": 3.2255993895434543,
+   "generic": 4.2895116561425555,
+   "chars_over_4": 34.83824555284269
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "npi_Deva",
+   "ours": 5.83053177546866,
+   "generic": 5.494514530443798,
+   "chars_over_4": 47.14285714285714
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "npi_Deva/roman",
+   "ours": 3.2514079277048995,
+   "generic": 3.8853556662327877,
+   "chars_over_4": 34.529411764705884
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "mai_Deva",
+   "ours": 7.806066102739381,
+   "generic": 9.679651669126214,
+   "chars_over_4": 49.17349726775956
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "mai_Deva/roman",
+   "ours": 3.074770187621993,
+   "generic": 3.9311712580816005,
+   "chars_over_4": 32.19325609031492
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "urd_Arab",
+   "ours": 20.797926653954583,
+   "generic": 21.410506706082966,
+   "chars_over_4": 34.50328407224959
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "snd_Arab",
+   "ours": 18.36311672299276,
+   "generic": 19.141442193034415,
+   "chars_over_4": 57.05882352941176
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "san_Deva",
+   "ours": 7.898847926038538,
+   "generic": 7.629573126552276,
+   "chars_over_4": 51.0
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "san_Deva/roman",
+   "ours": 2.76925927006942,
+   "generic": 3.5633148040178737,
+   "chars_over_4": 34.75975975975976
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "kan_Knda",
+   "ours": 6.0847740598450075,
+   "generic": 6.23470485254701,
+   "chars_over_4": 45.22922873220788
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "kan_Knda/roman",
+   "ours": 3.5263438776104583,
+   "generic": 3.197733458864009,
+   "chars_over_4": 33.146067415730336
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "tam_Taml",
+   "ours": 6.777602983222838,
+   "generic": 7.074505484209458,
+   "chars_over_4": 38.05803571428571
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "tam_Taml/roman",
+   "ours": 3.4877839833626587,
+   "generic": 3.219226679326665,
+   "chars_over_4": 32.6237922705314
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "tel_Telu",
+   "ours": 6.0132120586975795,
+   "generic": 6.155516952962829,
+   "chars_over_4": 47.65625
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "tel_Telu/roman",
+   "ours": 3.8448487832013614,
+   "generic": 3.597340781239247,
+   "chars_over_4": 32.142857142857146
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "mal_Mlym",
+   "ours": 6.518515948562325,
+   "generic": 6.719156261752312,
+   "chars_over_4": 47.62709137709138
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "mal_Mlym/roman",
+   "ours": 3.1541582817354974,
+   "generic": 3.1260649994161374,
+   "chars_over_4": 34.097805788982264
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "sat_Olck",
+   "ours": 0.31242974980938315,
+   "generic": 0.2229323974397921,
+   "chars_over_4": 89.89623492740546
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "kan_Knda/real_native",
+   "ours": 9.077343785196199,
+   "generic": 13.277753694189293,
+   "chars_over_4": 50.404172099087354
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "kan_Knda/real_mixed",
+   "ours": 8.185663314817326,
+   "generic": 9.951793844465115,
+   "chars_over_4": 45.08771929824562
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "kan_Knda/real_roman",
+   "ours": 9.619430960869844,
+   "generic": 11.978487053748161,
+   "chars_over_4": 24.053030303030305
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "tam_Taml/real_native",
+   "ours": 6.098269076891085,
+   "generic": 7.680199292304712,
+   "chars_over_4": 41.14654333008764
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "tam_Taml/real_mixed",
+   "ours": 7.6579873545090935,
+   "generic": 8.583569641743653,
+   "chars_over_4": 37.99038461538461
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "tam_Taml/real_roman",
+   "ours": 8.896419191585963,
+   "generic": 12.124068170710395,
+   "chars_over_4": 25.0
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "mal_Mlym/real_native",
+   "ours": 7.428080064265416,
+   "generic": 8.135949264956697,
+   "chars_over_4": 51.08695652173913
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "mal_Mlym/real_mixed",
+   "ours": 8.243406935447672,
+   "generic": 9.243473017320735,
+   "chars_over_4": 44.189852700490995
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "set": "mal_Mlym/real_roman",
+   "ours": 7.888782892013432,
+   "generic": 9.945491441228244,
+   "chars_over_4": 26.770833333333332
+  }
+ ]
+}

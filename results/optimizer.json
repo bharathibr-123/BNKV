@@ -1,0 +1,1055 @@
+{
+ "sentences_per_language": 120,
+ "rows": [
+  {
+   "tokenizer": "gpt4",
+   "language": "hin_Deva",
+   "premium_native": 4.74045575614087,
+   "premium_casual": 2.22787807043504,
+   "premium_word_best": 2.22787807043504,
+   "premium_optimized": 2.22787807043504,
+   "saving_vs_native": 0.5300287176925959,
+   "saving_vs_best_fixed": 0.0
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "hin_Deva",
+   "premium_native": 1.5816876122082586,
+   "premium_casual": 1.9605026929982046,
+   "premium_word_best": 1.4700777977259125,
+   "premium_optimized": 1.4700777977259125,
+   "saving_vs_native": 0.0705637533106318,
+   "saving_vs_best_fixed": 0.0705637533106318
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "hin_Deva",
+   "premium_native": 2.550059241706161,
+   "premium_casual": 2.1981635071090047,
+   "premium_word_best": 2.059834123222749,
+   "premium_optimized": 2.059834123222749,
+   "saving_vs_native": 0.19224067835985592,
+   "saving_vs_best_fixed": 0.06292952432286758
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "hin_Deva",
+   "premium_native": 1.305263157894737,
+   "premium_casual": 1.9342105263157894,
+   "premium_word_best": 1.2821637426900585,
+   "premium_optimized": 1.2821637426900585,
+   "saving_vs_native": 0.01769713261648742,
+   "saving_vs_best_fixed": 0.01769713261648742
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "hin_Deva",
+   "premium_native": 4.363059163059163,
+   "premium_casual": 2.195093795093795,
+   "premium_word_best": 2.195093795093795,
+   "premium_optimized": 2.195093795093795,
+   "saving_vs_native": 0.49689112316443973,
+   "saving_vs_best_fixed": 0.0
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "hin_Deva",
+   "premium_native": 2.8142092746730083,
+   "premium_casual": 2.2095719381688466,
+   "premium_word_best": 2.1391200951248512,
+   "premium_optimized": 2.138228299643282,
+   "saving_vs_native": 0.24020280976021968,
+   "saving_vs_best_fixed": 0.03228844342795645
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "hin_Deva",
+   "premium_native": 1.827812678469446,
+   "premium_casual": 2.125071387778412,
+   "premium_word_best": 1.6684751570531124,
+   "premium_optimized": 1.6681896059394632,
+   "saving_vs_native": 0.0873301046711451,
+   "saving_vs_best_fixed": 0.0873301046711451
+  },
+  {
+   "tokenizer": "*",
+   "language": "hin_Deva",
+   "spelling_ambiguity": 0.038239174633512
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "ben_Beng",
+   "premium_native": 5.947913583900562,
+   "premium_casual": 2.2752293577981653,
+   "premium_word_best": 2.2752293577981653,
+   "premium_optimized": 2.3536549274933414,
+   "saving_vs_native": 0.6042889839785053,
+   "saving_vs_best_fixed": -0.03446930280957328
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "ben_Beng",
+   "premium_native": 1.75344105326152,
+   "premium_casual": 2.040394973070018,
+   "premium_word_best": 1.580191502094554,
+   "premium_optimized": 1.5816876122082586,
+   "saving_vs_native": 0.0979522184300341,
+   "saving_vs_best_fixed": 0.0979522184300341
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "ben_Beng",
+   "premium_native": 5.912914691943128,
+   "premium_casual": 2.2470379146919433,
+   "premium_word_best": 2.2470379146919433,
+   "premium_optimized": 2.314277251184834,
+   "saving_vs_native": 0.608606352068931,
+   "saving_vs_best_fixed": -0.029923543369364536
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "ben_Beng",
+   "premium_native": 1.2385964912280703,
+   "premium_casual": 2.0219298245614037,
+   "premium_word_best": 1.2049707602339181,
+   "premium_optimized": 1.196783625730994,
+   "saving_vs_native": 0.03375826251180358,
+   "saving_vs_best_fixed": 0.03375826251180358
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "ben_Beng",
+   "premium_native": 5.139105339105339,
+   "premium_casual": 2.240981240981241,
+   "premium_word_best": 2.240981240981241,
+   "premium_optimized": 2.2888888888888888,
+   "saving_vs_native": 0.5546133542988712,
+   "saving_vs_best_fixed": -0.021377978106889906
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "ben_Beng",
+   "premium_native": 2.096908442330559,
+   "premium_casual": 2.2529726516052317,
+   "premium_word_best": 1.8611771700356718,
+   "premium_optimized": 1.8650416171224733,
+   "saving_vs_native": 0.11057555996597679,
+   "saving_vs_best_fixed": 0.11057555996597679
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "ben_Beng",
+   "premium_native": 2.1236436322101655,
+   "premium_casual": 2.158195316961736,
+   "premium_word_best": 1.8149628783552256,
+   "premium_optimized": 1.8138206739006282,
+   "saving_vs_native": 0.14589216081753398,
+   "saving_vs_best_fixed": 0.14589216081753398
+  },
+  {
+   "tokenizer": "*",
+   "language": "ben_Beng",
+   "spelling_ambiguity": 0.10280577380847024
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "mar_Deva",
+   "premium_native": 5.1260728026043205,
+   "premium_casual": 2.467889908256881,
+   "premium_word_best": 2.467889908256881,
+   "premium_optimized": 2.4643385617046465,
+   "saving_vs_native": 0.5192540846371456,
+   "saving_vs_best_fixed": 0.0014390214654035338
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "mar_Deva",
+   "premium_native": 1.8512866546977857,
+   "premium_casual": 2.189706762417714,
+   "premium_word_best": 1.7118491921005385,
+   "premium_optimized": 1.708258527827648,
+   "saving_vs_native": 0.07725876838532408,
+   "saving_vs_best_fixed": 0.07725876838532408
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "mar_Deva",
+   "premium_native": 2.858116113744076,
+   "premium_casual": 2.452902843601896,
+   "premium_word_best": 2.3699644549763033,
+   "premium_optimized": 2.3658175355450237,
+   "saving_vs_native": 0.17224582858327286,
+   "saving_vs_best_fixed": 0.035502958579881616
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "mar_Deva",
+   "premium_native": 1.408187134502924,
+   "premium_casual": 2.1695906432748537,
+   "premium_word_best": 1.369298245614035,
+   "premium_optimized": 1.364327485380117,
+   "saving_vs_native": 0.03114617940199338,
+   "saving_vs_best_fixed": 0.03114617940199338
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "mar_Deva",
+   "premium_native": 4.64935064935065,
+   "premium_casual": 2.431168831168831,
+   "premium_word_best": 2.431168831168831,
+   "premium_optimized": 2.427705627705628,
+   "saving_vs_native": 0.47783985102420856,
+   "saving_vs_best_fixed": 0.0014245014245014564
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "mar_Deva",
+   "premium_native": 3.0549940546967895,
+   "premium_casual": 2.4518430439952437,
+   "premium_word_best": 2.3748513674197382,
+   "premium_optimized": 2.3712841854934603,
+   "saving_vs_native": 0.2238007200544906,
+   "saving_vs_best_fixed": 0.03285645004849658
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "mar_Deva",
+   "premium_native": 2.2007424328954883,
+   "premium_casual": 2.3557966876070817,
+   "premium_word_best": 1.983438035408338,
+   "premium_optimized": 1.980011422044546,
+   "saving_vs_native": 0.10029842999870253,
+   "saving_vs_best_fixed": 0.10029842999870253
+  },
+  {
+   "tokenizer": "*",
+   "language": "mar_Deva",
+   "spelling_ambiguity": 0.006062321058684622
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "guj_Gujr",
+   "premium_native": 7.7848475880437995,
+   "premium_casual": 2.3225806451612905,
+   "premium_word_best": 2.3225806451612905,
+   "premium_optimized": 2.3202130807931343,
+   "saving_vs_native": 0.7019578026991067,
+   "saving_vs_best_fixed": 0.0010193679918450993
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "guj_Gujr",
+   "premium_native": 1.8426092160383005,
+   "premium_casual": 2.012567324955117,
+   "premium_word_best": 1.6292639138240574,
+   "premium_optimized": 1.6265709156193895,
+   "saving_vs_native": 0.11724585904514451,
+   "saving_vs_best_fixed": 0.11724585904514451
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "guj_Gujr",
+   "premium_native": 7.791765402843602,
+   "premium_casual": 2.2985781990521326,
+   "premium_word_best": 2.2985781990521326,
+   "premium_optimized": 2.296208530805687,
+   "saving_vs_native": 0.7053031743014636,
+   "saving_vs_best_fixed": 0.0010309278350515427
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "guj_Gujr",
+   "premium_native": 1.8982456140350876,
+   "premium_casual": 2.0005847953216374,
+   "premium_word_best": 1.65906432748538,
+   "premium_optimized": 1.656140350877193,
+   "saving_vs_native": 0.12754158964879847,
+   "saving_vs_best_fixed": 0.12754158964879847
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "guj_Gujr",
+   "premium_native": 6.823665223665223,
+   "premium_casual": 2.2862914862914865,
+   "premium_word_best": 2.2862914862914865,
+   "premium_optimized": 2.283982683982684,
+   "saving_vs_native": 0.6652850617492809,
+   "saving_vs_best_fixed": 0.0010098459984851926
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "guj_Gujr",
+   "premium_native": 3.917063020214031,
+   "premium_casual": 2.2693222354340072,
+   "premium_word_best": 2.248216409036861,
+   "premium_optimized": 2.2443519619500596,
+   "saving_vs_native": 0.42703194960916746,
+   "saving_vs_best_fixed": 0.011003405816085943
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "guj_Gujr",
+   "premium_native": 2.7529982866933183,
+   "premium_casual": 2.198172472872644,
+   "premium_word_best": 2.0659623072529985,
+   "premium_optimized": 2.0633923472301543,
+   "saving_vs_native": 0.25049268748055176,
+   "saving_vs_best_fixed": 0.06131462717588987
+  },
+  {
+   "tokenizer": "*",
+   "language": "guj_Gujr",
+   "spelling_ambiguity": 0.030696269725691117
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "pan_Guru",
+   "premium_native": 7.735720627404557,
+   "premium_casual": 2.4166913287955016,
+   "premium_word_best": 2.4166913287955016,
+   "premium_optimized": 2.469073690440959,
+   "saving_vs_native": 0.6808217605876277,
+   "saving_vs_best_fixed": -0.02167523879500366
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "pan_Guru",
+   "premium_native": 2.597247157390784,
+   "premium_casual": 2.152004787552364,
+   "premium_word_best": 2.0029922202274086,
+   "premium_optimized": 2.023339317773788,
+   "saving_vs_native": 0.22096774193548385,
+   "saving_vs_best_fixed": 0.059788654060066726
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "pan_Guru",
+   "premium_native": 7.704383886255924,
+   "premium_casual": 2.4001777251184833,
+   "premium_word_best": 2.4001777251184833,
+   "premium_optimized": 2.4425355450236967,
+   "saving_vs_native": 0.6829680891964629,
+   "saving_vs_best_fixed": -0.01764778477107254
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "pan_Guru",
+   "premium_native": 2.6517543859649124,
+   "premium_casual": 2.1029239766081873,
+   "premium_word_best": 1.9932748538011695,
+   "premium_optimized": 2.0149122807017545,
+   "saving_vs_native": 0.2401587826662256,
+   "saving_vs_best_fixed": 0.04185205784204671
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "pan_Guru",
+   "premium_native": 7.1122655122655125,
+   "premium_casual": 2.3797979797979796,
+   "premium_word_best": 2.3797979797979796,
+   "premium_optimized": 2.4126984126984126,
+   "saving_vs_native": 0.660769355624087,
+   "saving_vs_best_fixed": -0.01382488479262678
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "pan_Guru",
+   "premium_native": 4.434304399524375,
+   "premium_casual": 2.4099286563614744,
+   "premium_word_best": 2.410523186682521,
+   "premium_optimized": 2.4441141498216408,
+   "saving_vs_native": 0.4488167862170678,
+   "saving_vs_best_fixed": -0.014185271987171566
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "pan_Guru",
+   "premium_native": 2.953455168475157,
+   "premium_casual": 2.2984009137635635,
+   "premium_word_best": 2.1533409480296974,
+   "premium_optimized": 2.1781838949171903,
+   "saving_vs_native": 0.26249637435947015,
+   "saving_vs_best_fixed": 0.05230463411603925
+  },
+  {
+   "tokenizer": "*",
+   "language": "pan_Guru",
+   "spelling_ambiguity": 0.1263422505841294
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "ory_Orya",
+   "premium_native": 12.472033145901154,
+   "premium_casual": 2.292394199467298,
+   "premium_word_best": 2.292394199467298,
+   "premium_optimized": 2.299200947025747,
+   "saving_vs_native": 0.8156514723678903,
+   "saving_vs_best_fixed": -0.0029692744642395574
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "ory_Orya",
+   "premium_native": 4.963794135248354,
+   "premium_casual": 2.0628366247755836,
+   "premium_word_best": 2.0628366247755836,
+   "premium_optimized": 2.0694195092758827,
+   "saving_vs_native": 0.5830972331062753,
+   "saving_vs_best_fixed": -0.003191180736872745
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "ory_Orya",
+   "premium_native": 12.25681279620853,
+   "premium_casual": 2.2568127962085307,
+   "premium_word_best": 2.2568127962085307,
+   "premium_optimized": 2.263329383886256,
+   "saving_vs_native": 0.8153411150583629,
+   "saving_vs_best_fixed": -0.002887518046987836
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "ory_Orya",
+   "premium_native": 3.4412280701754385,
+   "premium_casual": 2.0312865497076023,
+   "premium_word_best": 2.0236842105263158,
+   "premium_optimized": 2.028654970760234,
+   "saving_vs_native": 0.41048517291188713,
+   "saving_vs_best_fixed": 0.001295523247444974
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "ory_Orya",
+   "premium_native": 9.691486291486292,
+   "premium_casual": 2.2542568542568544,
+   "premium_word_best": 2.2542568542568544,
+   "premium_optimized": 2.258874458874459,
+   "saving_vs_native": 0.7669217712396891,
+   "saving_vs_best_fixed": -0.002048393291512074
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "ory_Orya",
+   "premium_native": 5.504161712247325,
+   "premium_casual": 2.2633769322235433,
+   "premium_word_best": 2.2633769322235433,
+   "premium_optimized": 2.2687277051129606,
+   "saving_vs_native": 0.5878159429682437,
+   "saving_vs_best_fixed": -0.0023640661938533203
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "ory_Orya",
+   "premium_native": 12.784408909194745,
+   "premium_casual": 2.1876070816676183,
+   "premium_word_best": 2.1876070816676183,
+   "premium_optimized": 2.193889206167904,
+   "saving_vs_native": 0.8283933796430725,
+   "saving_vs_best_fixed": -0.0028716877692207543
+  },
+  {
+   "tokenizer": "*",
+   "language": "ory_Orya",
+   "spelling_ambiguity": 0.041020939217847885
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "asm_Beng",
+   "premium_native": 6.25984018940515,
+   "premium_casual": 2.309559041136431,
+   "premium_word_best": 2.309559041136431,
+   "premium_optimized": 2.426753477360166,
+   "saving_vs_native": 0.6123298033282905,
+   "saving_vs_best_fixed": -0.050743208610968704
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "asm_Beng",
+   "premium_native": 2.0317175344105327,
+   "premium_casual": 2.0906642728904847,
+   "premium_word_best": 1.777079593058049,
+   "premium_optimized": 1.7920406941950928,
+   "saving_vs_native": 0.1179675994108984,
+   "saving_vs_best_fixed": 0.1179675994108984
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "asm_Beng",
+   "premium_native": 6.2295616113744074,
+   "premium_casual": 2.2772511848341233,
+   "premium_word_best": 2.2772511848341233,
+   "premium_optimized": 2.375888625592417,
+   "saving_vs_native": 0.6186106224145309,
+   "saving_vs_best_fixed": -0.04331425598335059
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "asm_Beng",
+   "premium_native": 2.0362573099415204,
+   "premium_casual": 2.0701754385964914,
+   "premium_word_best": 1.7739766081871344,
+   "premium_optimized": 1.791812865497076,
+   "saving_vs_native": 0.12004595060310164,
+   "saving_vs_best_fixed": 0.12004595060310164
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "asm_Beng",
+   "premium_native": 5.441558441558442,
+   "premium_casual": 2.276190476190476,
+   "premium_word_best": 2.276190476190476,
+   "premium_optimized": 2.3526695526695525,
+   "saving_vs_native": 0.5676478387695572,
+   "saving_vs_best_fixed": -0.03359959426905035
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "asm_Beng",
+   "premium_native": 2.758323424494649,
+   "premium_casual": 2.287752675386445,
+   "premium_word_best": 2.1997621878715816,
+   "premium_optimized": 2.240487514863258,
+   "saving_vs_native": 0.18773574738657184,
+   "saving_vs_best_fixed": 0.020660083160083165
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "asm_Beng",
+   "premium_native": 3.308395202741291,
+   "premium_casual": 2.180468303826385,
+   "premium_word_best": 2.125356938892062,
+   "premium_optimized": 2.1976013706453457,
+   "saving_vs_native": 0.3357500431555326,
+   "saving_vs_best_fixed": -0.00785751702462023
+  },
+  {
+   "tokenizer": "*",
+   "language": "asm_Beng",
+   "spelling_ambiguity": 0.16249144853474104
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "npi_Deva",
+   "premium_native": 4.782775969221663,
+   "premium_casual": 2.3009766203018645,
+   "premium_word_best": 2.3009766203018645,
+   "premium_optimized": 2.300680674755845,
+   "saving_vs_native": 0.5189654105562775,
+   "saving_vs_best_fixed": 0.00012861736334401908
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "npi_Deva",
+   "premium_native": 1.6334530221424297,
+   "premium_casual": 2.0601436265709157,
+   "premium_word_best": 1.5200478755236386,
+   "premium_optimized": 1.5197486535008977,
+   "saving_vs_native": 0.069609818648104,
+   "saving_vs_best_fixed": 0.069609818648104
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "npi_Deva",
+   "premium_native": 2.629443127962085,
+   "premium_casual": 2.2722156398104265,
+   "premium_word_best": 2.181575829383886,
+   "premium_optimized": 2.1812796208530805,
+   "saving_vs_native": 0.17044046412076153,
+   "saving_vs_best_fixed": 0.04002085777603959
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "npi_Deva",
+   "premium_native": 1.5330409356725145,
+   "premium_casual": 2.028654970760234,
+   "premium_word_best": 1.474561403508772,
+   "premium_optimized": 1.4739766081871346,
+   "saving_vs_native": 0.03852756055693307,
+   "saving_vs_best_fixed": 0.03852756055693307
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "npi_Deva",
+   "premium_native": 4.401731601731602,
+   "premium_casual": 2.2658008658008657,
+   "premium_word_best": 2.2658008658008657,
+   "premium_optimized": 2.2655122655122657,
+   "saving_vs_native": 0.485313401521112,
+   "saving_vs_best_fixed": 0.00012737230925996545
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "npi_Deva",
+   "premium_native": 2.980975029726516,
+   "premium_casual": 2.291319857312723,
+   "premium_word_best": 2.2612960760998813,
+   "premium_optimized": 2.259809750297265,
+   "saving_vs_native": 0.24192261667331472,
+   "saving_vs_best_fixed": 0.01375194603009855
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "npi_Deva",
+   "premium_native": 2.1501998857795543,
+   "premium_casual": 2.1593375214163335,
+   "premium_word_best": 1.9094802969731581,
+   "premium_optimized": 1.9089091947458594,
+   "saving_vs_native": 0.11221779548472777,
+   "saving_vs_best_fixed": 0.11221779548472777
+  },
+  {
+   "tokenizer": "*",
+   "language": "npi_Deva",
+   "spelling_ambiguity": 0.021482252870572108
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "mai_Deva",
+   "premium_native": 4.751109795797573,
+   "premium_casual": 2.250073986386505,
+   "premium_word_best": 2.250073986386505,
+   "premium_optimized": 2.250073986386505,
+   "saving_vs_native": 0.5264108633362402,
+   "saving_vs_best_fixed": 0.0
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "mai_Deva",
+   "premium_native": 1.7312986235786954,
+   "premium_casual": 2.0254338719329743,
+   "premium_word_best": 1.5870736086175943,
+   "premium_optimized": 1.5870736086175943,
+   "saving_vs_native": 0.08330452817144829,
+   "saving_vs_best_fixed": 0.08330452817144829
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "mai_Deva",
+   "premium_native": 2.572274881516588,
+   "premium_casual": 2.223637440758294,
+   "premium_word_best": 2.104265402843602,
+   "premium_optimized": 2.104265402843602,
+   "saving_vs_native": 0.18194380469829574,
+   "saving_vs_best_fixed": 0.05368322898627942
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "mai_Deva",
+   "premium_native": 1.581578947368421,
+   "premium_casual": 1.995906432748538,
+   "premium_word_best": 1.4748538011695906,
+   "premium_optimized": 1.4748538011695906,
+   "saving_vs_native": 0.06748012571639861,
+   "saving_vs_best_fixed": 0.06748012571639861
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "mai_Deva",
+   "premium_native": 4.268686868686869,
+   "premium_casual": 2.2144300144300146,
+   "premium_word_best": 2.2144300144300146,
+   "premium_optimized": 2.2144300144300146,
+   "saving_vs_native": 0.4812385910350889,
+   "saving_vs_best_fixed": 0.0
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "mai_Deva",
+   "premium_native": 3.0912604042806184,
+   "premium_casual": 2.2170035671819264,
+   "premium_word_best": 2.1964922711058263,
+   "premium_optimized": 2.1950059453032105,
+   "saving_vs_native": 0.2899317242042504,
+   "saving_vs_best_fixed": 0.009922231161169193
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "mai_Deva",
+   "premium_native": 2.2492861222158766,
+   "premium_casual": 2.116504854368932,
+   "premium_word_best": 1.8863506567675614,
+   "premium_optimized": 1.8857795545402627,
+   "saving_vs_native": 0.16160974990478605,
+   "saving_vs_best_fixed": 0.10901241230437131
+  },
+  {
+   "tokenizer": "*",
+   "language": "mai_Deva",
+   "spelling_ambiguity": 0.060862368807901975
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "san_Deva",
+   "premium_native": 5.182598401894052,
+   "premium_casual": 2.417283219887541,
+   "premium_word_best": 2.417283219887541,
+   "premium_optimized": 2.4643385617046465,
+   "saving_vs_native": 0.5244974874371859,
+   "saving_vs_best_fixed": -0.019466209598432815
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "san_Deva",
+   "premium_native": 2.28426092160383,
+   "premium_casual": 2.130460801915021,
+   "premium_word_best": 1.9649910233393177,
+   "premium_optimized": 1.9733692399760623,
+   "saving_vs_native": 0.13610165051087242,
+   "saving_vs_best_fixed": 0.0737359550561798
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "san_Deva",
+   "premium_native": 2.8062796208530805,
+   "premium_casual": 2.3856635071090047,
+   "premium_word_best": 2.328495260663507,
+   "premium_optimized": 2.3483412322274884,
+   "saving_vs_native": 0.16318344944057417,
+   "saving_vs_best_fixed": 0.015644400297988525
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "san_Deva",
+   "premium_native": 1.923391812865497,
+   "premium_casual": 2.0923976608187136,
+   "premium_word_best": 1.7926900584795322,
+   "premium_optimized": 1.7985380116959064,
+   "saving_vs_native": 0.06491334752204314,
+   "saving_vs_best_fixed": 0.06491334752204314
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "san_Deva",
+   "premium_native": 4.6669552669552665,
+   "premium_casual": 2.372582972582973,
+   "premium_word_best": 2.372582972582973,
+   "premium_optimized": 2.391919191919192,
+   "saving_vs_native": 0.48747758332818003,
+   "saving_vs_best_fixed": -0.008149860114341267
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "san_Deva",
+   "premium_native": 3.0386444708680145,
+   "premium_casual": 2.352259215219976,
+   "premium_word_best": 2.3260998810939357,
+   "premium_optimized": 2.346016646848989,
+   "saving_vs_native": 0.22793973782038734,
+   "saving_vs_best_fixed": 0.002653860735498559
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "san_Deva",
+   "premium_native": 2.46516276413478,
+   "premium_casual": 2.2681324957167335,
+   "premium_word_best": 2.13478012564249,
+   "premium_optimized": 2.1450599657338665,
+   "saving_vs_native": 0.12985057338121164,
+   "saving_vs_best_fixed": 0.05426161399974816
+  },
+  {
+   "tokenizer": "*",
+   "language": "san_Deva",
+   "spelling_ambiguity": 0.08306786227896348
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "kan_Knda",
+   "premium_native": 8.802012429712933,
+   "premium_casual": 2.261319917135247,
+   "premium_word_best": 2.261319917135247,
+   "premium_optimized": 2.247410476472329,
+   "saving_vs_native": 0.7446708358550198,
+   "saving_vs_best_fixed": 0.006151027352440774
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "kan_Knda",
+   "premium_native": 1.9602034709754639,
+   "premium_casual": 2.0254338719329743,
+   "premium_word_best": 1.7010771992818672,
+   "premium_optimized": 1.6861160981448235,
+   "saving_vs_native": 0.13982598076629527,
+   "saving_vs_best_fixed": 0.13982598076629527
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "kan_Knda",
+   "premium_native": 8.807464454976303,
+   "premium_casual": 2.248222748815166,
+   "premium_word_best": 2.248222748815166,
+   "premium_optimized": 2.233708530805687,
+   "saving_vs_native": 0.7463846102105334,
+   "saving_vs_best_fixed": 0.006455862977602145
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "kan_Knda",
+   "premium_native": 1.9178362573099415,
+   "premium_casual": 2.036842105263158,
+   "premium_word_best": 1.693859649122807,
+   "premium_optimized": 1.67046783625731,
+   "saving_vs_native": 0.1289830766885196,
+   "saving_vs_best_fixed": 0.1289830766885196
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "kan_Knda",
+   "premium_native": 6.852813852813853,
+   "premium_casual": 2.2303030303030305,
+   "premium_word_best": 2.2303030303030305,
+   "premium_optimized": 2.2155844155844155,
+   "saving_vs_native": 0.6766898294377763,
+   "saving_vs_best_fixed": 0.006599378881987583
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "kan_Knda",
+   "premium_native": 3.689655172413793,
+   "premium_casual": 2.241676575505351,
+   "premium_word_best": 2.241676575505351,
+   "premium_optimized": 2.2253269916765754,
+   "saving_vs_native": 0.39687399291008696,
+   "saving_vs_best_fixed": 0.007293462405516538
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "kan_Knda",
+   "premium_native": 2.2107367218732152,
+   "premium_casual": 2.1259280411193604,
+   "premium_word_best": 1.884351798972016,
+   "premium_optimized": 1.8706453455168475,
+   "saving_vs_native": 0.15383621803151637,
+   "saving_vs_best_fixed": 0.12008059100067159
+  },
+  {
+   "tokenizer": "*",
+   "language": "kan_Knda",
+   "spelling_ambiguity": 0.022083273886864544
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "tam_Taml",
+   "premium_native": 7.682450429121042,
+   "premium_casual": 2.4021899970405447,
+   "premium_word_best": 2.4021899970405447,
+   "premium_optimized": 2.397454868304232,
+   "saving_vs_native": 0.6879309680650256,
+   "saving_vs_best_fixed": 0.0019711716151287195
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "tam_Taml",
+   "premium_native": 2.035008976660682,
+   "premium_casual": 2.16098144823459,
+   "premium_word_best": 1.7902453620586476,
+   "premium_optimized": 1.7857570317175344,
+   "saving_vs_native": 0.12248198794294962,
+   "saving_vs_best_fixed": 0.12248198794294962
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "tam_Taml",
+   "premium_native": 7.689277251184834,
+   "premium_casual": 2.3803317535545023,
+   "premium_word_best": 2.3803317535545023,
+   "premium_optimized": 2.375592417061611,
+   "saving_vs_native": 0.6910512731615239,
+   "saving_vs_best_fixed": 0.0019910403185664505
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "tam_Taml",
+   "premium_native": 1.5125730994152047,
+   "premium_casual": 2.128362573099415,
+   "premium_word_best": 1.4388888888888889,
+   "premium_optimized": 1.4307017543859648,
+   "saving_vs_native": 0.05412719891745599,
+   "saving_vs_best_fixed": 0.05412719891745599
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "tam_Taml",
+   "premium_native": 6.130158730158731,
+   "premium_casual": 2.3604617604617606,
+   "premium_word_best": 2.3604617604617606,
+   "premium_optimized": 2.3558441558441556,
+   "saving_vs_native": 0.6156960595075561,
+   "saving_vs_best_fixed": 0.001956229367893414
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "tam_Taml",
+   "premium_native": 3.1578478002378123,
+   "premium_casual": 2.343935790725327,
+   "premium_word_best": 2.3338287752675386,
+   "premium_optimized": 2.3240190249702737,
+   "saving_vs_native": 0.264049703473595,
+   "saving_vs_best_fixed": 0.008497146480659468
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "tam_Taml",
+   "premium_native": 2.2367218732153056,
+   "premium_casual": 2.2058823529411766,
+   "premium_word_best": 1.9237578526556254,
+   "premium_optimized": 1.9191890348372358,
+   "saving_vs_native": 0.14196348780799184,
+   "saving_vs_best_fixed": 0.12996763754045304
+  },
+  {
+   "tokenizer": "*",
+   "language": "tam_Taml",
+   "spelling_ambiguity": 0.014801494623338636
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "tel_Telu",
+   "premium_native": 8.29653743711157,
+   "premium_casual": 2.144421426457532,
+   "premium_word_best": 2.144421426457532,
+   "premium_optimized": 2.129032258064516,
+   "saving_vs_native": 0.7433830348862096,
+   "saving_vs_best_fixed": 0.0071763731714049595
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "tel_Telu",
+   "premium_native": 1.895870736086176,
+   "premium_casual": 1.926391382405745,
+   "premium_word_best": 1.6214841412327947,
+   "premium_optimized": 1.606822262118492,
+   "saving_vs_native": 0.15246212121212122,
+   "saving_vs_best_fixed": 0.15246212121212122
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "tel_Telu",
+   "premium_native": 8.303613744075829,
+   "premium_casual": 2.1199644549763033,
+   "premium_word_best": 2.1199644549763033,
+   "premium_optimized": 2.1045616113744074,
+   "saving_vs_native": 0.7465487104484001,
+   "saving_vs_best_fixed": 0.007265614084113414
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "tel_Telu",
+   "premium_native": 1.733625730994152,
+   "premium_casual": 1.9154970760233918,
+   "premium_word_best": 1.5473684210526315,
+   "premium_optimized": 1.5283625730994153,
+   "saving_vs_native": 0.11840107944004052,
+   "saving_vs_best_fixed": 0.11840107944004052
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "tel_Telu",
+   "premium_native": 6.9535353535353535,
+   "premium_casual": 2.116305916305916,
+   "premium_word_best": 2.116017316017316,
+   "premium_optimized": 2.101010101010101,
+   "saving_vs_native": 0.6978500871586287,
+   "saving_vs_best_fixed": 0.007227601254602534
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "tel_Telu",
+   "premium_native": 3.744054696789536,
+   "premium_casual": 2.0948275862068964,
+   "premium_word_best": 2.0948275862068964,
+   "premium_optimized": 2.079369797859691,
+   "saving_vs_native": 0.444620881302104,
+   "saving_vs_best_fixed": 0.007379026536114663
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "tel_Telu",
+   "premium_native": 2.217018846373501,
+   "premium_casual": 2.0157053112507137,
+   "premium_word_best": 1.8198172472872645,
+   "premium_optimized": 1.805254140491148,
+   "saving_vs_native": 0.18572900566718187,
+   "saving_vs_best_fixed": 0.10440572319025354
+  },
+  {
+   "tokenizer": "*",
+   "language": "tel_Telu",
+   "spelling_ambiguity": 0.020225768177580414
+  },
+  {
+   "tokenizer": "gpt4",
+   "language": "mal_Mlym",
+   "premium_native": 8.941106836342113,
+   "premium_casual": 2.323468481799349,
+   "premium_word_best": 2.323468481799349,
+   "premium_optimized": 2.345664397750814,
+   "saving_vs_native": 0.7376539123527075,
+   "saving_vs_best_fixed": -0.00955292319449752
+  },
+  {
+   "tokenizer": "gpt4o",
+   "language": "mal_Mlym",
+   "premium_native": 1.9491322561340514,
+   "premium_casual": 2.1119090365050868,
+   "premium_word_best": 1.7103530819868342,
+   "premium_optimized": 1.711250748055057,
+   "saving_vs_native": 0.12204482652747928,
+   "saving_vs_best_fixed": 0.12204482652747928
+  },
+  {
+   "tokenizer": "llama3",
+   "language": "mal_Mlym",
+   "premium_native": 8.946978672985782,
+   "premium_casual": 2.2920616113744074,
+   "premium_word_best": 2.2920616113744074,
+   "premium_optimized": 2.306872037914692,
+   "saving_vs_native": 0.7421618937262042,
+   "saving_vs_best_fixed": -0.006461617989144575
+  },
+  {
+   "tokenizer": "gemma3",
+   "language": "mal_Mlym",
+   "premium_native": 1.8570175438596492,
+   "premium_casual": 2.0783625730994153,
+   "premium_word_best": 1.673391812865497,
+   "premium_optimized": 1.6716374269005847,
+   "saving_vs_native": 0.09982679892930246,
+   "saving_vs_best_fixed": 0.09982679892930246
+  },
+  {
+   "tokenizer": "qwen3",
+   "language": "mal_Mlym",
+   "premium_native": 7.198845598845599,
+   "premium_casual": 2.2903318903318906,
+   "premium_word_best": 2.2903318903318906,
+   "premium_optimized": 2.2981240981240982,
+   "saving_vs_native": 0.6807649134060295,
+   "saving_vs_best_fixed": -0.003402217741935498
+  },
+  {
+   "tokenizer": "deepseek_v4",
+   "language": "mal_Mlym",
+   "premium_native": 4.4878121284185495,
+   "premium_casual": 2.2832936979785967,
+   "premium_word_best": 2.2832936979785967,
+   "premium_optimized": 2.2936979785969083,
+   "saving_vs_native": 0.4889050804795655,
+   "saving_vs_best_fixed": -0.0045566983465694655
+  },
+  {
+   "tokenizer": "mistral_nemo",
+   "language": "mal_Mlym",
+   "premium_native": 2.559109080525414,
+   "premium_casual": 2.18703597944032,
+   "premium_word_best": 2.0445459737292975,
+   "premium_optimized": 2.04768703597944,
+   "saving_vs_native": 0.19984378486944876,
+   "saving_vs_best_fixed": 0.06371588980284637
+  },
+  {
+   "tokenizer": "*",
+   "language": "mal_Mlym",
+   "spelling_ambiguity": 0.04112001352258425
+  }
+ ]
+}
