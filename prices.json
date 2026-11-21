@@ -1,0 +1,48 @@
+{
+  "_note": "Edit these to match your provider. USD per 1M tokens. 'gpt4o' is OpenAI's list price (developers.openai.com, checked Oct 2026). Open-weight models have no single list price: by default they are priced the same as GPT-4o, so cost differences come only from tokenization. Replace them with your host's prices to use the router for real. 'sarvam1' (Sarvam-1, an open Indian model) is used only if its tokenizer file has been downloaded.",
+  "usd_to_inr": 96.5,
+  "usd_to_inr_note": "Mid-market rate, July 2026 (Policybazaar / CurrencyConvert). Update before presenting.",
+  "context_window": 128000,
+  "models": {
+    "gpt4": {
+      "input": 2.5,
+      "output": 10.0,
+      "list_price": false
+    },
+    "gpt4o": {
+      "input": 2.5,
+      "output": 10.0,
+      "list_price": true
+    },
+    "llama3": {
+      "input": 2.5,
+      "output": 10.0,
+      "list_price": false
+    },
+    "gemma3": {
+      "input": 2.5,
+      "output": 10.0,
+      "list_price": false
+    },
+    "qwen3": {
+      "input": 2.5,
+      "output": 10.0,
+      "list_price": false
+    },
+    "deepseek_v4": {
+      "input": 2.5,
+      "output": 10.0,
+      "list_price": false
+    },
+    "mistral_nemo": {
+      "input": 2.5,
+      "output": 10.0,
+      "list_price": false
+    },
+    "sarvam1": {
+      "input": 2.5,
+      "output": 10.0,
+      "list_price": false
+    }
+  }
+}
