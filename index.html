@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#141c33">
+<meta name="description" content="BhashaToken: measure the token tax on South Asian languages, cut it with meaning-safe rewrites, and prove every decision.">
+<title>BhashaToken · Team BNKV</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/static/icon.svg">
+<link rel="stylesheet" href="/static/style.css">
+<script>try { const t = localStorage.getItem("bt-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <img src="/static/icon.svg" alt="" width="36" height="36">
+    <div><h1>Bhasha<span>Token</span></h1><p>Measure the Tax. Preserve the Meaning. Make AI More Inclusive.</p></div>
+  </div>
+  <div class="actions">
+    <div class="mode" role="group" aria-label="View mode">
+      <button data-mode="simple" class="on" type="button">Simple</button><button data-mode="research" type="button">Research</button>
+    </div>
+    <button class="btn" id="theme-btn" type="button" aria-label="Switch light or dark theme">☾</button>
+    <a class="btn phone" href="/handout" target="_blank" rel="noopener">Handout</a>
+    <button class="btn phone" id="phone-btn" type="button">Open on phone</button>
+    <button class="btn primary" id="demo-btn" type="button">▶ Judge demo</button>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs" aria-label="Pages">
+  <button data-page="overview" class="on"><span class="ico">◎</span>Overview</button>
+  <button data-page="try"><span class="ico">✎</span>Optimizer</button>
+  <button data-page="languages"><span class="ico">⇄</span>Compare</button>
+  <button data-page="demos"><span class="ico">▶</span>Live Demos</button>
+  <button data-page="safety"><span class="ico">⛨</span>Safety Lab</button>
+  <button data-page="research"><span class="ico">∿</span>Research</button>
+  <button data-page="simulator"><span class="ico">₹</span>Simulator</button>
+  <button data-page="evidence"><span class="ico">✓</span>Evidence</button>
+</nav>
+
+<main>
+<!-- ===================== OVERVIEW ===================== -->
+<section class="page on" id="overview">
+  <div class="hero">
+    <div>
+      <div class="kicker">The token tax</div>
+      <h2>AI bills by the <em>token</em>. The same sentence in Kannada can cost many times more than in English.</h2>
+      <p>BhashaToken measures that tax on 17 South Asian languages and 7 real tokenizers, rewrites each message into its cheapest form <b>only if a multi-check verifier proves the meaning is unchanged</b>, and records every decision so it can be audited.</p>
+    </div>
+    <div class="pipeline" aria-label="How BhashaToken works">
+      <div>1 · Measure<span>tokens, ₹, context</span></div>
+      <div>2 · Explain<span>why each word is costly</span></div>
+      <div>3 · Generate<span>7 rewrite candidates</span></div>
+      <div>4 · Verify<span>numbers, negation, names…</span></div>
+      <div class="hot">5 · Choose<span>cheapest safe, per model</span></div>
+      <div>6 · Audit<span>trace + human review</span></div>
+    </div>
+  </div>
+  <div class="kpis" id="kpis"></div>
+
+  <div class="panel" id="gap-panel">
+    <h3>What existed before, and what BhashaToken adds</h3>
+    <div class="gap">
+      <div class="was"><h4>Existing research (2023–2026)</h4><ul>
+        <li>Measures the tax (Petrov 2023; Srivastava 2026: 10 Indian languages, 6 tokenizers)</li>
+        <li>Picks one cheaper format for a whole task, for one model (RomanSetu 2024)</li>
+        <li>Fixes tokenizers (grapheme / vowel-sign aware) – needs retraining the model</li>
+        <li>Compresses prompts – shown to harm non-English text (Lost in Compression 2026)</li>
+        <li>Rarely checks that meaning survived; no per-request audit trail</li>
+      </ul></div>
+      <div class="now"><h4>BhashaToken (this project)</h4><ul>
+        <li>Works <b>today</b> with any hosted model: changes the text sent, not the tokenizer</li>
+        <li>Chooses <b>per message and per model</b> among 7 rewrites (no format always wins)</li>
+        <li><b>Meaning-safety verifier</b>: numbers, dates, negation, questions, modality, names, every word – calibrated on held-out data</li>
+        <li><b>Decision trace + audit ledger</b>: tokenizer hash, candidates, rejection reasons, latency</li>
+        <li>Statistics: confidence intervals, paired tests, ablations, failure taxonomy</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="grid two">
+    <div class="panel">
+      <div class="panel-head"><h3>The token tax across India</h3>
+        <select id="map-model" aria-label="Model"></select></div>
+      <div id="map" class="map"></div>
+      <div class="map-legend" id="map-legend"></div>
+      <p class="explain">Each state is coloured by its main language: how many times more tokens that language needs than English for the same sentence. Tap a state.</p>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>Same sentence, every model</h3>
+        <select id="bar-lang" aria-label="Language"></select></div>
+      <div class="chart-box tall"><canvas id="chart-models"></canvas></div>
+      <p class="explain">Orange is English (1×). A bar at 8× means 8 times the tokens, so 8 times the input cost, and 1/8 of the usable context window.</p>
+    </div>
+  </div>
+
+  <div class="grid two">
+    <div class="panel">
+      <div class="panel-head"><h3>Where do the extra tokens come from?</h3>
+        <select id="donut-model" aria-label="Model"></select></div>
+      <div class="chart-box small"><canvas id="chart-causes"></canvas></div>
+      <p class="explain">For <b id="donut-lang-name">Kannada</b>. "Vowel signs split off": the tokenizer cuts words at vowel signs (ಾ ಿ ೆ) before it starts. "Missing vocabulary": the model never learned that word.</p>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>Language Fairness Index by model</h3></div>
+      <div class="chart-box small"><canvas id="chart-fair"></canvas></div>
+      <p class="explain">Average over 17 languages. 1.00 = every language treated as well as English. Formula and weight-sensitivity test on the Research page.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OPTIMIZER (TRY IT) ===================== -->
+<section class="page" id="try">
+  <div class="panel input-panel">
+    <div class="examples" id="examples"></div>
+    <textarea id="txt" rows="2" maxlength="5000" aria-label="Type any sentence"></textarea>
+    <div class="input-foot"><span class="note">Type, paste or <b>speak</b> any sentence in any South Asian language, with or without English words. Everything below is for <b>this sentence only</b>.</span>
+      <span class="ctrl"><select id="mic-lang" aria-label="Speech language"><option value="kn-IN">ಕನ್ನಡ</option><option value="hi-IN">हिन्दी</option><option value="ta-IN">தமிழ்</option><option value="te-IN">తెలుగు</option><option value="ml-IN">മലയാളം</option><option value="bn-IN">বাংলা</option><option value="mr-IN">मराठी</option><option value="gu-IN">ગુજરાતી</option><option value="en-IN">English</option></select>
+      <button class="solid mic" type="button" id="mic-btn">🎤 Speak</button>
+      <button class="solid" type="button" id="to-compare">Compare in all languages →</button></span></div>
+    <p class="note" id="mic-status" hidden></p>
+  </div>
+
+  <div class="steps-nav">
+    <a href="#s-cost">1 · Cost on every model</a><a href="#s-tokens">2 · See the tokens</a>
+    <a href="#s-cheaper">3 · Safe cheaper version</a><a href="#s-more">4 · Why · predict · shorten</a>
+  </div>
+
+  <div class="summary" id="try-summary"></div>
+
+  <div class="panel" id="s-cost">
+    <div class="kicker">Step 1 · Tokenizer Arena</div>
+    <h3>Your sentence on every AI model</h3>
+    <div class="scroll-x" id="model-table"></div>
+    <p class="explain">Tokens = pieces the model reads and bills. Characters per token: higher is better. Broken-letter pieces: tokens that hold only part of a letter (pure waste). Cost uses each model's input price, per 1 lakh messages like this one. Tap a row to inspect that model below.</p>
+    <div class="chart-box small"><canvas id="chart-opt"></canvas></div>
+  </div>
+
+  <div class="panel" id="s-tokens">
+    <div class="kicker">Step 2 · Fragmentation Microscope</div>
+    <h3>How <span id="tok-model-name">the model</span> cuts your sentence</h3>
+    <div class="chips" id="tok-chips"></div>
+    <div id="tok-view"></div>
+    <p class="explain">Each coloured box is one token. Red dashed boxes are broken letters: one letter split into ×n tokens because the model has no piece for it.</p>
+  </div>
+
+  <div class="panel" id="s-cheaper">
+    <div class="kicker">Step 3 · Adaptive Optimizer + meaning check</div>
+    <h3>The cheapest version that keeps the exact meaning</h3>
+    <div id="opt-best"></div>
+    <details class="trace" open><summary>All 7 versions we tried <span class="note" id="cand-model"></span></summary>
+      <div class="scroll-x" id="cand-table"></div></details>
+    <details class="trace" id="trace-box"><summary>Decision record (audit trail)</summary><div id="trace"></div></details>
+    <div class="ai-box" id="ai-box">
+      <h4>Does the AI still answer correctly? (live, on this laptop)</h4>
+      <p class="note" id="ai-status">Checking for a local AI…</p>
+      <button class="solid" type="button" id="ai-ask" disabled>Ask the AI both versions</button>
+      <div id="ai-out"></div>
+    </div>
+    <div class="review" id="review-form">
+      <b style="width:100%">Human check: does the chosen version keep the meaning?</b>
+      <label>Your name<input type="text" id="rv-name" maxlength="60" value="judge"></label>
+      <label>Meaning kept (1–5)<select id="rv-meaning"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></label>
+      <label>Fluency (1–5)<select id="rv-fluency"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></label>
+      <label>Would you send it?<select id="rv-ok"><option value="1">Yes</option><option value="0">No</option></select></label>
+      <button type="button" id="rv-send">Save review</button>
+      <span class="note" id="rv-status"></span>
+    </div>
+    <p class="explain">Only the <b>text you send</b> changes; no model or tokenizer is modified. Counts are exact for these tokenizer files; a hosted API may add a few tokens for chat formatting.</p>
+  </div>
+
+  <div class="panel" id="s-more">
+    <div class="kicker">Step 4 · Deeper analysis</div>
+    <details class="fold" open><summary>Why so many tokens? (word by word)</summary>
+      <div class="grid two tight">
+        <div class="chart-box small"><canvas id="chart-why"></canvas></div>
+        <div id="why-words" class="word-list"></div>
+      </div></details>
+    <details class="fold"><summary>Predicted before sending (no tokenizer needed)</summary>
+      <div class="chart-box"><canvas id="chart-pred"></canvas></div>
+      <p class="explain">Estimated from letters, vowel signs and script only, compared with the real count and the common "characters ÷ 4" rule.</p></details>
+    <details class="fold"><summary>Shorter without changing the meaning</summary>
+      <label class="check"><input type="checkbox" id="aggr"> Also use aggressive rules (shorter words, fillers, repeats)</label>
+      <div id="comp-out"></div></details>
+  </div>
+</section>
+
+<!-- ===================== LIVE DEMOS ===================== -->
+<section class="page" id="demos">
+  <div class="demo-intro">
+    <div class="kicker">Live demos</div>
+    <h2>Six things you can try right now</h2>
+    <p class="note">Tokenizer playgrounds already show how one text is cut into tokens. These demos show what they don't: memory lost over a whole conversation, a drop-in API, an audit of real message logs, and a meaning checker you can try to fool.</p>
+    <div class="demo-jump"><a href="#d-memory">1 · Memory race</a><a href="#d-fool">2 · Fool the checker</a><a href="#d-batch">3 · Audit your messages</a><a href="#d-api">4 · Drop-in API</a><a href="#d-crowd">5 · Live crowd check</a><a href="#d-receipt">6 · Token Tax receipt</a></div>
+  </div>
+
+  <div class="panel" id="d-memory">
+    <div class="panel-head"><div><div class="kicker">Demo 1 · Memory race</div><h3>Same conversation, same AI memory: who forgets first?</h3></div>
+      <div class="ctrl"><select id="mem-lang" aria-label="Language"></select><select id="mem-model" aria-label="Model"></select>
+        <select id="mem-window" aria-label="Memory size"><option value="1000">memory 1,000 tokens</option><option value="2000" selected>memory 2,000 tokens</option><option value="4000">memory 4,000 tokens</option></select>
+        <button class="solid" id="mem-play" type="button">▶ Play</button></div></div>
+    <div class="race">
+      <div class="lane" id="lane-en"><div class="lane-head"><b>English user</b><span class="lane-stat"></span></div><div class="meter"><i></i></div><div class="bubbles"></div></div>
+      <div class="lane" id="lane-nat"><div class="lane-head"><b id="lane-nat-name">Kannada user</b><span class="lane-stat"></span></div><div class="meter bad"><i></i></div><div class="bubbles"></div></div>
+      <div class="lane" id="lane-opt"><div class="lane-head"><b id="lane-opt-name">Kannada + BhashaToken</b><span class="lane-stat"></span></div><div class="meter good"><i></i></div><div class="bubbles"></div></div>
+    </div>
+    <div id="mem-result" class="mem-result"></div>
+    <p class="explain">Each turn is the next sentence of the same news story, professionally translated (FLORES-200). The AI keeps only the newest messages that fit in its memory (context window); older ones fade out. The memory is scaled down so you can watch it fill: a real 128,000-token window behaves the same way, because only the ratio matters. Cost and context audits report the same effect: for example, Bengali on GPT-4o fits only about 82k English-equivalent tokens into 128k.</p>
+  </div>
+
+  <div class="panel" id="d-fool">
+    <div class="kicker">Demo 2 · Can you fool the meaning checker?</div>
+    <h3>Change the sentence with one click and see if the checker notices</h3>
+    <div class="examples" id="fool-presets"></div>
+    <textarea id="fool-text" rows="2" maxlength="5000"></textarea>
+    <div class="mut-grid"><div><h4 class="good-h">Safe changes (should pass)</h4><div class="chips" id="mut-safe"></div></div>
+      <div><h4 class="bad-h">Meaning changes (should be caught)</h4><div class="chips" id="mut-bad"></div></div></div>
+    <div id="fool-out"></div>
+    <div class="scoreboard" id="fool-score"></div>
+  </div>
+
+  <div class="panel" id="d-batch">
+    <div class="panel-head"><div><div class="kicker">Demo 3 · Audit your own messages</div><h3>Paste chatbot messages (one per line) or upload a .txt / .csv file</h3></div>
+      <div class="ctrl"><select id="batch-model" aria-label="Model"></select>
+        <label class="solid upload">Upload file<input type="file" id="batch-file" accept=".txt,.csv" hidden></label>
+        <button class="solid" id="batch-run" type="button">Audit messages</button></div></div>
+    <textarea id="batch-text" rows="6" maxlength="202000"></textarea>
+    <div id="batch-out"></div>
+  </div>
+
+  <div class="panel" id="d-api">
+    <div class="kicker">Demo 4 · Drop-in API</div>
+    <h3>Your app changes one line; BhashaToken does the rest</h3>
+    <div class="grid two tight">
+      <div><h4>Python app using the OpenAI client</h4>
+<pre class="code">from openai import OpenAI
+
+client = OpenAI(base_url="http://127.0.0.1:8000/v1",  # only change
+                api_key="your-key")
+reply = client.chat.completions.create(
+    model="llama3",
+    messages=[{"role": "user", "content": "<span id="api-snippet-text">ನಾಳೆ ಬೆಳಿಗ್ಗೆ ಬಸ್ ಎಷ್ಟು ಗಂಟೆಗೆ?</span>"}])</pre>
+        <textarea id="api-text" rows="2" maxlength="5000">ನಾಳೆ ಬೆಳಿಗ್ಗೆ ಬಸ್ ಎಷ್ಟು ಗಂಟೆಗೆ ಬರುತ್ತದೆ? ಟಿಕೆಟ್ ಬೆಲೆ 45 ರೂಪಾಯಿ ಅಲ್ಲವೇ?</textarea>
+        <p><button class="solid" id="api-send" type="button">Send test request</button> <select id="api-model" aria-label="Model"></select></p></div>
+      <div id="api-out"><p class="note">Press "Send test request" to see what your app sends and what BhashaToken forwards.</p></div>
+    </div>
+    <p class="explain">Runs as a dry run: nothing leaves this computer unless <code>TOKENTAX_UPSTREAM</code> is set to a real OpenAI-compatible server. Only user messages are rewritten; system prompts and replies are untouched.</p>
+  </div>
+
+  <div class="panel" id="d-crowd">
+    <div class="kicker">Demo 5 · Live crowd check</div>
+    <h3>Ask the room: does the cheaper version mean the same?</h3>
+    <div class="grid two tight" style="grid-template-columns: 260px 1fr">
+      <div class="crowd-qr"><div id="crowd-qr"></div><p class="note" id="crowd-url"></p></div>
+      <div><div class="kpis three" id="crowd-kpis"></div><div class="chart-box small"><canvas id="chart-crowd"></canvas></div></div>
+    </div>
+    <p class="explain">Anyone on the same Wi-Fi scans the code, picks a language they read, and rates real rewrites that BhashaToken would send to Llama 3. Results update live. Only ratings from people who say they read the language are counted. These are event ratings, not a controlled study; the full protocol is in docs/METHODOLOGY.md. <a href="/api/crowd.csv" download>Download ratings (CSV)</a></p>
+  </div>
+
+  <div class="panel" id="d-receipt">
+    <div class="panel-head"><div><div class="kicker">Demo 6 · Token Tax receipt</div><h3>What does one person pay extra in a month?</h3></div>
+      <div class="ctrl"><select id="rc-lang" aria-label="Language"></select><select id="rc-model" aria-label="Model"></select>
+        <select id="rc-msgs" aria-label="Messages per month"><option value="100">100 messages / month</option><option value="500" selected>500 messages / month</option><option value="2000">2,000 messages / month</option></select>
+        <button class="solid" id="rc-print" type="button">🖨 Print / save PDF</button></div></div>
+    <div id="receipt" class="receipt"></div>
+    <p class="explain">Built from measured token rates for the chosen model and language (40-word questions, 120-word answers, list prices, both editable on the Simulator page). Simulated, not a real bill.</p>
+  </div>
+</section>
+
+<!-- ===================== SAFETY LAB ===================== -->
+<section class="page" id="safety">
+  <div class="kpis three" id="safety-kpis"></div>
+  <div class="grid two">
+    <div class="panel" id="lab-panel">
+      <div class="kicker">Meaning Safety Lab</div>
+      <h3>Test any rewrite against the original</h3>
+      <div class="examples" id="lab-presets"></div>
+      <label class="note">Original</label>
+      <textarea id="lab-a" rows="2" maxlength="5000"></textarea>
+      <label class="note">Rewrite (from any tool, a person, or another AI)</label>
+      <textarea id="lab-b" rows="2" maxlength="5000"></textarea>
+      <div id="lab-out"></div>
+    </div>
+    <div class="panel">
+      <h3>Why similarity alone is not enough</h3>
+      <div class="chart-box tall"><canvas id="chart-catch"></canvas></div>
+      <p class="explain">Held-out FLORES devtest sentences in 6 languages, each changed on purpose. Grey: share of <b>unsafe</b> changes a similarity-only check would let through. Orange: our full verifier. For safe rewrites, higher is better (they should be accepted).</p>
+    </div>
+  </div>
+  <div class="grid two">
+    <div class="panel">
+      <h3>Which check catches what</h3>
+      <div class="chart-box"><canvas id="chart-layers"></canvas></div>
+      <p class="explain">Ablation: remove one check at a time and measure how many unsafe changes still get caught. Checks with a big drop are doing real work.</p>
+    </div>
+    <div class="panel">
+      <h3>Human evaluation</h3>
+      <div id="review-summary"></div>
+      <p><a class="solid" href="/api/reviews.csv" download style="text-decoration:none;display:inline-block">Download reviews (CSV)</a></p>
+      <p class="explain">Protocol (docs/METHODOLOGY.md): two native speakers rate each chosen rewrite for meaning (1–5), fluency (1–5) and "would you send it". Ratings are stored locally with the request's audit ID. We report only ratings actually collected.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LANGUAGES ===================== -->
+<section class="page" id="languages">
+  <div class="panel" id="cmp-panel">
+    <div class="kicker">Same sentence, every language</div>
+    <h3>Compare one sentence across 18 languages</h3>
+    <div class="cmp-controls">
+      <div class="examples" id="cmp-featured"></div>
+      <div class="cmp-search"><input type="text" id="cmp-q" placeholder="Search the 1,012 sentences in any language, e.g. earthquake, ಭೂಕಂಪ, भूकंप"><select id="cmp-model" aria-label="Model"></select></div>
+      <div id="cmp-results" class="cmp-results"></div>
+    </div>
+    <div id="cmp-head"></div>
+    <div class="scroll-x" id="cmp-table"></div>
+    <div class="chart-box tall"><canvas id="chart-cmp"></canvas></div>
+    <p class="explain">Every row is the <b>same sentence</b>, translated by professional translators (FLORES-200), so differences come only from the language and the model. We don't machine-translate your own text, because a weak translation would make the comparison unfair. "After" = the cheapest version that passed every meaning check.</p>
+  </div>
+  <div class="panel">
+    <div class="panel-head"><h3>Heatmap: tokens vs English</h3>
+      <div class="seg" role="group" aria-label="Writing style">
+        <button class="on" data-style="native">Native script</button><button data-style="roman">English letters</button></div></div>
+    <div id="heatmap" class="scroll-x"></div>
+    <p class="explain">Average over the same 1,012 sentences in every language. Darker = bigger tax. Urdu, Sindhi and Santali have no English-letter version in our tool.</p>
+  </div>
+  <div class="grid two">
+    <div class="panel">
+      <div class="panel-head"><h3>Native script vs English letters</h3>
+        <select id="style-model" aria-label="Model"></select></div>
+      <div class="chart-box tall"><canvas id="chart-style"></canvas></div>
+      <p class="explain">If the orange bar is shorter, English letters are cheaper on this model. It flips between models, which is why we choose per model.</p>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>Fairness profile</h3>
+        <select id="radar-lang" aria-label="Language"></select></div>
+      <div class="chart-box tall"><canvas id="chart-radar"></canvas></div>
+      <p class="explain">Five parts of the Language Fairness Index, each a ratio to English (1 = as good as English).</p>
+    </div>
+  </div>
+  <div class="panel">
+    <h3>Real code-mixed comments: switch to English letters?</h3>
+    <div class="chart-box"><canvas id="chart-codemix"></canvas></div>
+    <p class="explain">Real YouTube comments in Kannada, Tamil and Malayalam script. Positive = English letters save tokens; negative = they cost more.</p>
+  </div>
+</section>
+
+<!-- ===================== RESEARCH ===================== -->
+<section class="page" id="research">
+  <div class="panel" id="pareto-panel">
+    <div class="kicker">Research Dashboard</div>
+    <h3>Token saving vs meaning safety, every strategy</h3>
+    <div class="grid two tight" style="grid-template-columns: 1.6fr 1fr">
+      <div class="chart-box tall"><canvas id="chart-pareto"></canvas></div>
+      <div class="scroll-x" id="pareto-table"></div>
+    </div>
+    <p class="explain" id="pareto-note"></p>
+  </div>
+  <div class="grid two">
+    <div class="panel">
+      <h3>Ours vs the best single format (per model)</h3>
+      <div class="chart-box"><canvas id="chart-paired"></canvas></div>
+      <div class="scroll-x" id="paired-table"></div>
+      <p class="explain">"Best single format" = the one format (native, ISO or casual Latin) that was cheapest for that model and language on separate dev data, the strongest version of what earlier work does. Table: mean per-sentence gain in percentage points, 95% bootstrap CI, paired permutation p. On GPT-4 and Qwen3 the fixed format is slightly ahead because it also sends the ~1–2% of rewrites our verifier rejects.</p>
+    </div>
+    <div class="panel">
+      <h3>Ablation: what each part contributes</h3>
+      <div class="chart-box"><canvas id="chart-ablation"></canvas></div>
+      <p class="explain" id="ablation-note"></p>
+    </div>
+  </div>
+  <div class="grid two">
+    <div class="panel">
+      <h3>Failure taxonomy: why rewrites were rejected</h3>
+      <div class="chart-box small"><canvas id="chart-fail"></canvas></div>
+      <div id="fail-examples" class="rmode"></div>
+      <p class="explain">Every rejected candidate in the strategy study, grouped by the check that stopped it. Some rejections are false alarms (the verifier is deliberately strict); see Evidence → limitations.</p>
+    </div>
+    <div class="panel">
+      <h3>Formal vs conversational text</h3>
+      <div class="chart-box small"><canvas id="chart-domain"></canvas></div>
+      <p class="explain">Formal = FLORES news-style sentences. Conversational = real code-mixed YouTube comments (Kannada, Tamil, Malayalam). Average over all 7 tokenizers.</p>
+    </div>
+  </div>
+  <div class="panel" id="cf-panel">
+    <h3>Fix the tokenizer, or fix the text?</h3>
+    <div class="grid two tight">
+      <div class="chart-box"><canvas id="chart-cf"></canvas></div>
+      <div id="cf-note"></div>
+    </div>
+  </div>
+  <div class="grid two">
+    <div class="panel">
+      <h3>Language Fairness Index: is the ranking robust?</h3>
+      <div id="lfi-box"></div>
+      <div class="chart-box small"><canvas id="chart-lfi"></canvas></div>
+    </div>
+    <div class="panel">
+      <h3>Which rewrite wins most often</h3>
+      <div class="chart-box small"><canvas id="chart-wins"></canvas></div>
+      <p class="explain">For each sentence and model, which candidate was the cheapest safe one. No single format wins everywhere.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SIMULATOR ===================== -->
+<section class="page" id="simulator">
+  <div class="grid two">
+    <div class="panel">
+      <div class="kicker">Cost &amp; Context Simulator</div>
+      <h3>A state government chatbot</h3>
+      <form id="sim-form" class="sliders">
+        <label>Daily users <output data-for="daily_users"></output><input type="range" name="daily_users" min="10000" max="2000000" step="10000" value="100000"></label>
+        <label>Messages per user <output data-for="messages_per_user"></output><input type="range" name="messages_per_user" min="1" max="20" step="1" value="4"></label>
+        <label>Chats in the regional language <output data-for="regional_share"></output><input type="range" name="regional_share" min="0" max="1" step="0.05" value="0.7"></label>
+        <label>Words per question <output data-for="input_words"></output><input type="range" name="input_words" min="5" max="300" step="5" value="40"></label>
+        <label>Words per answer <output data-for="output_words"></output><input type="range" name="output_words" min="10" max="600" step="10" value="120"></label>
+        <div class="row2"><label>Model<select name="model" id="sim-model"></select></label>
+          <label>Language<select name="language" id="sim-lang"></select></label></div>
+        <div class="row2"><label>Input price, US$ per 1M tokens<input type="number" name="input_price_usd" min="0" step="0.05" value="2.50"></label>
+          <label>Output price, US$ per 1M tokens<input type="number" name="output_price_usd" min="0" step="0.05" value="10.00"></label></div>
+        <div class="row2"><label>Context window (tokens)<input type="number" name="context_window" min="1000" step="1000" value="128000"></label>
+          <label class="check" style="flex-direction:row;margin-top:22px"><input type="checkbox" name="reply_optimized"> Also optimize replies</label></div>
+      </form>
+      <p class="explain">Simulated from measured averages for the chosen model and language. This is not an API bill. By default only the questions are rewritten; replies stay in native script.</p>
+    </div>
+    <div class="panel">
+      <div class="kpis compact" id="sim-kpis"></div>
+      <div class="grid two tight">
+        <div class="chart-box small"><canvas id="chart-sim-pie"></canvas></div>
+        <div class="chart-box small"><canvas id="chart-sim-bar"></canvas></div>
+      </div>
+      <h4>Context window: how many messages fit?</h4>
+      <div class="chart-box small"><canvas id="chart-ctx"></canvas></div>
+      <p class="explain" id="ctx-note"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EVIDENCE ===================== -->
+<section class="page" id="evidence">
+  <div class="panel">
+    <div class="kicker">Evidence &amp; Reproducibility</div>
+    <h3>How a message moves through the system</h3>
+    <div class="flow">
+      <div class="step">Text<span>any South Asian language, mixed or Latin letters</span></div>
+      <div class="step">Detect<span>language, script, style</span></div>
+      <div class="step">Measure<span>7 tokenizers, ₹, context</span></div>
+      <div class="step">Generate<span>original, normalized, ISO, casual, word-mix, compressed, combo</span></div>
+      <div class="step">Verify<span>critical facts, every word, similarity, structure</span></div>
+      <div class="step hot">Choose + log<span>cheapest safe per model, audit record</span></div>
+    </div>
+  </div>
+  <div class="grid two">
+    <div class="panel">
+      <h3>Recent decisions (audit ledger)</h3>
+      <div class="scroll-x" id="audit-table"></div>
+      <p class="explain">Stored locally in <code>var/audit.sqlite</code>. Click a row to see its full trace.</p>
+      <pre class="json" id="audit-detail" hidden></pre>
+    </div>
+    <div class="panel">
+      <h3>Reproducibility ledger</h3>
+      <div id="ledger"></div>
+    </div>
+  </div>
+  <div class="grid two">
+    <div class="panel">
+      <h3>What we found</h3>
+      <ol class="findings" id="findings"></ol>
+    </div>
+    <div class="panel">
+      <h3>Limitations (stated honestly)</h3>
+      <ol class="findings">
+        <li>Token counts are exact for the open tokenizer files; hosted APIs may add a few formatting tokens, and prices change. Costs shown are simulations.</li>
+        <li>Answer quality per format is not benchmarked; with Ollama installed, the Optimizer page shows a small local AI answering both versions (a demonstration).</li>
+        <li>The meaning verifier is rule-based and strict. It was tested on <b>synthetic</b> changes of the kinds it checks for; real errors outside these types (e.g. a wrong synonym) can pass, and some safe rewrites are wrongly rejected.</li>
+        <li>LaBSE embeddings are supported but optional; the default similarity is chrF on a common spelling, so paraphrases score low (conservative).</li>
+        <li>Casual romanisation is machine-made, not typed by users; we have not measured whether a model answers equally well in each format.</li>
+        <li>Grammar rules for compression cover Kannada, Tamil and Telugu pronouns only; the saving is small (a negative result we report).</li>
+        <li>Human evaluation needs native-speaker raters; the interface and protocol are built, results are shown only once collected.</li>
+        <li>Sinhala is not included yet. Sarvam-1's tokenizer is optional: <code>python scripts/get_sarvam.py</code> adds it to the live tools (non-commercial licence).</li>
+      </ol>
+    </div>
+  </div>
+  <div class="panel">
+    <h3>Related work and exactly where we differ</h3>
+    <div class="scroll-x"><table>
+      <tr><th>Work</th><th>What it does</th><th>What it does not do (our addition)</th></tr>
+      <tr><td>Petrov et al. 2023; Ahia et al. 2023</td><td>Show tokenizer premiums and unequal API cost across languages</td><td>No South Asian per-message fix; we add 17 languages × 7 current tokenizers × two writing styles</td></tr>
+      <tr><td>Srivastava 2026 (arXiv 2607.24276)</td><td>10 Indian languages, 6 tokenizers; byte-token rate explains the tax (r = 0.89); context loss</td><td>Native script only, no user-side mitigation, no meaning verification</td></tr>
+      <tr><td>Token-cost ledger 2026 (arXiv 2609.00378)</td><td>Splits token cost into removable and irreducible parts, includes Kannada</td><td>No rewriting, no per-input choice, no verification or audit</td></tr>
+      <tr><td>RomanSetu 2024; Nag et al. 2024</td><td>Romanisation / code-mixing can cut cost</td><td>One format per task and model; we choose per message and per model and show romanising sometimes costs more</td></tr>
+      <tr><td>Vowel Signs Are Not Letters 2026; grapheme tokenizers (ACL 2026)</td><td>Find the vowel-sign split and fix the tokenizer</td><td>Requires retraining; we explain it word by word and work around it for hosted models</td></tr>
+      <tr><td>Lost in Compression 2026</td><td>English-trained compressors harm other languages; only Hindi for India</td><td>Rule-based compression for Dravidian languages with a verified safety budget</td></tr>
+    </table></div>
+  </div>
+  <div class="grid two">
+    <div class="panel">
+      <h3>Try it on your phone</h3>
+      <p>Connect your phone to the same Wi-Fi as this laptop and scan the code. On the phone, use <b>Add to Home Screen</b> to install it like an app.</p>
+      <div id="phone-box" class="phone-box"></div>
+    </div>
+    <div class="panel">
+      <h3>About</h3>
+      <p><b>Team BNKV</b> · ATME College of Engineering, Mysuru · The Big Hack 2.0, AI Research track (R3: The Token Tax)</p>
+      <div class="team"><span>Bharathi B R</span><span>Nayana</span><span>Kavitha M</span><span>Varsha Malipatil</span></div>
+      <p class="note">Runs on a CPU laptop (8 GB RAM), no paid API needed. Code, data sources and every number are reproducible with <code>python -m tokentax.experiments</code>.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="sheet" id="sheet" hidden><div class="sheet-card"><button class="close" id="sheet-close" aria-label="Close">×</button><div id="sheet-body"></div></div></div>
+<div class="tip" id="tip" hidden></div>
+<div class="demo" id="demo" hidden role="dialog" aria-label="Judge demo">
+  <div class="bar"><i id="demo-bar"></i></div>
+  <h4 id="demo-title"></h4><p id="demo-text"></p>
+  <div class="nav"><span id="demo-count"></span><div>
+    <button class="btn" id="demo-prev" type="button">Back</button>
+    <button class="btn primary" id="demo-next" type="button">Next</button>
+    <button class="btn" id="demo-close" type="button" aria-label="Close demo">✕</button></div></div>
+</div>
+
+<footer>Team BNKV · BhashaToken · FLORES-200 (CC BY-SA 4.0) · DravidianCodeMix (research use) · India boundaries: DataMeet (CC BY 4.0) · Charts: Chart.js (MIT)</footer>
+<script src="/static/vendor/chart.umd.min.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
