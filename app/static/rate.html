@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#141c33">
+<title>BhashaToken · Rate a rewrite</title>
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+<style>
+  body { background: var(--paper); }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 14px 14px 40px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; box-shadow: var(--shadow); margin-bottom: 12px; }
+  .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 700; margin-bottom: 4px; }
+  .txt { font-size: 20px; line-height: 1.45; }
+  .rw { font-size: 19px; line-height: 1.45; background: var(--warn-bg); border-radius: 10px; padding: 10px; }
+  .answers { display: grid; gap: 10px; margin-top: 6px; }
+  .answers button { font: inherit; font-size: 18px; font-weight: 700; padding: 15px; border-radius: 14px; border: 0; cursor: pointer; color: #fff; }
+  .same { background: #23845a; } .partly { background: #d08a17; } .different { background: #c13b27; }
+  .chips button { font-size: 15px; }
+  .thanks { text-align: center; color: var(--good); font-weight: 700; min-height: 22px; }
+  details summary { cursor: pointer; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<header class="top"><div class="brand"><img src="/static/icon.svg" alt="" width="30" height="30"><div><h1 style="font-size:18px">Bhasha<span>Token</span> · live check</h1></div></div></header>
+<div class="wrap">
+  <div class="card">
+    <div class="lbl">1 · Pick a language you can read</div>
+    <div class="chips" id="langs"></div>
+  </div>
+  <div class="card" id="pair">
+    <div class="lbl">Original sentence</div>
+    <div class="txt" id="orig">Loading…</div>
+    <div class="lbl" style="margin-top:12px">What BhashaToken would send (cheaper)</div>
+    <div class="rw" id="rew"></div>
+    <p class="note" id="tok"></p>
+    <details><summary>Show the English meaning</summary><p id="eng" class="note"></p></details>
+  </div>
+  <div class="card">
+    <div class="lbl">2 · Does the rewrite mean exactly the same?</div>
+    <div class="answers">
+      <button class="same" data-a="same" type="button">✓ Same meaning</button>
+      <button class="partly" data-a="partly" type="button">~ Partly the same</button>
+      <button class="different" data-a="different" type="button">✗ Different meaning</button>
+    </div>
+    <p class="note"><label><input type="checkbox" id="knows" checked> I can read this language well</label> (ratings from people who can't are not counted)</p>
+    <div class="thanks" id="thanks"></div>
+  </div>
+  <p class="note" style="text-align:center">Anonymous: only your answer and the language are saved, on the presenter's laptop.</p>
+</div>
+<script>
+const LANGS = [["kan_Knda", "ಕನ್ನಡ Kannada"], ["hin_Deva", "हिन्दी Hindi"], ["tam_Taml", "தமிழ் Tamil"], ["tel_Telu", "తెలుగు Telugu"], ["mal_Mlym", "മലയാളം Malayalam"], ["ben_Beng", "বাংলা Bengali"]];
+let lang = "kan_Knda", pair = null, seed = Math.floor(Math.random() * 1e6), done = 0;
+const $ = (s) => document.querySelector(s);
+async function load() {
+  $("#orig").textContent = "Loading…"; $("#rew").textContent = ""; $("#tok").textContent = ""; $("#eng").textContent = "";
+  seed++;
+  const r = await fetch(`/api/crowd/pair?language=${lang}&seed=${seed}`);
+  if (!r.ok) { $("#orig").textContent = "Could not load a sentence. Try another language."; return; }
+  pair = await r.json();
+  $("#orig").textContent = pair.original; $("#rew").textContent = pair.rewrite;
+  $("#tok").textContent = `Llama 3: ${pair.tokens_before} → ${pair.tokens_after} tokens`;
+  $("#eng").textContent = pair.english;
+}
+async function rate(answer) {
+  if (!pair) return;
+  const body = { pair_id: pair.pair_id, language: pair.language, candidate: pair.candidate, answer, knows_language: $("#knows").checked };
+  const r = await fetch("/api/crowd/rate", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+  if (r.ok) { done++; $("#thanks").textContent = `Thank you! You rated ${done}. Here is another one.`; }
+  load();
+}
+$("#langs").innerHTML = LANGS.map(([c, n]) => `<button data-c="${c}" class="${c === lang ? "on" : ""}" type="button">${n}</button>`).join("");
+document.querySelectorAll("#langs button").forEach((b) => { b.onclick = () => { lang = b.dataset.c; document.querySelectorAll("#langs button").forEach((x) => x.classList.toggle("on", x === b)); load(); }; });
+document.querySelectorAll(".answers button").forEach((b) => { b.onclick = () => rate(b.dataset.a); });
+load();
+</script>
+</body>
+</html>

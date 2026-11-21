@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BhashaToken · Team BNKV · one-page summary</title>
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<style>
+  @page { size: A4; margin: 10mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Inter", "Segoe UI", "Noto Sans", "Noto Sans Kannada", system-ui, sans-serif; color: #1b2440; background: #e9ecf3; }
+  .page { width: 210mm; min-height: 297mm; margin: 12px auto; background: #fff; padding: 12mm 13mm; box-shadow: 0 6px 30px rgba(0,0,0,.12); }
+  header { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #ef8f1f; padding-bottom: 8px; }
+  h1 { margin: 0; font-size: 30px; letter-spacing: -.01em; } h1 span { color: #ef8f1f; }
+  .tag { font-size: 13px; color: #56607a; margin-top: 2px; }
+  .team { text-align: right; font-size: 12px; color: #56607a; line-height: 1.4; }
+  .hook { font-size: 17px; margin: 12px 0 6px; font-weight: 700; }
+  .hook em { color: #a85400; font-style: normal; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0; }
+  .box { border: 1px solid #dfe4ee; border-radius: 10px; padding: 9px 11px; }
+  .box h3 { margin: 0 0 4px; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: #a85400; }
+  .box p, .box li { font-size: 12.5px; line-height: 1.45; margin: 0; }
+  .box ul { margin: 0; padding-left: 16px; }
+  .flow { display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; margin: 8px 0; }
+  .flow div { background: #eef1f7; border-radius: 8px; padding: 6px 7px; font-size: 11.5px; font-weight: 700; }
+  .flow div span { display: block; font-weight: 400; color: #56607a; font-size: 10.5px; }
+  .flow div.hot { background: #ef8f1f; color: #1b2440; } .flow div.hot span { color: #1b2440; }
+  .nums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 10px 0; }
+  .num { background: #1b2440; color: #fff; border-radius: 10px; padding: 9px 11px; }
+  .num b { display: block; font-size: 23px; color: #f5a240; line-height: 1.1; }
+  .num span { font-size: 11.5px; color: #c3cce0; }
+  .num.g { background: #23845a; } .num.g b, .num.g span { color: #fff; }
+  table { border-collapse: collapse; width: 100%; font-size: 11.5px; }
+  th, td { border-bottom: 1px solid #dfe4ee; padding: 4px 6px; text-align: left; vertical-align: top; }
+  th { background: #eef1f7; }
+  .bottom { display: grid; grid-template-columns: 1fr 140px; gap: 12px; align-items: center; margin-top: 10px; }
+  .qr svg { width: 130px; height: 130px; }
+  .small { font-size: 10.5px; color: #56607a; line-height: 1.4; }
+  .actions { text-align: center; margin: 10px; }
+  .actions button { font: inherit; padding: 8px 16px; border-radius: 8px; border: 0; background: #1b2440; color: #fff; cursor: pointer; }
+  @media print { body { background: #fff; } .page { margin: 0; box-shadow: none; width: auto; min-height: auto; padding: 0; zoom: .9; } .actions { display: none; } }
+</style>
+</head>
+<body>
+<div class="actions"><button onclick="window.print()">🖨 Print / save as PDF</button></div>
+<div class="page">
+  <header>
+    <div><h1>Bhasha<span>Token</span></h1><div class="tag">Measure the Tax. Preserve the Meaning. Make AI More Inclusive.</div></div>
+    <div class="team"><b>Team BNKV</b> · ATME College of Engineering, Mysuru<br>Bharathi B R · Nayana · Kavitha M · Varsha Malipatil<br>The Big Hack 2.0 · AI Research · R3 The Token Tax</div>
+  </header>
+
+  <p class="hook">Same question, same answer. Why should a Kannada speaker pay <em>8.9× more</em> and get a fraction of the AI's memory?</p>
+
+  <div class="two">
+    <div class="box"><h3>The problem</h3><p>AI models read and bill <b>tokens</b>, not words. Their tokenizers were built mostly for English, so South Asian languages are cut into many more tokens: up to 13.7× English on identical FLORES-200 sentences. Users pay more, wait longer, and the AI forgets their conversation sooner.</p></div>
+    <div class="box"><h3>Our solution</h3><p>BhashaToken rewrites each message into its cheapest form <b>for each AI model</b> (native script, English letters, word-by-word mix, grammar-safe shorter…) and sends it <b>only if a meaning checker proves</b> that numbers, dates, negation, questions, names and every word survived. Every decision is logged for audit.</p></div>
+  </div>
+
+  <div class="flow">
+    <div>1 · Measure<span>7 tokenizers, ₹, memory</span></div><div>2 · Explain<span>why each word costs</span></div>
+    <div>3 · Generate<span>7 rewrites</span></div><div>4 · Verify<span>"not", numbers, names…</span></div>
+    <div class="hot">5 · Choose<span>cheapest safe, per model</span></div><div>6 · Audit<span>trace + human review</span></div>
+  </div>
+
+  <div class="nums">
+    <div class="num"><b>17 × 7</b><span>South Asian languages × AI tokenizers measured on the same sentences</span></div>
+    <div class="num g"><b>51.4%</b><span>fewer tokens, 100% of outputs meaning-verified (held-out test data)</span></div>
+    <div class="num g"><b>100% vs 29%</b><span>harmful edits caught: our checker vs a similarity score alone (6,242 tests)</span></div>
+    <div class="num"><b>3.2×</b><span>more conversation memory for a Kannada user on Llama 3 (40-turn chat)</span></div>
+    <div class="num"><b>≈0% vs 11–64%</b><span>saving from fixing the tokenizer without retraining vs our text rewrite today</span></div>
+    <div class="num"><b>₹1.5 crore</b><span>simulated yearly token tax for one Kannada government chatbot (1 lakh users/day)</span></div>
+  </div>
+
+  <div class="box"><h3>What existed vs what we add</h3>
+    <table>
+      <tr><th>Existing work</th><th>BhashaToken</th></tr>
+      <tr><td>Measures the tax (Petrov 2023; Srivastava 2026, incl. Kannada)</td><td>Reduces it today, per message, for any hosted model</td></tr>
+      <tr><td>Retrains tokenizers (grapheme / vowel-sign aware): needs the model maker</td><td>Changes only the text sent; works with GPT, Gemini, Llama… now</td></tr>
+      <tr><td>One cheaper format for a whole task and model (RomanSetu 2024)</td><td>Chooses per message and per model among 7 rewrites</td></tr>
+      <tr><td>Prompt compression harms non-English text (Lost in Compression 2026)</td><td>Layered meaning checker, calibrated on held-out data; unsafe rewrites never sent</td></tr>
+      <tr><td>Tokenizer playgrounds only show tokens</td><td>Memory race, live crowd check, message audit, drop-in API, audit trail</td></tr>
+    </table>
+  </div>
+
+  <div class="bottom">
+    <div>
+      <div class="box"><h3>How it is used</h3><p>Free, open-source API in front of any AI. An app changes <b>one line</b> (<code>base_url</code>) and every Indian-language message becomes cheaper and meaning-checked. Runs on a CPU laptop (≈35 ms per sentence for 7 tokenizers), no paid API, nothing leaves the computer by default.</p></div>
+      <p class="small">Honest limits: costs are simulations; the checker is rule-based and was tested on known error types; answer quality per format is demonstrated live with a small local model, not benchmarked; human ratings are being collected at the event. Every number is reproducible with one command (seeds, data and tokenizer hashes in the app's Evidence page).</p>
+    </div>
+    <div class="qr"><div id="qr"></div><div class="small" id="qr-url">Scan to try it (same Wi-Fi)</div></div>
+  </div>
+</div>
+<script>
+if (location.search.includes("noqr")) {
+  document.getElementById("qr").innerHTML = '<div style="width:130px;height:130px;border:2px dashed #b7c0d4;border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:11px;color:#56607a;padding:8px">Scan the QR code at our table to try it</div>';
+  document.getElementById("qr-url").textContent = "";
+} else fetch("/api/phone").then((r) => r.json()).then((p) => {
+  if (p.svg) document.getElementById("qr").innerHTML = p.svg;
+  if (p.url) document.getElementById("qr-url").textContent = `Scan to try it: ${p.url} (same Wi-Fi)`;
+}).catch(() => {});
+</script>
+</body>
+</html>
